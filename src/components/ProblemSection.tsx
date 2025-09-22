@@ -7,7 +7,7 @@ export default function ProblemSection() {
             <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">Problem</h2>
             <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">Problemy, które rozwiązujemy</h3>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 md:gap-8 mt-12">
             <div style={{ opacity: 1, filter: "blur(0px)", transform: "translateY(-6px)" }}>
               <div data-slot="card" className="text-card-foreground flex flex-col gap-6 rounded-xl border py-6 bg-background border-none shadow-none">
                 <div data-slot="card-content" className="p-6 space-y-4">
