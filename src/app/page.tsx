@@ -1,6 +1,4 @@
-'use client';
 
-import DarkModeToggle from "../components/DarkModeToggle";
 import Navigation from "../components/Navigation";
 import HeroSection from "../components/HeroSection";
 import FeaturesSection from "../components/FeaturesSection";
@@ -15,8 +13,7 @@ import BlazingAcceptanceSection from "@/components/BlazingAcceptanceSection";
 
 export default function Home() {
   return (
-    <div className="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100">
-      <DarkModeToggle />
+    <div className="bg-gray-50 text-gray-800">
       <Navigation />
       <HeroSection />
       <FeaturesSection />
