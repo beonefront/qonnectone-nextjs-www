@@ -1,93 +1,61 @@
-'use client';
-
-import React, { useState } from "react";
-
-const faqs = [
-  {
-    question: "Dlaczego właśnie Qonnect?",
-    answer: "Ponieważ oferta dopasowana jest do konkretnych wymagań Twojej firmy. Nasi programiści są w stanie szybko dopasować fragmenty aplikacji do twojej branży oraz indywidualnych wymagań."
-  },
-  {
-    question: "Dlaczego korzystać z zewnętrznego partnera zamiast własnego systemu?",
-    answer: "Prace nad dedykowanym systemem informatycznym to koszty oraz ryzyko. Z nami jesteś w stanie zrobić to w rekordowym czasie, wyprzedzić konkurencję i korzystać z benefitów dopracowanego już systemu."
-  },
-  {
-    question: "Czym jest aplikacja SAAS?",
-    answer: "Aplikacja SaaS (Software as a Service) to oprogramowanie udostępniane użytkownikom przez Internet w modelu abonamentowym. Nie wymaga instalacji na komputerze – korzystasz z niego przez przeglądarkę. Wszystkie dane i aktualizacje są utrzymywane w chmurze przez dostawcę usługi."
-  }
-];
+import Link from "next/link";
 
 export default function FAQSection() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
   return (
-    <section className="py-16 bg-gray-100 dark:bg-gray-900 md:py-24 px-4">
-      <div className="max-w-4xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-montserrat font-bold mb-6 tracking-tight">
-            3 <span className="text-primary">KLUCZOWE PYTANIA</span>
-          </h2>
-        </div>
+    <section id="faq">
+      <div>
+        <div className="relative container mx-auto px-4 py-16 max-w-7xl">
+          <div className="text-center space-y-4 pb-12 mx-auto">
+            <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">FAQ</h2>
+            <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">3 KLUCZOWE PYTANIA</h3>
+          </div>
 
-        {/* FAQ Items */}
-        <div className="space-y-6">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 overflow-hidden transition-all duration-200 hover:shadow-lg"
-            >
-              <button
-                className="w-full px-8 py-6 text-left flex items-center justify-between focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-                onClick={() => toggleFAQ(index)}
-                aria-expanded={openIndex === index}
-              >
-                <div className="flex items-start">
-                  <span className="text-primary font-bold text-xl mr-4 mt-1 flex-shrink-0">
-                    {index + 1}.
-                  </span>
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white font-montserrat pr-4">
-                    {faq.question}
-                  </h3>
-                </div>
-                <div className="flex-shrink-0">
-                  <i
-                    className={`fas fa-chevron-down text-primary text-lg transition-transform duration-200 ${
-                      openIndex === index ? "rotate-180" : ""
-                    }`}
-                  ></i>
-                </div>
-              </button>
-
-              <div
-                className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                  openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-                }`}
-              >
-                <div className="px-8 pb-6 pl-16">
-                  <p className="text-gray-600 dark:text-gray-300 font-inter leading-relaxed text-lg">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
+          <div className="max-w-4xl mx-auto space-y-8">
+            {/* Question 1 */}
+            <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
+              <h4 className="text-xl font-bold text-gray-900 mb-4">
+                1. Dlaczego właśnie Qonnect?
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Ponieważ oferta dopasowana jest do konkretnych wymagań Twojej firmy. Nasi programiści są w stanie szybko dopasować fragmenty aplikacji do twojej branży oraz indywidualnych wymagań.
+              </p>
             </div>
-          ))}
-        </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-12">
-          <p className="text-gray-600 dark:text-gray-300 font-inter mb-6">
-            Masz więcej pytań? Skontaktuj się z nami
-          </p>
-          <button className="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold font-inter transition-all duration-200 hover:scale-105 shadow-lg">
-            Skontaktuj się z nami <i className="fas fa-arrow-right ml-2"></i>
-          </button>
+            {/* Question 2 */}
+            <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
+              <h4 className="text-xl font-bold text-gray-900 mb-4">
+                2. Dlaczego korzystać z zewnętrznego partnera zamiast własnego systemu?
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Prace nad dedykowanym systemem informatycznym to koszty oraz ryzyko. Z nami jesteś w stanie zrobić to w rekordowym czasie, wyprzedzić konkurencję i korzystać z benefitów dopracowanego już systemu.
+              </p>
+            </div>
+
+            {/* Question 3 */}
+            <div className="bg-white rounded-lg shadow-sm border border-neutral-200 p-6">
+              <h4 className="text-xl font-bold text-gray-900 mb-4">
+                3. Czym jest aplikacja SAAS?
+              </h4>
+              <p className="text-gray-600 leading-relaxed">
+                Aplikacja SaaS (Software as a Service) to oprogramowanie udostępniane użytkownikom przez Internet w modelu abonamentowym. Nie wymaga instalacji na komputerze – korzystasz z niego przez przeglądarkę. Wszystkie dane i aktualizacje są utrzymywane w chmurze przez dostawcę usługi.
+              </p>
+            </div>
+          </div>
+
+          {/* Case Studies Section */}
+          <div className="mt-16 text-center bg-gray-50 rounded-lg p-8">
+            <p className="text-lg text-gray-700 mb-4">
+              Poznaj <b>realne historie naszych klientów</b> i zobacz, jak dzięki <b>naszej platformie</b> zwiększyli efektywność i zyski.
+            </p>
+            <Link href="/business-cases" passHref>
+              <button className="rounded-md text-sm font-medium transition-all outline-none focus-visible:border-ring bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 text-background cursor-pointer">
+                Przeczytaj Bussiness Cases
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     </section>
   );
 }
+

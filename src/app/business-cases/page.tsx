@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import ContactCTA from '@/components/ContactCTA';
 
 export const metadata: Metadata = {
   title: 'Business Cases | Qonnect',
@@ -9,73 +10,91 @@ export const metadata: Metadata = {
 
 export default function BusinessCasesPage() {
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="bg-gray-50 text-gray-800">
       <Navigation />
 
       {/* Hero Section */}
-      <section className="text-white hero-bg from-primary">
-        <div className="container mx-auto px-4 py-16 md:py-20">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-montserrat font-bold mb-6 tracking-tight">
-              Business Cases
+      <section id="hero">
+        <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 sm:px-6 sm:pt-24 md:pt-32 md:pb-16 lg:px-8">
+          <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
+            <h1 className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
+              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">Business</span>
+              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">Cases</span>
             </h1>
-            <p className="text-xl md:text-2xl font-montserrat font-medium mb-8 text-gray-200">
-              Poznaj historie sukcesu firm, które zaufały rozwiązaniom QonnectOne
-            </p>
-            <p className="text-lg text-gray-300 mb-10 max-w-3xl mx-auto font-inter leading-relaxed">
-              Odkryj, jak nasze rozwiązania pomagają instytucjom finansowym w przyspieszeniu wzrostu,
-              minimalizacji ryzyka i spełnieniu wymogów regulacyjnych w różnych sektorach.
+            <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
+              Odkryj, jak nasze rozwiązania pomagają instytucjom finansowym w przyspieszeniu wzrostu, minimalizacji ryzyka i spełnieniu wymogów regulacyjnych w różnych sektorach.
             </p>
 
             {/* Key Benefits */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-10 max-w-3xl mx-auto">
-              <div className="flex items-center text-left bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <i className="fas fa-rocket text-blue-300 text-xl mr-3 flex-shrink-0"></i>
-                <span className="font-inter">Szybkie wejście na rynek</span>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6 mb-6 max-w-3xl">
+              <div className="flex items-center text-left bg-blue-50 border border-blue-100 rounded-lg p-4 hover:bg-blue-100 transition-colors">
+                <svg className="w-6 h-6 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <span className="font-inter text-gray-700">Szybkie wejście na rynek</span>
               </div>
-              <div className="flex items-center text-left bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <i className="fas fa-shield-alt text-green-300 text-xl mr-3 flex-shrink-0"></i>
-                <span className="font-inter">Minimalizacja ryzyka</span>
+              <div className="flex items-center text-left bg-green-50 border border-green-100 rounded-lg p-4 hover:bg-green-100 transition-colors">
+                <svg className="w-6 h-6 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+                <span className="font-inter text-gray-700">Minimalizacja ryzyka</span>
               </div>
-              <div className="flex items-center text-left bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <i className="fas fa-coins text-yellow-300 text-xl mr-3 flex-shrink-0"></i>
-                <span className="font-inter">Redukcja kosztów operacyjnych</span>
+              <div className="flex items-center text-left bg-yellow-50 border border-yellow-100 rounded-lg p-4 hover:bg-yellow-100 transition-colors">
+                <svg className="w-6 h-6 text-yellow-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                </svg>
+                <span className="font-inter text-gray-700">Redukcja kosztów operacyjnych</span>
               </div>
-              <div className="flex items-center text-left bg-white/10 backdrop-blur-sm rounded-lg p-4">
-                <i className="fas fa-balance-scale text-purple-300 text-xl mr-3 flex-shrink-0"></i>
-                <span className="font-inter">Zgodność z regulacjami</span>
+              <div className="flex items-center text-left bg-purple-50 border border-purple-100 rounded-lg p-4 hover:bg-purple-100 transition-colors">
+                <svg className="w-6 h-6 text-purple-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16l3-3m-3 3l-3-3" />
+                </svg>
+                <span className="font-inter text-gray-700">Zgodność z regulacjami</span>
               </div>
-            </div>
-
-            <div className="flex flex-wrap justify-center gap-4">
-              <button className="cursor-pointer bg-white text-gray-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-200 transition font-inter">
-                Skontaktuj się z nami <i className="fas fa-arrow-right ml-2"></i>
-              </button>
-              <button className="cursor-pointer bg-transparent border-2 border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-gray-900 transition font-inter">
-                Zobacz demo <i className="fas fa-play-circle ml-2"></i>
-              </button>
             </div>
           </div>
+
+          <p className="mt-5 text-sm text-foreground/70">Rzeczywiste przypadki użycia i sukcesy naszych klientów</p>
+
+          <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div>
         </div>
       </section>
 
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid lg:grid-cols-1 gap-8">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-              <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                  Rozszerzenie Oferty Płatniczej dla Krajowej Instytucji Płatniczej X
-                </h2>
-                <div className="text-sm text-blue-600 dark:text-blue-400 mb-4">
-                  Sektor: Instytucje płatnicze
+      {/* Case Studies Section */}
+      <section id="case-studies" className="bg-neutral-100">
+        <div className="relative container mx-auto px-4 pb-22 max-w-7xl">
+          <div className="text-center space-y-4 pb-6 pt-28 mx-auto">
+            <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">BUSINESS CASES</h2>
+            <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
+              Historie sukcesu naszych klientów
+            </h3>
+            <p className="mx-auto mt-5 max-w-2xl text-foreground/70 text-lg text-center">
+              Realnie osiągnięte korzyści i wymierne rezultaty biznesowe
+            </p>
+          </div>
+
+          <div className="max-w-6xl mx-auto">
+            {/* Case Study 1 Details */}
+            <div className="bg-white rounded-xl shadow-lg p-8 mb-12 hover:shadow-xl transition-shadow">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <div className="inline-flex items-center px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium mb-4">
+                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    </svg>
+                    Instytucje płatnicze
+                  </div>
+                  <h2 className="text-3xl font-montserrat font-bold text-gray-900 mb-4">
+                    Rozszerzenie Oferty Płatniczej dla Krajowej Instytucji Płatniczej X
+                  </h2>
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Wprowadzenie:</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <div className="grid lg:grid-cols-3 gap-8">
+                {/* Wprowadzenie */}
+                <div className="lg:col-span-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Wprowadzenie</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     Krajowa Instytucja Płatnicza (KIP) X, posiadająca podstawową licencję na realizację przekazu płatniczego,
                     stoi przed strategiczną decyzją o rozszerzeniu swojej oferty o nowe, kluczowe produkty, takie jak karty płatnicze
                     i konta IBAN dla swoich klientów. Tradycyjna ścieżka rozwoju wiąże się z szeregiem wyzwań, w tym długotrwałym
@@ -83,309 +102,329 @@ export default function BusinessCasesPage() {
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Wyzwania tradycyjnego podejścia &quot;build from scratch&quot;:</h3>
+                {/* Wyzwania */}
+                <div className="lg:col-span-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Wyzwania tradycyjnego podejścia &quot;build from scratch&quot;</h3>
                   <div className="space-y-3">
-                    <div className="pl-4 border-l-2 border-red-200 dark:border-red-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Długotrwały proces licencyjny</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Złożenie wniosku do KNF o rozszerzenie licencji na nowe produkty (np. wydawanie pieniądza elektronicznego,
-                        usługi związane z kontami płatniczymi) to proces trwający kilkanaście miesięcy, wymagający przygotowania
-                        obszernej dokumentacji i spełnienia rygorystycznych wymogów regulacyjnych.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 15.5c-.77.833.192 2.5 1.732 2.5z" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Długotrwały proces licencyjny</div>
+                        <div className="text-sm text-gray-600">Złożenie wniosku do KNF o rozszerzenie licencji na nowe produkty to proces trwający kilkanaście miesięcy, wymagający przygotowania obszernej dokumentacji i spełnienia rygorystycznych wymogów regulacyjnych.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-red-200 dark:border-red-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Znaczące nakłady finansowe</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Budowa własnego systemu transakcyjnego od podstaw, integracja z różnymi dostawcami (banki, schematy kartowe,
-                        dostawcy usług AML/KYC) oraz zatrudnienie wyspecjalizowanego zespołu (programiści, specjaliści ds. compliance,
-                        operacji) generuje ogromne koszty inwestycyjne i operacyjne.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Znaczące nakłady finansowe</div>
+                        <div className="text-sm text-gray-600">Budowa własnego systemu transakcyjnego od podstaw, integracja z różnymi dostawcami (banki, schematy kartowe, dostawcy usług AML/KYC) oraz zatrudnienie wyspecjalizowanego zespołu.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-red-200 dark:border-red-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Wysokie ryzyko biznesowe i operacyjne</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Złożoność projektu, potencjalne opóźnienia w procesie licencyjnym i budowie systemu, a także brak gwarancji
-                        sukcesu rynkowego dla nowych produktów, stanowią poważne ryzyko biznesowe. Utrzymanie zgodności z dynamicznie
-                        zmieniającymi się regulacjami również jest wyzwaniem.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Wysokie ryzyko biznesowe i operacyjne</div>
+                        <div className="text-sm text-gray-600">Złożoność projektu, potencjalne opóźnienia w procesie licencyjnym i budowie systemu, a także brak gwarancji sukcesu rynkowego dla nowych produktów.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-red-200 dark:border-red-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Brak elastyczności</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Raz zbudowany system może być trudny do adaptacji w obliczu zmieniających się wymagań rynkowych czy regulacyjnych.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Brak elastyczności</div>
+                        <div className="text-sm text-gray-600">Raz zbudowany system może być trudny do adaptacji w obliczu zmieniających się wymagań rynkowych czy regulacyjnych.</div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Rozwiązanie: Partnerstwo z QonnectOne</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    QonnectOne oferuje alternatywne podejście, które pozwala KIP X na szybkie i efektywne skalowanie biznesu,
-                    omijając większość wymienionych wyżej wyzwań:
-                  </p>
-
+                {/* Rozwiązanie */}
+                <div className="lg:col-span-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Rozwiązanie: Partnerstwo z QonnectOne</h3>
+                  <p className="text-gray-600 text-sm mb-3">QonnectOne oferuje alternatywne podejście, które pozwala KIP X na szybkie i efektywne skalowanie biznesu, omijając większość wymienionych wyżej wyzwań:</p>
                   <div className="space-y-3">
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Gotowy do integracji system transakcyjny</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        QonnectOne dostarcza kompletny, sprawdzony system informatyczny, który jest gotowy do integracji z istniejącą
-                        stroną transakcyjną KIP X. Eliminuje to potrzebę projektowania i budowy skomplikowanej infrastruktury od zera.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Gotowy do integracji system transakcyjny</div>
+                        <div className="text-sm text-gray-600">QonnectOne dostarcza kompletny, sprawdzony system informatyczny, który jest gotowy do integracji z istniejącą stroną transakcyjną KIP X.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Partnerstwo z licencjonowaną instytucją</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        QonnectOne współpracuje z instytucjami nadzorowanymi, które posiadają już niezbędne, rozszerzone licencje
-                        (np. licencję instytucji pieniądza elektronicznego lub inną wymaganą do obsługi kart i kont IBAN).
-                        Dzięki temu KIP X może oferować nowe produkty pod nadzorem licencji partnera.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Partnerstwo z licencjonowaną instytucją</div>
+                        <div className="text-sm text-gray-600">QonnectOne współpracuje z instytucjami nadzorowanymi, które posiadają już niezbędne, rozszerzone licencje na obsługę kart i kont IBAN.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Minimalizacja kosztów i ryzyka</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        KIP X unika ogromnych początkowych nakładów finansowych związanych z budową systemu i procesem licencyjnym.
-                        Zamiast inwestycji w aktywa, model ten opiera się na kosztach operacyjnych (abonament, prowizje),
-                        co znacząco redukuje ryzyko finansowe.
-                      </p>
-                    </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Szybkie wejście na rynek (Time-to-Market)</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Integracja z QonnectOne pozwala na znaczne skrócenie czasu potrzebnego na uruchomienie nowych produktów.
-                        Zamiast kilkunastu miesięcy, KIP X może zaoferować karty płatnicze i konta IBAN w ciągu kilku tygodni
-                        lub miesięcy, co daje ogromną przewagę konkurencyjną.
-                      </p>
-                    </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Sprawdzenie modelu biznesowego</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        QonnectOne umożliwia KIP X szybkie i sprawne przetestowanie nowego modelu biznesowego na rzeczywistym rynku.
-                        Dzięki temu można weryfikować popyt, optymalizować procesy i zbierać cenne dane bez ponoszenia pełnych
-                        kosztów i ryzyk tradycyjnego podejścia.
-                      </p>
-                    </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Skupienie na rozwoju biznesu</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Współpraca z QonnectOne zwalnia KIP X z obciążeń technologicznych i regulacyjnych, pozwalając w pełni
-                        skupić się na tym, co najważniejsze – pozyskiwaniu klientów, budowaniu marki i rozwijaniu relacji biznesowych.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Szybkie wejście na rynek (Time-to-Market)</div>
+                        <div className="text-sm text-gray-600">Integracja z QonnectOne pozwala na znaczne skrócenie czasu potrzebnego na uruchomienie nowych produktów z miesięcy do tygodni.</div>
+                      </div>
                     </div>
                   </div>
                 </div>
+              </div>
 
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Kluczowe rezultaty:</h3>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-1">12-18 miesięcy → 4-6 tygodni</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Skrócenie czasu wejścia na rynek</div>
-                    </div>
-                    <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-1">70%</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Redukcja nakładów inwestycyjnych</div>
-                    </div>
-                    <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-1">Minimalizacja</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Ryzyka biznesowego i operacyjnego</div>
-                    </div>
-                    <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 mb-1">100%</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Fokus na rozwoju biznesu</div>
-                    </div>
+              {/* Rezultaty */}
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Kluczowe rezultaty</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                    <div className="text-2xl font-bold text-blue-600 mb-1">4-6 tygodni</div>
+                    <div className="text-sm text-gray-600">Time-to-Market</div>
+                  </div>
+                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                    <div className="text-2xl font-bold text-green-600 mb-1">70%</div>
+                    <div className="text-sm text-gray-600">Redukcja nakładów</div>
+                  </div>
+                  <div className="text-center p-4 bg-purple-50 rounded-lg">
+                    <div className="text-2xl font-bold text-purple-600 mb-1">Minimalizacja</div>
+                    <div className="text-sm text-gray-600">Ryzyka biznesowego</div>
+                  </div>
+                  <div className="text-center p-4 bg-orange-50 rounded-lg">
+                    <div className="text-2xl font-bold text-orange-600 mb-1">100%</div>
+                    <div className="text-sm text-gray-600">Fokus na biznes</div>
                   </div>
                 </div>
+              </div>
 
-                <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Podsumowanie</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Dla Krajowej Instytucji Płatniczej X, dążącej do rozszerzenia swojej oferty o karty płatnicze i konta IBAN,
-                    partnerstwo z QonnectOne stanowi strategiczne i optymalne rozwiązanie. Pozwala ono na znaczące skrócenie czasu
-                    wejścia na rynek, redukcję nakładów finansowych i minimalizację ryzyka biznesowego i operacyjnego.
-                    Zamiast złożonej i kosztownej drogi samodzielnego rozwoju, KIP X otrzymuje kompletne narzędzie informatyczne
-                    i wsparcie licencjonowanego partnera, co umożliwia szybkie sprawdzenie i skalowanie nowego modelu biznesowego.
-                  </p>
-                </div>
+              {/* Szczegółowe informacje - opcjonalnie ukryte */}
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <details className="group">
+                  <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-900 hover:text-primary transition-colors">
+                    <span>Więcej szczegółów o rozwiązaniu</span>
+                    <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="mt-4 text-gray-600 leading-relaxed space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Dodatkowe korzyści z partnerstwa z QonnectOne:</h4>
+                      <ul className="space-y-2 ml-4">
+                        <li className="flex items-start">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span><strong>Minimalizacja kosztów i ryzyka:</strong> KIP X unika ogromnych początkowych nakładów finansowych związanych z budową systemu i procesem licencyjnym. Zamiast inwestycji w aktywa, model ten opiera się na kosztach operacyjnych (abonament, prowizje).</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span><strong>Sprawdzenie modelu biznesowego:</strong> QonnectOne umożliwia KIP X szybkie i sprawne przetestowanie nowego modelu biznesowego na rzeczywistym rynku. Dzięki temu można weryfikować popyt, optymalizować procesy i zbierać cenne dane.</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span><strong>Skupienie na rozwoju biznesu:</strong> Współpraca z QonnectOne zwalnia KIP X z obciążeń technologicznych i regulacyjnych, pozwalając w pełni skupić się na pozyskiwaniu klientów, budowaniu marki i rozwijaniu relacji biznesowych.</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Podsumowanie:</h4>
+                      <p>
+                        Dla Krajowej Instytucji Płatniczej X, dążącej do rozszerzenia swojej oferty o karty płatnicze i konta IBAN,
+                        partnerstwo z QonnectOne stanowi strategiczne i optymalne rozwiązanie. Pozwala ono na znaczące skrócenie czasu
+                        wejścia na rynek, redukcję nakładów finansowych i minimalizację ryzyka biznesowego i operacyjnego.
+                        Zamiast złożonej i kosztownej drogi samodzielnego rozwoju, KIP X otrzymuje kompletne narzędzie informatyczne
+                        i wsparcie licencjonowanego partnera, co umożliwia szybkie sprawdzenie i skalowanie nowego modelu biznesowego.
+                      </p>
+                    </div>
+                  </div>
+                </details>
               </div>
             </div>
 
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-              <div className="mb-6">
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                  Ciągłość Działalności i Zgodność z MiCA dla Instytucji Kryptowalutowej Y
-                </h2>
-                <div className="text-sm text-green-600 dark:text-green-400 mb-4">
-                  Sektor: Kryptowaluty i aktywa cyfrowe
+            {/* Case Study 2 Details */}
+            <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+              <div className="flex items-start justify-between mb-6">
+                <div>
+                  <div className="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium mb-4">
+                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                    </svg>
+                    Kryptowaluty i aktywa cyfrowe
+                  </div>
+                  <h2 className="text-3xl font-montserrat font-bold text-gray-900 mb-4">
+                    Ciągłość Działalności i Zgodność z MiCA dla Instytucji Kryptowalutowej Y
+                  </h2>
                 </div>
               </div>
 
-              <div className="space-y-6">
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Wprowadzenie:</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <div className="grid lg:grid-cols-3 gap-8">
+                {/* Wprowadzenie */}
+                <div className="lg:col-span-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Wprowadzenie</h3>
+                  <p className="text-gray-600 leading-relaxed">
                     Instytucja Nadzorowana Y, posiadająca podstawową licencję na obrót kryptoaktywami, stoi w obliczu znaczących zmian
-                    regulacyjnych związanych z wejściem w życie dyrektywy MiCA (Markets in Crypto-Assets Regulation). Aby kontynuować
-                    działalność i obsługiwać swoich klientów w nowym środowisku prawnym, firma musi uzyskać stosowną licencję MiCA.
-                    Tradycyjna ścieżka jej pozyskania wiąże się jednak z długotrwałym i niepewnym procesem.
+                    regulacyjnych związanych z wejściem w życie dyrektywy MiCA (Markets in Crypto-Assets Regulation).
+                    Nowe przepisy wymagają uzyskania rozszerzonych licencji dla kontynuacji działalności, co stwarza poważne wyzwania
+                    operacyjne i strategiczne dla przedsiębiorstwa.
                   </p>
                 </div>
 
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Wyzwania związane z dyrektywą MiCA w tradycyjnym podejściu:</h3>
+                {/* Wyzwania */}
+                <div className="lg:col-span-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Wyzwania związane z wdrożeniem MiCA</h3>
                   <div className="space-y-3">
-                    <div className="pl-4 border-l-2 border-red-200 dark:border-red-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Długotrwały i niepewny proces licencyjny</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Procedura złożenia wniosku i uzyskania licencji MiCA to złożony proces, który może trwać od kilku do kilkunastu
-                        miesięcy, a co najważniejsze – nie gwarantuje jej otrzymania. Wymaga to gruntownego przygotowania dokumentacji,
-                        spełnienia rygorystycznych wymogów kapitałowych, organizacyjnych i technologicznych.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Długotrwały proces licencyjny MiCA</div>
+                        <div className="text-sm text-gray-600">Procedura uzyskania licencji zgodnej z MiCA może trwać od 6 do 18 miesięcy, wymagając kompleksowej dokumentacji i spełnienia rygorystycznych wymogów kapitałowych oraz operacyjnych.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-red-200 dark:border-red-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Blokada działalności operacyjnej</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Bez odpowiedniej licencji MiCA, Instytucja Y nie będzie mogła kontynuować swojej dotychczasowej działalności
-                        ani obsługiwać obecnych klientów w nowym środowisku regulacyjnym. Może to prowadzić do utraty klientów,
-                        spadku przychodów i potencjalnie do konieczności zawieszenia operacji.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728L5.636 5.636m12.728 12.728L18 18M5.636 5.636L6 6" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Blokada działalności operacyjnej</div>
+                        <div className="text-sm text-gray-600">Bez odpowiedniej licencji MiCA instytucja nie może kontynuować obsługi klientów w zakresie kryptoaktywów, co oznacza całkowite wstrzymanie przychodów z tego segmentu.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-red-200 dark:border-red-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Znaczące nakłady finansowe i zasobów</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Przygotowanie do wniosku licencyjnego i dostosowanie wewnętrznych systemów do wymogów MiCA wiąże się z dużymi
-                        inwestycjami w doradztwo prawne i regulacyjne, technologie, audyty oraz rekrutację lub szkolenie personelu.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Ryzyko utraty pozycji rynkowej</div>
+                        <div className="text-sm text-gray-600">Konkurenci, którzy szybciej uzyskają licencję MiCA lub mają alternatywne rozwiązania, mogą przejąć klientów i pozycję rynkową w czasie oczekiwania na licencję.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-red-200 dark:border-red-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Ryzyko utraty pozycji rynkowej</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Długotrwały okres oczekiwania na licencję może spowodować, że konkurenci, którzy szybciej dostosują się do
-                        nowych regulacji, zyskają przewagę rynkową, a Instytucja Y straci swój udział w rynku.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Wysokie koszty compliance</div>
+                        <div className="text-sm text-gray-600">Dostosowanie systemów, procesów i zespołu do wymogów MiCA wymaga znacznych inwestycji bez gwarancji uzyskania licencji.</div>
+                      </div>
                     </div>
                   </div>
                 </div>
 
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Rozwiązanie: Partnerstwo z QonnectOne</h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
-                    QonnectOne oferuje strategiczne rozwiązanie, które pozwala Instytucji Y na bezproblemowe przejście przez okres
-                    transformacji regulacyjnej, zapewniając ciągłość działania:
-                  </p>
-
+                {/* Rozwiązanie */}
+                <div className="lg:col-span-1">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-3">Rozwiązanie: Partnerstwo z QonnectOne</h3>
+                  <p className="text-gray-600 text-sm mb-3">QonnectOne oferuje kompleksowe rozwiązanie, które pozwala na kontynuację działalności w okresie przejściowym:</p>
                   <div className="space-y-3">
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Gotowy system do integracji</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        QonnectOne dostarcza kompletny, sprawdzony system transakcyjny, który jest gotowy do szybkiej integracji
-                        z istniejącą platformą transakcyjną Instytucji Y. Eliminuje to potrzebę kosztownej i czasochłonnej budowy
-                        własnych rozwiązań od zera, zgodnych z MiCA.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Gotowy system zgodny z MiCA</div>
+                        <div className="text-sm text-gray-600">Kompletny system transakcyjny już dostosowany do wymogów MiCA, gotowy do natychmiastowej integracji z infrastrukturą klienta.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Partnerstwo z licencjonowaną instytucją (depozytariuszem)</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        QonnectOne umożliwia partnerstwo z instytucją nadzorowaną, która już posiada odpowiednie licencje na działalność
-                        jako depozytariusz aktywów cyfrowych oraz dysponuje wymaganym systemem transakcyjnym. Dzięki temu Instytucja Y
-                        może prowadzić swoją działalność pod &quot;parasolem&quot; licencjonowanego partnera.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Partnerstwo z licencjonowanym depozytariuszem</div>
+                        <div className="text-sm text-gray-600">Współpraca z instytucjami posiadającymi już licencje MiCA, umożliwiająca działalność pod ich parasolem regulacyjnym.</div>
+                      </div>
                     </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Utrzymanie dotychczasowej działalności</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Kluczową korzyścią jest możliwość kontynuowania działalności operacyjnej i obsługi swoich obecnych klientów
-                        bez konieczności wstrzymywania operacji w oczekiwaniu na własną licencję MiCA. Pozwala to na utrzymanie
-                        płynności finansowej i unikanie utraty bazy klientów.
-                      </p>
-                    </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Spokojne procedowanie własnej licencji</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Partnerstwo z QonnectOne daje Instytucji Y niezbędny czas i przestrzeń na spokojne i dokładne procedowanie
-                        własnego wniosku o licencję MiCA, bez presji czasowej wynikającej z zagrożenia wstrzymaniem działalności.
-                        Firma może skoncentrować się na spełnianiu wszystkich wymogów, mając pewność, że jej operacje są zabezpieczone.
-                      </p>
-                    </div>
-
-                    <div className="pl-4 border-l-2 border-green-200 dark:border-green-700">
-                      <h4 className="font-medium text-gray-900 dark:text-white">Minimalizacja ryzyka biznesowego</h4>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm">
-                        Dzięki temu rozwiązaniu, Instytucja Y znacząco minimalizuje ryzyko związane z niepewnością procesu licencyjnego
-                        oraz potencjalną blokadą działalności, chroniąc swoje przychody i pozycję na rynku.
-                      </p>
+                    <div className="flex items-start">
+                      <svg className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      </svg>
+                      <div>
+                        <div className="font-medium text-gray-900">Ciągłość działalności bez przerw</div>
+                        <div className="text-sm text-gray-600">Kontynuacja obsługi klientów i generowania przychodów od pierwszego dnia wdrożenia rozwiązania.</div>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Kluczowe rezultaty:</h3>
-                  <div className="grid md:grid-cols-2 gap-4">
-                    <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-green-600 dark:text-green-400 mb-1">100%</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Ciągłość działalności operacyjnej</div>
-                    </div>
-                    <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-1">Zabezpieczone</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Przychody i pozycja rynkowa</div>
-                    </div>
-                    <div className="bg-purple-50 dark:bg-purple-900/20 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-1">Bez presji</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Procedowanie własnej licencji MiCA</div>
-                    </div>
-                    <div className="bg-orange-50 dark:bg-orange-900/20 p-4 rounded-lg">
-                      <div className="text-2xl font-bold text-orange-600 dark:text-orange-400 mb-1">Pełna zgodność</div>
-                      <div className="text-sm text-gray-600 dark:text-gray-300">Z regulacjami od pierwszego dnia</div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="bg-gray-50 dark:bg-gray-700 p-6 rounded-lg">
-                  <h3 className="font-semibold text-gray-900 dark:text-white mb-3">Podsumowanie</h3>
-                  <p className="text-gray-600 dark:text-gray-300">
-                    Dla Instytucji Nadzorowanej Y, stojącej przed wyzwaniem uzyskania licencji MiCA, partnerstwo z QonnectOne stanowi
-                    strategiczne i niezbędne rozwiązanie. Umożliwia ono utrzymanie ciągłości działalności operacyjnej i obsługi klientów
-                    w okresie przejściowym, jednocześnie pozwalając na spokojne i skuteczne procedowanie własnego wniosku licencyjnego.
-                    QonnectOne dostarcza gotowy system i dostęp do licencjonowanego partnera, co pozwala Instytucji Y na płynne przejście
-                    przez transformację regulacyjną, zabezpieczenie pozycji rynkowej i minimalizację ryzyka finansowego oraz operacyjnego.
-                  </p>
                 </div>
               </div>
-            </div>
 
-          </div>
+              {/* Rezultaty */}
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">Kluczowe rezultaty</h3>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                    <div className="text-2xl font-bold text-green-600 mb-1">100%</div>
+                    <div className="text-sm text-gray-600">Ciągłość działalności</div>
+                  </div>
+                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                    <div className="text-2xl font-bold text-blue-600 mb-1">Zabezpieczone</div>
+                    <div className="text-sm text-gray-600">Przychody i pozycja</div>
+                  </div>
+                  <div className="text-center p-4 bg-purple-50 rounded-lg">
+                    <div className="text-2xl font-bold text-purple-600 mb-1">Bez presji</div>
+                    <div className="text-sm text-gray-600">Własna licencja MiCA</div>
+                  </div>
+                  <div className="text-center p-4 bg-orange-50 rounded-lg">
+                    <div className="text-2xl font-bold text-orange-600 mb-1">Pełna zgodność</div>
+                    <div className="text-sm text-gray-600">Od pierwszego dnia</div>
+                  </div>
+                </div>
+              </div>
 
-          <div className="text-center mt-12">
-            <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-8">
-              <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                Potrzebujesz podobnego rozwiązania?
-              </h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-6">
-                Skontaktuj się z nami, aby omówić jak QonnectOne może przyspieszyć rozwój Twojej instytucji finansowej
-                i pomóc w spełnieniu wymogów regulacyjnych.
-              </p>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors">
-                Umów konsultację
-              </button>
+              {/* Szczegółowe informacje - opcjonalnie ukryte */}
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <details className="group">
+                  <summary className="flex justify-between items-center cursor-pointer text-lg font-semibold text-gray-900 hover:text-primary transition-colors">
+                    <span>Więcej szczegółów o rozwiązaniu</span>
+                    <svg className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </summary>
+                  <div className="mt-4 text-gray-600 leading-relaxed space-y-4">
+                    <div>
+                      <h4 className="font-semibold text-gray-900 mb-2">Kluczowe korzyści z partnerstwa w kontekście MiCA:</h4>
+                      <ul className="space-y-2 ml-4">
+                        <li className="flex items-start">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span><strong>Zabezpieczenie ciągłości biznesowej:</strong> Instytucja Y może kontynuować obsługę swoich klientów kryptowalutowych bez przerwy, zachowując przychody i relacje biznesowe w czasie oczekiwania na własną licencję MiCA.</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span><strong>Brak presji czasowej:</strong> Możliwość spokojnego przygotowania i złożenia wysokiej jakości wniosku licencyjnego bez presji związanej z utratą przychodów czy pozycji rynkowej.</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span><strong>Przewaga konkurencyjna:</strong> Podczas gdy konkurenci mogą zmagać się z przerwami w działalności, Instytucja Y utrzymuje pełną operacyjność i może nawet pozyskać nowych klientów.</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="w-2 h-2 bg-green-500 rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                          <span><strong>Redukcja ryzyka regulacyjnego:</strong> Działalność pod licencją doświadczonego partnera minimalizuje ryzyko naruszeń przepisów MiCA i zapewnia pełną zgodność od pierwszego dnia.</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="bg-gray-50 p-4 rounded-lg">
+                      <h4 className="font-semibold text-gray-900 mb-2">Strategiczne znaczenie rozwiązania:</h4>
+                      <p>
+                        Dla Instytucji Nadzorowanej Y, stojącej przed wyzwaniem wdrożenia MiCA, partnerstwo z QonnectOne stanowi
+                        nie tylko rozwiązanie przejściowe, ale strategiczny element długoterminowej strategii biznesowej.
+                        Umożliwia ono utrzymanie konkurencyjności w kluczowym momencie transformacji regulacyjnej sektora kryptowalut,
+                        jednocześnie zapewniając spokój i stabilność finansową niezbędną do skutecznego uzyskania własnej licencji MiCA.
+                      </p>
+                    </div>
+                  </div>
+                </details>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
+      <ContactCTA />
 
       <Footer />
     </div>
