@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Play } from "lucide-react";
+import { Play, ChevronRight } from "lucide-react";
 import { Modal } from "./ui/Modal";
 import { EmailForm } from "./ui/EmailForm";
 
@@ -29,9 +29,7 @@ export default function HeroSection() {
               📣 Nowość
             </div>
             <p className="text-xs font-medium text-primary sm:text-sm">Poznaj moduły QonnectOne</p>
-            <svg width="12" height="12" className="ml-1 text-primary" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M8.78141 5.33312L5.20541 1.75712L6.14808 0.814453L11.3334 5.99979L6.14808 11.1851L5.20541 10.2425L8.78141 6.66645H0.666748V5.33312H8.78141Z" fill="currentColor"></path>
-            </svg>
+            <ChevronRight className="ml-1 w-3 h-3 text-primary" />
           </Link>
 
           <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
@@ -47,7 +45,7 @@ export default function HeroSection() {
           <div className="mx-auto mt-6 flex w-full max-w-2xl flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
             <button
               onClick={openModal}
-              className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-primary/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2"
+              className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-primary/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2 cursor-pointer"
             >
               <Play className="h-6 w-6" />
               Wypróbuj za darmo
@@ -70,9 +68,7 @@ export default function HeroSection() {
                 <div className="absolute inset-0 flex items-center justify-center group-hover:scale-100 scale-[0.9] transition-all duration-200 ease-out rounded-2xl">
                   <div className="z-30 bg-primary/10 flex items-center justify-center rounded-full backdrop-blur-md size-28">
                     <div className="flex items-center justify-center bg-gradient-to-b from-primary/30 to-primary shadow-md rounded-full size-20 transition-all ease-out duration-200 relative group-hover:scale-[1.2] scale-100">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="size-8 text-white fill-white transition-transform duration-200 ease-out group-hover:scale-105 scale-100" style={{ filter: "drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06))" }}>
-                        <polygon points="6 3 20 12 6 21 6 3"></polygon>
-                      </svg>
+                      <Play className="size-8 text-white fill-white transition-transform duration-200 ease-out group-hover:scale-105 scale-100" style={{ filter: "drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06))" }} />
                     </div>
                   </div>
                 </div>
