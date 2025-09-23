@@ -59,7 +59,7 @@ export default function MetodyPlatnosciPage() {
               {/* Subscription Model */}
               <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 py-10 rounded-2xl hover:bg-blue-500/10 transition-all duration-500 ease-out">
                 <div>
-                  <h3 className="font-semibold mb-2 text-primary">Model Subskrypcyjny</h3>
+                  <h3 className="font-semibold mb-2 text-primary">Model Abonamentowy</h3>
                   <p className="text-foreground mb-4">
                     Uzyskaj natychmiastowy dostęp do naszych najnowszych funkcji i bieżących aktualizacji w ramach przewidywalnej opłaty miesięcznej lub rocznej. To idealne rozwiązanie dla firm, które cenią sobie elastyczność, skalowalność i minimalizację kosztów początkowych.
                   </p>

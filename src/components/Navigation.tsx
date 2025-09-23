@@ -66,6 +66,7 @@ export default function Navigation() {
     const container = containerRef.current;
     const el = itemRefs.current[targetIndex];
     if (!container || !el) return;
+
     const containerRect = container.getBoundingClientRect();
     const rect = el.getBoundingClientRect();
     const left = rect.left - containerRect.left;
@@ -76,12 +77,27 @@ export default function Navigation() {
     <>
       <nav className={`fixed inset-x-0 z-40 transition-transform duration-300 ${scrolled ? "-translate-y-1" : "translate-y-3"}`} style={{ top: 20 }}>
         <div className="container mx-auto px-4 flex justify-center">
-          {/* Desktop segmented control without logo */}
+          {/* Desktop segmented control with logo */}
           <div
-            className="hidden md:flex relative w-fit items-center rounded-full border border-white/20 bg-white/60 backdrop-blur-md p-1.5 shadow-sm"
+            className="hidden md:flex relative w-fit items-center rounded-full border border-white/20 bg-white/60 backdrop-blur-sm p-1.5 shadow-sm"
             ref={containerRef}
             onMouseLeave={() => setHoveredIndex(null)}
           >
+            {/* Logo */}
+            <div className="flex items-center px-3 py-1">
+              <Image
+                src="/logo.png"
+                alt="Qonnect"
+                width={100}
+                height={28}
+                className="h-7 w-auto"
+                priority
+              />
+            </div>
+
+            {/* Divider */}
+            <div className="h-6 w-px bg-gray-300/50 mx-1" />
+
             {/* Shared sliding pill */}
             {pillStyle && (
               <div

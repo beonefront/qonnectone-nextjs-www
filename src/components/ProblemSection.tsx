@@ -2,7 +2,7 @@ export default function ProblemSection() {
   return (
     <section id="problem">
       <div>
-        <div className="relative container mx-auto px-4 py-16 max-w-7xl">
+        <div className="relative container mx-auto px-4 py-32 max-w-7xl">
           <div className="text-center space-y-4 pb-6 mx-auto">
             <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">Problem</h2>
             <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">Problemy, które rozwiązujemy</h3>

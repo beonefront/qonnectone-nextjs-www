@@ -497,7 +497,7 @@ export default function ModulyPage() {
                   <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
                   <circle cx="12" cy="16" r="1"/>
                 </svg>
-                <h3 className="font-semibold mb-2 text-foreground">Model Subskrypcyjny</h3>
+                <h3 className="font-semibold mb-2 text-foreground">Model Abonamentowy</h3>
                 <p className="text-slate-600 text-sm">Elastyczne płatności miesięczne lub roczne</p>
               </div>
               <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 text-center">
