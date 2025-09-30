@@ -25,7 +25,7 @@ export default function MetodyPlatnosciPage() {
       <section id="hero">
         <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 sm:px-6 sm:pt-24 md:pt-32 lg:px-8">
 
-          <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
+          <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8 pb-10">
             <h1 className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">Modele</span>
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">współpracy</span>
@@ -34,10 +34,8 @@ export default function MetodyPlatnosciPage() {
               Doskonale rozumiemy, że każdy biznes ma unikalne potrzeby i strategię rozwoju. Właśnie dlatego oferujemy nasze innowacyjne systemy informatyczne w elastycznych modelach, które idealnie dopasowują się do Twoich wymagań, infrastruktury oraz budżetu.
             </p>
           </div>
-
-          <p className="mt-5 text-sm text-foreground/70">Dopasuj model i metodę płatności do indywidualnych potrzeb swojego biznesu</p>
-
-          <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div>
+          {/* <p className="mt-5 text-sm text-foreground/70">Dopasuj model i metodę płatności do indywidualnych potrzeb swojego biznesu</p> */}
+          {/* <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div> */}
         </div>
       </section>
 

@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import { useState } from "react";
 import { Modal } from "@/components/ui/Modal";
 import { EmailForm } from "@/components/ui/EmailForm";
-import { Phone, Plug, Cloud, Award, CreditCard } from "lucide-react";
+import { Phone, Plug, Cloud, Award, CreditCard, LucideTreePalm } from "lucide-react";
 import Link from 'next/link';
 
 export default function ModulyPage() {
@@ -472,15 +472,13 @@ export default function ModulyPage() {
 
           <div className="relative container mx-auto px-4 py-20 max-w-7xl">
             <div className="text-center space-y-6 mb-12">
-              <div className="inline-flex items-center px-4 py-2 bg-white/70 backdrop-blur-sm rounded-full border border-primary/20">
-                <span className="text-sm text-primary font-mono font-medium tracking-wider uppercase">
-                  Gotowy, aby zacząć?
-                </span>
-              </div>
-              <h3 className="mx-auto max-w-4xl text-4xl font-bold sm:text-5xl md:text-6xl bg-gradient-to-r from-gray-900 via-primary to-blue-700 bg-clip-text text-transparent leading-tight">
+              <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">
+              Gotowy, aby zacząć?
+            </h2>
+              <h3 className="mx-auto max-w-4xl text-2xl font-bold sm:text-2xl md:text-6xl bg-gradient-to-r from-gray-900 via-primary to-blue-700 bg-clip-text text-transparent leading-tight">
                 Dostępne modele współpracy
               </h3>
-              <p className="mt-8 text-xl leading-8 text-slate-600 max-w-3xl mx-auto">
+              <p className="mt-8 text-md leading-8 text-slate-600 max-w-3xl mx-auto">
                 Poznaj wszystkie modele współpracy dostosowane do Twojego biznesu
               </p>
             </div>
@@ -548,13 +546,10 @@ export default function ModulyPage() {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2 cursor-pointer"
-              >
-                <Phone className="h-6 w-6" />
-                Skontaktuj się z nami
-              </button>
+                <Link href="/modele-wspolpracy" className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2">
+                <Award className="h-6 w-6" />
+                Czytaj więcej o modelach współpracy
+                </Link>
             </div>
           </div>
         </div>
