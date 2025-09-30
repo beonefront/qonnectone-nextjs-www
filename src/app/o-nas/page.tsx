@@ -42,7 +42,7 @@ export default function ONasPage() {
             </h2>
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 space-y-6">
               <p className="text-lg text-foreground/80 leading-relaxed">
-                QonnectOne dostarcza zaawansowane rozwiązania IT i ICT (Information and Communication Technology) dla dynamicznie rozwijającego się sektora finansowego w Polsce i Unii Europejskiej.
+                QonnectOne jest kompleksową platformą dostarczającą zaawansowane rozwiązania IT i ICT (Information and Communication Technology).
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed">
                 Specjalizujemy się w obsłudze firm nadzorowanych oraz podmiotów obowiązanych zgodnie z Ustawą z dnia 1 marca 2018 r. o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu (AML/CFT).
@@ -67,7 +67,7 @@ export default function ONasPage() {
                   </h3>
                 </div>
                 <p className="text-foreground/70 leading-relaxed">
-                  Nasza misja jest jasna: integrować instytucje płatnicze i nadzorowane, aby umożliwić im szybkie i bezpieczne skalowanie biznesu płatniczego. Wierzymy, że kluczem do sukcesu jest połączenie innowacji technologicznych z rygorystycznymi wymogami regulacyjnymi.
+                  Naszą misją jest przekształcanie instytucji płatniczych i nadzorowanych, aby umożliwić im szybkie i bezpieczne skalowanie biznesu płatniczego. Wierzymy, że kluczem do sukcesu jest połączenie innowacji technologicznych z rygorystycznymi wymogami regulacyjnymi.
                 </p>
               </div>
               <div className="bg-background border border-border rounded-xl p-8 shadow-sm">

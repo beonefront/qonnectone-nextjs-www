@@ -11,13 +11,13 @@ export default function PricingSection() {
               MODELE WSPÓŁPRACY
             </h2>
             <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
-              Sprawdź dostępne metody płatności
+              Sprawdź dostępne modele współpracy
             </h3>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {/* Model Abonamentowy */}
-            <div className="rounded-2xl flex flex-col justify-between border border-gray-300 p-8 bg-background text-center hover:shadow-lg transition-shadow duration-300">
+            {/* <div className="rounded-2xl flex flex-col justify-between border border-gray-300 p-8 bg-background text-center hover:shadow-lg transition-shadow duration-300">
               <div className="mb-6">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
                   <span className="text-3xl">📱</span>
@@ -27,10 +27,10 @@ export default function PricingSection() {
                   Elastyczne płatności miesięczne lub roczne
                 </p>
               </div>
-              <Link href="/metody-platnosci" className="mt-4 inline-block">
+              <Link href="/modele-wspolpracy" className="mt-4 inline-block">
                 <PrimaryButton>Czytaj więcej</PrimaryButton>
               </Link>
-            </div>
+            </div> */}
 
             {/* Model SaaS */}
             <div className="rounded-2xl flex flex-col justify-between border border-gray-300 p-8 bg-background text-center hover:shadow-lg transition-shadow duration-300">
@@ -43,7 +43,7 @@ export default function PricingSection() {
                   Wygodne rozwiązanie w chmurze
                 </p>
               </div>
-              <Link href="/metody-platnosci" className="mt-4 inline-block">
+              <Link href="/modele-wspolpracy" className="mt-4 inline-block">
                 <PrimaryButton>Czytaj więcej</PrimaryButton>
               </Link>
             </div>
@@ -59,7 +59,7 @@ export default function PricingSection() {
                   Pełna kontrola nad systemem
                 </p>
               </div>
-              <Link href="/metody-platnosci" className="mt-4 inline-block">
+              <Link href="/modele-wspolpracy" className="mt-4 inline-block">
                 <PrimaryButton>Czytaj więcej</PrimaryButton>
               </Link>
             </div>

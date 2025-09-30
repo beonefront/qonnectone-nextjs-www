@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
-import { Play, ChevronRight } from "lucide-react";
+import { Play, ChevronRight, ChevronLeft, Phone } from "lucide-react";
 import { Modal } from "./ui/Modal";
 import { EmailForm } from "./ui/EmailForm";
 
@@ -34,11 +34,10 @@ export default function HeroSection() {
 
           <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
             <h1 className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
-              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">Qonnect</span>
-              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">One</span>
+              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">QonnectOne</span>
             </h1>
             <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
-              Qonnect One to rewolucyjna platforma dla domów maklerskich, firm pożyczkowych, ubezpieczycieli, giełd kryptowalut, funduszów inwestycyjnych, oraz wszystkich instytucji nadzorowanych.
+              QonnectOne to kompleksowa platforma, która rewolucjonizuje rynek, umożliwiając firmom niefinansowym oraz nadzorowanym natychmiastowe płatności.
             </p>
           </div>
 
@@ -47,8 +46,8 @@ export default function HeroSection() {
               onClick={openModal}
               className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-primary/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2 cursor-pointer"
             >
-              <Play className="h-6 w-6" />
-              Wypróbuj za darmo
+              <Phone className="size-4 text-background" />
+              Kontakt
             </button>
           </div>
 
@@ -80,7 +79,7 @@ export default function HeroSection() {
         </div>
       </section>
 
-      <Modal isOpen={isModalOpen} onClose={closeModal} title="Wypróbuj za darmo">
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
         <EmailForm onSubmit={handleEmailSubmit} onClose={closeModal} />
       </Modal>
   </>

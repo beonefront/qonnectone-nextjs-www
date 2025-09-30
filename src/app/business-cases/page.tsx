@@ -23,7 +23,7 @@ export default function BusinessCasesPage() {
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">Cases</span>
             </h1>
             <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
-              Odkryj, jak nasze rozwiązania pomagają instytucjom finansowym w przyspieszeniu wzrostu, minimalizacji ryzyka i spełnieniu wymogów regulacyjnych w różnych sektorach.
+              Odkryj, jak nasze rozwiązania pomagają w przyspieszeniu wzrostu, minimalizacji ryzyka i spełnieniu wymogów regulacyjnych w różnych sektorach.
             </p>
 
             {/* Key Benefits */}
@@ -47,8 +47,6 @@ export default function BusinessCasesPage() {
             </div>
           </div>
 
-          <p className="mt-5 text-sm text-foreground/70">Rzeczywiste przypadki użycia i sukcesy naszych klientów</p>
-
           <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div>
         </div>
       </section>
@@ -59,10 +57,10 @@ export default function BusinessCasesPage() {
           <div className="text-center space-y-4 pb-6 pt-28 mx-auto">
             <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">BUSINESS CASES</h2>
             <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
-              Historie sukcesu naszych klientów
+              Przykładowe scenariusze użycia
             </h3>
             <p className="mx-auto mt-5 max-w-2xl text-foreground/70 text-lg text-center">
-              Realnie osiągnięte korzyści i wymierne rezultaty biznesowe
+              Korzyści i wymierne rezultaty biznesowe uzyskane dzięki naszym rozwiązaniom
             </p>
           </div>
 
