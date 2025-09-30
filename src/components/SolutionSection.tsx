@@ -9,7 +9,7 @@ export default function SolutionSection() {
               Narzędzia dla nadzorowanych instytucji finansowych
             </h3>
             <p className="mt-6 text-lg leading-8 text-slate-600 max-w-2xl mx-auto">
-              Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QONNECT zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne zyski.
+              Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne zyski.
             </p>
           </div>
 

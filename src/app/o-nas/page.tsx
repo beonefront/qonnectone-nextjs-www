@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
+import { Zap, Eye, Target, Users, Lightbulb, Shield, Award, Building, Server, Search } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'O nas | QonnectOne',
@@ -41,7 +42,7 @@ export default function ONasPage() {
             </h2>
             <div className="bg-primary/5 border border-primary/20 rounded-xl p-8 space-y-6">
               <p className="text-lg text-foreground/80 leading-relaxed">
-                QonnectOne dostarcza zaawansowane rozwiązania IT i ICT (Information and Communication Technology) dla dynamicznie rozwijającego się sektora finansowego w Polsce i Unii Europejskiej.
+                QonnectOne jest kompleksową platformą dostarczającą zaawansowane rozwiązania IT i ICT (Information and Communication Technology).
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed">
                 Specjalizujemy się w obsłudze firm nadzorowanych oraz podmiotów obowiązanych zgodnie z Ustawą z dnia 1 marca 2018 r. o przeciwdziałaniu praniu pieniędzy oraz finansowaniu terroryzmu (AML/CFT).
@@ -59,25 +60,20 @@ export default function ONasPage() {
               <div className="bg-background border border-border rounded-xl p-8 shadow-sm">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
+                    <Zap className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-2xl font-semibold text-foreground font-montserrat">
                     Misja
                   </h3>
                 </div>
                 <p className="text-foreground/70 leading-relaxed">
-                  Nasza misja jest jasna: integrować instytucje płatnicze i nadzorowane, aby umożliwić im szybkie i bezpieczne skalowanie biznesu płatniczego. Wierzymy, że kluczem do sukcesu jest połączenie innowacji technologicznych z rygorystycznymi wymogami regulacyjnymi.
+                  Naszą misją jest przekształcanie instytucji płatniczych i nadzorowanych, aby umożliwić im szybkie i bezpieczne skalowanie biznesu płatniczego. Wierzymy, że kluczem do sukcesu jest połączenie innowacji technologicznych z rygorystycznymi wymogami regulacyjnymi.
                 </p>
               </div>
               <div className="bg-background border border-border rounded-xl p-8 shadow-sm">
                 <div className="flex items-center mb-6">
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
-                    <svg className="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                    </svg>
+                    <Eye className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-2xl font-semibold text-foreground font-montserrat">
                     Wizja
@@ -136,9 +132,7 @@ export default function ONasPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-500/20 transition-colors duration-300">
-                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                </svg>
+                <Building className="w-8 h-8 text-blue-600" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 Specjalizacja branżowa
@@ -149,9 +143,7 @@ export default function ONasPage() {
             </div>
             <div className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-500/20 transition-colors duration-300">
-                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                </svg>
+                <Lightbulb className="w-8 h-8 text-purple-600" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 Innowacyjność
@@ -162,10 +154,7 @@ export default function ONasPage() {
             </div>
             <div className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-500/20 transition-colors duration-300">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                </svg>
+                <Target className="w-8 h-8 text-green-600" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 Elastyczność
@@ -176,9 +165,7 @@ export default function ONasPage() {
             </div>
             <div className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300">
               <div className="w-16 h-16 bg-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-500/20 transition-colors duration-300">
-                <svg className="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+                <Users className="w-8 h-8 text-orange-600" />
               </div>
               <h3 className="text-lg font-semibold text-foreground mb-3">
                 Wsparcie ekspertów
@@ -204,9 +191,7 @@ export default function ONasPage() {
             <div className="space-y-6">
               <div className="bg-muted/30 border border-border rounded-xl p-6 flex items-start">
                 <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
+                  <Shield className="w-6 h-6 text-blue-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">RODO / GDPR</h3>
@@ -217,9 +202,7 @@ export default function ONasPage() {
               </div>
               <div className="bg-muted/30 border border-border rounded-xl p-6 flex items-start">
                 <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01" />
-                  </svg>
+                  <Server className="w-6 h-6 text-purple-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">DORA (Digital Operational Resilience Act)</h3>
@@ -230,9 +213,7 @@ export default function ONasPage() {
               </div>
               <div className="bg-muted/30 border border-border rounded-xl p-6 flex items-start">
                 <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                  </svg>
+                  <Search className="w-6 h-6 text-green-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Audyty Bezpieczeństwa / Penetration Tests</h3>
@@ -243,9 +224,7 @@ export default function ONasPage() {
               </div>
               <div className="bg-muted/30 border border-border rounded-xl p-6 flex items-start">
                 <div className="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2l3.09 6.26L22 9l-5 4.87L18.18 22 12 18.82 5.82 22 7 13.87 2 9l6.91-.74L12 2z" />
-                  </svg>
+                  <Award className="w-6 h-6 text-red-600" />
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-2">Zgodność z Wymogami KNF dla KIP MIP</h3>

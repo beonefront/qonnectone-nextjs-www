@@ -40,7 +40,7 @@ export default function Navigation() {
   const navItems = useMemo(() => [
     { href: "/", label: "Strona główna" },
     { href: "/moduly", label: "Moduły" },
-    { href: "/metody-platnosci", label: "Metody płatności" },
+    { href: "/modele-wspolpracy", label: "Modele współpracy" },
     { href: "/business-cases", label: "Business Cases" },
     { href: "/o-nas", label: "O nas" },
   ], []);
@@ -85,14 +85,16 @@ export default function Navigation() {
           >
             {/* Logo */}
             <div className="flex items-center px-3 py-1">
-              <Image
-                src="/logo.png"
-                alt="Qonnect"
-                width={100}
-                height={28}
-                className="h-7 w-auto"
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.png"
+                  alt="Qonnect"
+                  width={100}
+                  height={28}
+                  className="h-7 w-auto cursor-pointer"
+                  priority
+                />
+              </Link>
             </div>
 
             {/* Divider */}
@@ -131,14 +133,16 @@ export default function Navigation() {
           <div className="flex items-center justify-between rounded-2xl border border-white/20 bg-white/80 backdrop-blur-md p-3 shadow-sm">
             {/* Logo */}
             <div className="flex items-center">
-              <Image
-                src="/logo.png"
-                alt="Qonnect"
-                width={120}
-                height={32}
-                className="h-8 w-auto"
-                priority
-              />
+              <Link href="/">
+                <Image
+                  src="/logo.png"
+                  alt="Qonnect"
+                  width={120}
+                  height={32}
+                  className="h-8 w-auto cursor-pointer"
+                  priority
+                />
+              </Link>
             </div>
 
             {/* Hamburger Menu Button */}

@@ -54,7 +54,7 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {[
                     { href: "/moduly", label: "Moduły systemu" },
-                    { href: "/metody-platnosci", label: "Metody płatności" },
+                    { href: "/modele-wspolpracy", label: "Modele współpracy" },
                     // { href: "/#features", label: "Funkcje" },
                     // { href: "/#integrations", label: "Integracje" },
                     // { href: "/#pricing", label: "Cennik" }
