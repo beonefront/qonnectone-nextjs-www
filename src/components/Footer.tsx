@@ -104,9 +104,9 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {[
                     { href: "/#faq", label: "FAQ" },
-                    { href: "/o-nas", label: "Dokumentacja API" },
-                    { href: "/o-nas", label: "Centrum pomocy" },
                     { href: "/o-nas", label: "Kontakt" },
+                    // { href: "/o-nas", label: "Dokumentacja API" },
+                    // { href: "/o-nas", label: "Centrum pomocy" },
                     // { href: "#", label: "Status systemu" }
                   ].map((link) => (
                     <li key={link.label}>

@@ -34,7 +34,7 @@ export default function ONasPage() {
       </section>
 
       {/* Czym jest QonnectOne */}
-      <section className="py-16 bg-background">
+      {/* <section className="py-16 bg-background">
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
@@ -50,7 +50,7 @@ export default function ONasPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Misja i Wizja */}
       <section className="py-16 bg-primary/5">
