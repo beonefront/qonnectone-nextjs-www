@@ -17,6 +17,11 @@ export default function MetodyPlatnosciPage() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
+  const handleAppointmentClick = () => {
+    // Redirect to Google appointment scheduling
+    window.open('https://workspace.google.com/resources/appointment-scheduling/', '_blank');
+  };
+
   return (
     <div className="bg-gray-50 text-gray-800">
       <Navigation />
@@ -25,7 +30,7 @@ export default function MetodyPlatnosciPage() {
       <section id="hero">
         <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 sm:px-6 sm:pt-24 md:pt-32 lg:px-8">
 
-          <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8 pb-10">
+          <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8 pb-18">
             <h1 className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">Modele</span>
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">współpracy</span>
@@ -35,7 +40,6 @@ export default function MetodyPlatnosciPage() {
             </p>
           </div>
           {/* <p className="mt-5 text-sm text-foreground/70">Dopasuj model i metodę płatności do indywidualnych potrzeb swojego biznesu</p> */}
-          {/* <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div> */}
         </div>
       </section>
 
@@ -211,11 +215,18 @@ export default function MetodyPlatnosciPage() {
 
             <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
               <button
-                onClick={openModal}
-                className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2"
+                onClick={handleAppointmentClick}
+                className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-primary/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2 cursor-pointer"
               >
-                <Briefcase className="h-6 w-6" />
-                Rozpocznij rozmowę
+                <Calendar className="size-4 text-background" />
+                Umów spotkanie
+              </button>
+              <button
+                onClick={openModal}
+                className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] bg-white border border-input shadow-xs hover:bg-gray-50 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-foreground flex gap-2 cursor-pointer"
+              >
+                <Phone className="size-4" />
+                Skontaktuj się z nami
               </button>
               {/* <button
                 className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] bg-white border border-primary text-primary shadow-xs hover:bg-primary/5 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto flex gap-2"

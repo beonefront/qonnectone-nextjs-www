@@ -1,9 +1,8 @@
 'use client';
 
 import Link from "next/link";
-import Image from "next/image";
 import { useState } from "react";
-import { Play, ChevronRight, ChevronLeft, Phone } from "lucide-react";
+import { ChevronRight, Phone, Calendar } from "lucide-react";
 import { Modal } from "./ui/Modal";
 import { EmailForm } from "./ui/EmailForm";
 
@@ -13,6 +12,11 @@ export default function HeroSection() {
   const handleEmailSubmit = (email: string) => {
     console.log('Email submitted:', email);
     // Tutaj można dodać logikę wysyłania emaila
+  };
+
+  const handleAppointmentClick = () => {
+    // Redirect to Google appointment scheduling
+    window.open('https://workspace.google.com/resources/appointment-scheduling/', '_blank');
   };
 
   const openModal = () => setIsModalOpen(true);
@@ -46,36 +50,12 @@ export default function HeroSection() {
               onClick={openModal}
               className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-primary/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2 cursor-pointer"
             >
-              <Phone className="size-4 text-background" />
+              <Phone className="size-4" />
               Skontaktuj się z nami
             </button>
           </div>
 
           <p className="mt-5 text-sm text-foreground/70">Odblokuj potencjał biznesowy i zarabiaj więcej</p>
-
-          <div className="relative mx-auto flex w-full items-center justify-center">
-            <div className="relative border rounded-lg shadow-lg max-w-screen-lg mt-16">
-              <div className="relative cursor-pointer group rounded-md p-0 ring-1 ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10 backdrop-blur-md">
-                <Image
-                  alt="Hero Video"
-                  src="/admin-panel.webp"
-                  width={1920}
-                  height={600}
-                  className="transition-all duration-200 ease-out group-hover:brightness-[0.8] rounded-md border"
-                  priority
-                />
-                <div className="absolute inset-0 flex items-center justify-center group-hover:scale-100 scale-[0.9] transition-all duration-200 ease-out rounded-2xl">
-                  <div className="z-30 bg-primary/10 flex items-center justify-center rounded-full backdrop-blur-md size-28">
-                    <div className="flex items-center justify-center bg-gradient-to-b from-primary/30 to-primary shadow-md rounded-full size-20 transition-all ease-out duration-200 relative group-hover:scale-[1.2] scale-100">
-                      <Play className="size-8 text-white fill-white transition-transform duration-200 ease-out group-hover:scale-105 scale-100" style={{ filter: "drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06))" }} />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 bg-gradient-to-t from-background via-background to-transparent lg:h-1/4"></div>
         </div>
       </section>
 

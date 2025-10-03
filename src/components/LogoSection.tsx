@@ -8,28 +8,37 @@ interface Company {
   logo: string;
 }
 
+interface PaymentMethod {
+  name: string;
+  logo: string;
+}
+
 const LogoSection: React.FC = () => {
   const [isPaused, setIsPaused] = useState(false);
 
-  const companies: Company[] = [
-    { name: 'Google', logo: 'https://cdn.magicui.design/companies/Google.svg' },
-    { name: 'Microsoft', logo: 'https://cdn.magicui.design/companies/Microsoft.svg' },
-    { name: 'Amazon', logo: 'https://cdn.magicui.design/companies/Amazon.svg' },
-    { name: 'Netflix', logo: 'https://cdn.magicui.design/companies/Netflix.svg' },
-    { name: 'YouTube', logo: 'https://cdn.magicui.design/companies/YouTube.svg' },
-    { name: 'Instagram', logo: 'https://cdn.magicui.design/companies/Instagram.svg' },
-    { name: 'Uber', logo: 'https://cdn.magicui.design/companies/Uber.svg' },
-    { name: 'Spotify', logo: 'https://cdn.magicui.design/companies/Spotify.svg' },
+  const partners: Company[] = [
+    { name: 'SIBS', logo: '/partners/sibs.svg' },
+    { name: 'vlayer', logo: '/partners/vlayer.svg' },
+    { name: 'QSecurities', logo: '/partners/qsecurities.png' },
+  ];
+
+  const paymentMethods: PaymentMethod[] = [
+    { name: 'BLIK', logo: '/payment-methods/blik.svg' },
+    { name: 'Visa/Mastercard', logo: '/payment-methods/visa-mastercard.svg' },
+    { name: 'Apple Pay', logo: '/payment-methods/apple-pay.svg' },
+    { name: 'Google Pay', logo: '/payment-methods/google-pay.svg' },
+    { name: 'PayByLink', logo: '/payment-methods/pbl.svg' },
   ];
 
   // Create 4 sets for continuous scrolling
-  const logoSets = Array(4).fill(companies);
+  const allLogos = [...partners];
+  const logoSets = Array(4).fill(allLogos);
 
   return (
     <section id="logos" className="bg-gray-50 transition-colors duration-300">
-      <div className="container mx-auto px-4 md:px-8 py-12">
+      <div className="container mx-auto px-4 md:px-8 py-24">
         <h3 className="text-center text-sm font-semibold text-gray-500 transition-colors duration-300">
-          ZAUFALI NAM
+          NASI PARTNERZY
         </h3>
 
         <div className="relative mt-6">
@@ -40,7 +49,7 @@ const LogoSection: React.FC = () => {
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
-            {logoSets.map((companies, setIndex) => (
+            {logoSets.map((logos, setIndex) => (
               <div
                 key={setIndex}
                 className="flex shrink-0 justify-around gap-4 animate-marquee flex-row"
@@ -48,18 +57,18 @@ const LogoSection: React.FC = () => {
                   animationPlayState: isPaused ? 'paused' : 'running'
                 }}
               >
-                {companies.map((company: Company, index: number) => (
+                {logos.map((logo: Company | PaymentMethod, index: number) => (
                   <div
                     key={`${setIndex}-${index}`}
                     className="group/logo cursor-pointer transition-all duration-300 hover:scale-110"
                     onClick={() => {
-                      console.log(`Clicked on ${company.name}`);
+                      console.log(`Clicked on ${logo.name}`);
                       // Add click handler logic here
                     }}
                   >
                     <Image
-                      src={company.logo}
-                      alt={`${company.name} logo`}
+                      src={logo.logo}
+                      alt={`${logo.name} logo`}
                       width={112}
                       height={40}
                       className="h-10 w-28 grayscale opacity-30

@@ -26,10 +26,7 @@ export default function Footer() {
             {/* Social links */}
             <div className="flex space-x-3">
               {[
-                { href: "#", icon: "fab fa-linkedin", label: "LinkedIn" },
-                { href: "#", icon: "fab fa-twitter", label: "Twitter" },
-                // { href: "#", icon: "fab fa-facebook", label: "Facebook" },
-                // { href: "#", icon: "fab fa-youtube", label: "YouTube" }
+                { href: "https://www.linkedin.com/company/109154246", icon: "fab fa-linkedin", label: "LinkedIn" },
               ].map((social) => (
                 <Link
                   key={social.label}

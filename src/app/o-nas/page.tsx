@@ -17,19 +17,17 @@ export default function ONasPage() {
       {/* Hero Section */}
       <section id="about-hero">
         <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 sm:px-6 sm:pt-24 md:pt-32 lg:px-8">
-          <div className="flex w-full max-w-4xl flex-col space-y-4 overflow-hidden pt-8">
+          <div className="flex w-full max-w-4xl flex-col space-y-4 overflow-hidden py-8 pb-16">
             <h1 className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">O QonnectOne</span>
             </h1>
             <p className="mx-auto max-w-3xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
-              Integrujemy biznes płatniczy za pomocą multi-funkcjonalnej platformy dla instytucji nadzorowanych.
+              Jesteśmy QonnectOne, kompleksową platformą płatniczą SaaS, która rewolucjonizuje rynek, umożliwiając firmom niefinansowym i operatorom płatniczym natychmiastowe wzbogacenie swojej oferty o usługi bankowości wbudowanej (Embedded Banking).
             </p>
             <p className="mx-auto max-w-4xl text-center text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7 text-balance">
-              Dostarczamy zaawansowane rozwiązania IT i ICT dla dynamicznie rozwijającego się sektora finansowego w Polsce i Unii Europejskiej.
+              Działamy jako centralny hub, integrujący aplikacje klienckie z zewnętrznymi dostawcami usług finansowych (jak np. spersonalizowane karty płatnicze, rachunki rozliczeniowe czy usługi pożyczkowe), a wszystko to za pośrednictwem intuicyjnego API. Nasz model SaaS gwarantuje minimalizację kosztów początkowych i szybkie wdrożenie, jednocześnie zapewniając pełną skalowalność i zgodność z regulacjami (m.in. RODO, DORA, MICA).
             </p>
           </div>
-
-          <div className="pointer-events-none absolute inset-x-0 -bottom-12 h-1/3 lg:h-1/4"></div>
         </div>
       </section>
 
@@ -67,7 +65,7 @@ export default function ONasPage() {
                   </h3>
                 </div>
                 <p className="text-foreground/70 leading-relaxed">
-                  Naszą misją jest przekształcanie instytucji płatniczych i nadzorowanych, aby umożliwić im szybkie i bezpieczne skalowanie biznesu płatniczego. Wierzymy, że kluczem do sukcesu jest połączenie innowacji technologicznych z rygorystycznymi wymogami regulacyjnymi.
+                  Naszą misją jest przekształcanie złożoności w przewagę konkurencyjną dla naszych klientów. Dążymy do tego, by każde przedsiębiorstwo mogło &ldquo;wbudować&rdquo; płynne, natywne i bezpieczne doświadczenia finansowe bezpośrednio w swoje produkty i platformy, zwiększając tym samym lojalność klientów i generując nowe strumienie przychodów. Dostarczamy infrastrukturę (silnik BaaS), która pozwala firmom niefinansowym angażować większą część klientów, bez konieczności polegania na zewnętrznych portalach bankowych tworzyć bardziej &ldquo;płynne, wciągające doświadczenie użytkownika&rdquo; (&ldquo;seamless, sticky user experience&rdquo;), zwiększając zaangażowanie i lojalność klientów.
                 </p>
               </div>
               <div className="bg-background border border-border rounded-xl p-8 shadow-sm">
