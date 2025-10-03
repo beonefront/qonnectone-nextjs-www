@@ -5,7 +5,8 @@ import Footer from '@/components/Footer';
 import { useState } from "react";
 import { Modal } from "@/components/ui/Modal";
 import { EmailForm } from "@/components/ui/EmailForm";
-import { Check, Phone, Mail, Calendar, Briefcase, Download } from "lucide-react";
+import { Check, Phone, Mail, Calendar } from "lucide-react";
+import { openAppointmentScheduler } from '@/config/calendar';
 
 export default function MetodyPlatnosciPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -16,11 +17,6 @@ export default function MetodyPlatnosciPage() {
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-
-  const handleAppointmentClick = () => {
-    // Redirect to Google appointment scheduling
-    window.open('https://workspace.google.com/resources/appointment-scheduling/', '_blank');
-  };
 
   return (
     <div className="bg-gray-50 text-gray-800">
@@ -215,7 +211,7 @@ export default function MetodyPlatnosciPage() {
 
             <div className="flex flex-col w-full sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
               <button
-                onClick={handleAppointmentClick}
+                onClick={openAppointmentScheduler}
                 className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-primary/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2 cursor-pointer"
               >
                 <Calendar className="size-4 text-background" />

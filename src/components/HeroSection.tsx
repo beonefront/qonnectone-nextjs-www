@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { ChevronRight, Phone, Calendar } from "lucide-react";
+import { ChevronRight, Phone } from "lucide-react";
 import { Modal } from "./ui/Modal";
 import { EmailForm } from "./ui/EmailForm";
 
@@ -12,11 +12,6 @@ export default function HeroSection() {
   const handleEmailSubmit = (email: string) => {
     console.log('Email submitted:', email);
     // Tutaj można dodać logikę wysyłania emaila
-  };
-
-  const handleAppointmentClick = () => {
-    // Redirect to Google appointment scheduling
-    window.open('https://workspace.google.com/resources/appointment-scheduling/', '_blank');
   };
 
   const openModal = () => setIsModalOpen(true);

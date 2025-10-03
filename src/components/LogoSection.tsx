@@ -8,11 +8,6 @@ interface Company {
   logo: string;
 }
 
-interface PaymentMethod {
-  name: string;
-  logo: string;
-}
-
 const LogoSection: React.FC = () => {
   const [isPaused, setIsPaused] = useState(false);
 
@@ -20,14 +15,6 @@ const LogoSection: React.FC = () => {
     { name: 'SIBS', logo: '/partners/sibs.svg' },
     { name: 'vlayer', logo: '/partners/vlayer.svg' },
     { name: 'QSecurities', logo: '/partners/qsecurities.png' },
-  ];
-
-  const paymentMethods: PaymentMethod[] = [
-    { name: 'BLIK', logo: '/payment-methods/blik.svg' },
-    { name: 'Visa/Mastercard', logo: '/payment-methods/visa-mastercard.svg' },
-    { name: 'Apple Pay', logo: '/payment-methods/apple-pay.svg' },
-    { name: 'Google Pay', logo: '/payment-methods/google-pay.svg' },
-    { name: 'PayByLink', logo: '/payment-methods/pbl.svg' },
   ];
 
   // Create 4 sets for continuous scrolling
@@ -57,7 +44,7 @@ const LogoSection: React.FC = () => {
                   animationPlayState: isPaused ? 'paused' : 'running'
                 }}
               >
-                {logos.map((logo: Company | PaymentMethod, index: number) => (
+                {logos.map((logo: Company, index: number) => (
                   <div
                     key={`${setIndex}-${index}`}
                     className="group/logo cursor-pointer transition-all duration-300 hover:scale-110"
