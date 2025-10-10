@@ -46,7 +46,7 @@ export default function SolutionSection() {
                       https://acme.ai
                     </text>
                   </g>
-                  <image href="/modules/aml.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
+                  <image href="/modules/aml.png" width="1200" height="750" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
                 </g>
                 <defs>
                   <clipPath id="path0">
@@ -92,7 +92,7 @@ export default function SolutionSection() {
                       https://acme.ai
                     </text>
                   </g>
-                  <image href="/modules/transactions.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
+                  <image href="/modules/transactions.png" width="1650" height="1200" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
                 </g>
                 <defs>
                   <clipPath id="path0">
@@ -109,9 +109,9 @@ export default function SolutionSection() {
             {/* Card 3 */}
             <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 rounded-2xl md:row-span-2 hover:bg-orange-500/10 transition-all duration-500 ease-out">
               <div>
-                <h3 className="font-semibold mb-2 text-primary">Moduł Krypto</h3>
+                <h3 className="font-semibold mb-2 text-primary">Raportowanie</h3>
                 <p className="text-foreground">
-                  Umożliwia kompleksową obsługę operacji związanych z aktywami cyfrowymi. Pozwala na bezpieczne depozyty i wypłaty kryptowalut, sprawną wymianę walut cyfrowych oraz generowanie i zarządzanie portfelami dla klientów.
+                Automatyzuje przygotowanie i wysyłkę raportów do regulatorów (np. KNF, NBP, GIIF). Zapewnia kompletność, walidację danych i śledzenie statusów, ograniczając obciążenie zespołów.
                 </p>
               </div>
               <canvas
@@ -144,7 +144,7 @@ export default function SolutionSection() {
                       https://acme.ai
                     </text>
                   </g>
-                  <image href="/modules/krypto.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
+                  <image href="/modules/reports.png" width="1000" height="720" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
                 </g>
                 <defs>
                   <clipPath id="path0">
@@ -161,9 +161,9 @@ export default function SolutionSection() {
             {/* Card 4 */}
             <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 rounded-2xl flex-row order-4 md:col-span-2 md:flex-row xl:order-none hover:bg-green-500/10 transition-all duration-500 ease-out">
               <div>
-                <h3 className="font-semibold mb-2 text-primary">Raportowanie</h3>
+                <h3 className="font-semibold mb-2 text-primary">Moduł Krypto</h3>
                 <p className="text-foreground">
-                  Automatyzuje przygotowanie i wysyłkę raportów do regulatorów (np. KNF, NBP, GIIF). Zapewnia kompletność, walidację danych i śledzenie statusów, ograniczając obciążenie zespołów.
+                Umożliwia kompleksową obsługę operacji związanych z aktywami cyfrowymi. Pozwala na bezpieczne depozyty i wypłaty kryptowalut, sprawną wymianę walut cyfrowych oraz generowanie i zarządzanie portfelami dla klientów.
                 </p>
               </div>
               <div className="inset-0 bg-white/5 [mask-image:linear-gradient(to_bottom,white,transparent)] absolute -bottom-full">
@@ -312,7 +312,7 @@ export default function SolutionSection() {
                       https://acme.ai
                     </text>
                   </g>
-                  <image href="/modules/reports.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
+                  <image href="/modules/krypto.png" width="1200" height="800" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
                 </g>
                 <defs>
                   <clipPath id="path0">

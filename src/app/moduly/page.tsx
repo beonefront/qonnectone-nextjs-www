@@ -219,7 +219,7 @@ export default function ModulyPage() {
                   <circle cx="47" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                   <circle cx="67" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                   <path d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z" fill="#F5F5F5"></path>
-                  <image href="/modules/krypto.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom2)"></image>
+                  <image href="/modules/krypto.png" width="1600" height="1000" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom2)"></image>
                 </g>
                 <defs>
                   <clipPath id="path2">
@@ -333,7 +333,7 @@ export default function ModulyPage() {
                   <circle cx="47" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                   <circle cx="67" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                   <path d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z" fill="#F5F5F5"></path>
-                  <image href="/modules/administracja.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom5)"></image>
+                  <image href="/modules/administracja.png" width="1200" height="800" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom5)"></image>
                 </g>
                 <defs>
                   <clipPath id="path5">
@@ -371,7 +371,7 @@ export default function ModulyPage() {
                   <circle cx="47" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                   <circle cx="67" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                   <path d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z" fill="#F5F5F5"></path>
-                  <image href="/modules/backoffice.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom6)"></image>
+                  <image href="/modules/backoffice.png" width="1200" height="800" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom6)"></image>
                 </g>
                 <defs>
                   <clipPath id="path6">
@@ -409,7 +409,7 @@ export default function ModulyPage() {
                   <circle cx="47" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                   <circle cx="67" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                   <path d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z" fill="#F5F5F5"></path>
-                  <image href="/modules/api-plugins.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom8)"></image>
+                  <image href="/modules/api-plugins.png" width="1800" height="900" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom8)"></image>
                 </g>
                 <defs>
                   <clipPath id="path8">
