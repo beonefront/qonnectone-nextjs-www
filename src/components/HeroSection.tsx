@@ -6,6 +6,7 @@ import { useState } from "react";
 import { ChevronRight, Phone } from "lucide-react";
 import { Modal } from "./ui/Modal";
 import { EmailForm } from "./ui/EmailForm";
+import VideoBasic from "./VideoBasic";
 
 export default function HeroSection() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,7 +36,7 @@ export default function HeroSection() {
           <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
             <h1 className="text-center text-4xl justify-center flex font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
               {/* <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">QonnectOne</span> */}
-              <Image src="/logo.png" alt="QonnectOne" width={270 * 1.25} height={46 * 1.25} />
+              <Image src="/logo-black.png" alt="QonnectOne" width={270 * 1.25} height={46 * 1.25} />
             </h1>
             <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
               QonnectOne to rewolucyjna platforma, która wspiera firmy niefinansowe i nadzorowane w kluczowych obszarach operacyjnych oraz regulacyjnych. Ponadto zapewnia zgodność z przepisami, umożliwia natychmiastowe płatności oraz systematyczne zwiększanie zysków.
@@ -50,6 +51,17 @@ export default function HeroSection() {
               <Phone className="size-4" />
               Skontaktuj się z nami
             </button>
+          </div>
+
+          <div className="relative mx-auto flex w-full items-center justify-center">
+            <VideoBasic
+              thumbnailSrc="/admin-panel.png"
+              videoSrc="/video/system.mov"
+              alt="Hero Video"
+              width={3546}
+              height={1808}
+              className="mt-16"
+            />
           </div>
 
           <p className="mt-5 text-sm text-foreground/70">Odblokuj potencjał biznesowy i zarabiaj więcej</p>
