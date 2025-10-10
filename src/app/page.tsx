@@ -9,12 +9,14 @@ import PricingSection from "@/components/PricingSection";
 import ProblemComparisonSection from "@/components/ProblemComparisonSection";
 import ProblemSection from "@/components/ProblemSection";
 import SolutionSection from "@/components/SolutionSection";
+import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
     <div className="bg-gray-50 text-gray-800">
       <Navigation />
       <HeroSection />
+      <VideoSection />
       {/* <LogoSection /> */}
       <ProblemSection />
       <SolutionSection />
