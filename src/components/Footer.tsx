@@ -19,7 +19,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-8 max-w-md">
-              Kompleksowe rozwiązania płatnicze dla instytucji finansowych.
+              Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych.
               Bezpieczeństwo, innowacyjność i zgodność z regulacjami.
             </p>
 

@@ -19,12 +19,12 @@ export default function ONasPage() {
         <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 sm:px-6 sm:pt-24 md:pt-32 lg:px-8">
           <div className="flex w-full max-w-4xl flex-col space-y-4 overflow-hidden py-8 pb-16">
             <h1 className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
-              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">O QonnectOne</span>
+              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">O nas</span>
             </h1>
             <p className="mx-auto max-w-3xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
               Jesteśmy QonnectOne, kompleksową platformą płatniczą SaaS, która rewolucjonizuje rynek, umożliwiając firmom niefinansowym i operatorom płatniczym natychmiastowe wzbogacenie swojej oferty o usługi bankowości wbudowanej (Embedded Banking).
             </p>
-            <p className="mx-auto max-w-4xl text-center text-sm leading-6 text-foreground/60 sm:text-base sm:leading-7 text-balance">
+            <p className="mx-auto max-w-4xl text-center text-base leading-6 text-foreground/60 sm:text-base sm:leading-7 text-balance">
               Działamy jako centralny hub, integrujący aplikacje klienckie z zewnętrznymi dostawcami usług finansowych (jak np. spersonalizowane karty płatnicze, rachunki rozliczeniowe czy usługi pożyczkowe), a wszystko to za pośrednictwem intuicyjnego API. Nasz model SaaS gwarantuje minimalizację kosztów początkowych i szybkie wdrożenie, jednocześnie zapewniając pełną skalowalność i zgodność z regulacjami (m.in. RODO, DORA, MICA).
             </p>
           </div>

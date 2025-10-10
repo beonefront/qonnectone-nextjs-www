@@ -23,7 +23,7 @@ export default function ContactCTA() {
             </h2>
             <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
               Skontaktuj się z nami, aby omówić jak QonnectOne może przyspieszyć rozwój Twojej instytucji finansowej
-              i pomóc w spełnieniu wymogów regulacyjnych.
+              lub firmy i pomóc w spełnieniu wymogów regulacyjnych.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button

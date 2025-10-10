@@ -7,6 +7,7 @@ import { Modal } from "@/components/ui/Modal";
 import { EmailForm } from "@/components/ui/EmailForm";
 import { Cloud, Award } from "lucide-react";
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function ModulyPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,7 +29,10 @@ export default function ModulyPage() {
             <h1 className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">Funkcje</span>
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">i moduły</span>
-              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">QonnectOne</span>
+              {/* <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">QonnectOne</span> */}
+              <div className="flex justify-center">
+                <Image src="/logo-black.png" alt="QonnectOne" width={270 * 1.5} height={46 * 1.5} />
+              </div>
             </h1>
             <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
               Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne zyski.
