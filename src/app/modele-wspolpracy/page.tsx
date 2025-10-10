@@ -101,7 +101,7 @@ export default function MetodyPlatnosciPage() {
                     <circle cx="47" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                     <circle cx="67" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                     <path d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z" fill="#F5F5F5"></path>
-                    <image href="/admin-panel.webp" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom1)"></image>
+                    <image href="/modules/backoffice.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom1)"></image>
                   </g>
                   <defs>
                     <clipPath id="path1">
@@ -157,7 +157,7 @@ export default function MetodyPlatnosciPage() {
                     <circle cx="47" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                     <circle cx="67" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
                     <path d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z" fill="#F5F5F5"></path>
-                    <image href="/admin-panel.webp" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom2)"></image>
+                    <image href="/modules/ksiegowosc.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom2)"></image>
                   </g>
                   <defs>
                     <clipPath id="path2">

@@ -36,7 +36,7 @@ export default function HeroSection() {
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">QonnectOne</span>
             </h1>
             <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
-              QonnectOne to kompleksowa platforma, która rewolucjonizuje rynek, umożliwiając firmom niefinansowym oraz nadzorowanym natychmiastowe płatności.
+              QonnectOne to rewolucyjna platforma, która wspiera firmy niefinansowe i nadzorowane w kluczowych obszarach operacyjnych oraz regulacyjnych. Ponadto zapewnia zgodność z przepisami, umożliwia natychmiastowe płatności oraz systematyczne zwiększanie zysków.
             </p>
           </div>
 

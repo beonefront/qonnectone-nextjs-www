@@ -46,7 +46,7 @@ export default function SolutionSection() {
                       https://acme.ai
                     </text>
                   </g>
-                  <image href="/admin-panel.webp" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
+                  <image href="/modules/aml.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
                 </g>
                 <defs>
                   <clipPath id="path0">
@@ -92,7 +92,7 @@ export default function SolutionSection() {
                       https://acme.ai
                     </text>
                   </g>
-                  <image href="/admin-panel.webp" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
+                  <image href="/modules/transactions.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
                 </g>
                 <defs>
                   <clipPath id="path0">
@@ -144,7 +144,7 @@ export default function SolutionSection() {
                       https://acme.ai
                     </text>
                   </g>
-                  <image href="/admin-panel.webp" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
+                  <image href="/modules/krypto.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
                 </g>
                 <defs>
                   <clipPath id="path0">
@@ -312,7 +312,7 @@ export default function SolutionSection() {
                       https://acme.ai
                     </text>
                   </g>
-                  <image href="/admin-panel.webp" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
+                  <image href="/modules/reports.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom)"></image>
                 </g>
                 <defs>
                   <clipPath id="path0">
