@@ -66,7 +66,7 @@ export default function MetodyPlatnosciPage() {
                   <p className="text-foreground mb-4">
                     Postaw na wygodę i efektywność, korzystając z naszych rozwiązań jako usługi w chmurze. Eliminuje potrzebę instalacji, utrzymania i zarządzania infrastrukturą IT. My zajmiemy się bezpieczeństwem, dostępnością i wydajnością.
                   </p>
-                  <div className="space-y-2 mb-6">
+                  <div className="space-y-2 mb-2">
                     <div className="flex items-center text-sm text-foreground">
                       <Check className="text-green-500 mr-2 w-4 h-4" />
                       <span>Brak instalacji i utrzymania</span>
@@ -86,31 +86,87 @@ export default function MetodyPlatnosciPage() {
                   </div>
                 </div>
                 <svg
-                  width="1203"
-                  height="753"
-                  viewBox="0 0 1203 753"
+                  width="600"
+                  height="300"
+                  viewBox="0 0 600 300"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
+                  className="-mb-32 mt-2 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
                 >
-                  <g clipPath="url(#path1)">
-                    <path d="M0 52H1202V741C1202 747.627 1196.63 753 1190 753H12C5.37258 753 0 747.627 0 741V52Z" className="fill-[#E5E5E5]"></path>
-                    <path fillRule="evenodd" clipRule="evenodd" d="M0 12C0 5.37258 5.37258 0 12 0H1190C1196.63 0 1202 5.37258 1202 12V52H0L0 12Z" className="fill-[#E5E5E5]"></path>
-                    <path fillRule="evenodd" clipRule="evenodd" d="M1.06738 12C1.06738 5.92487 5.99225 1 12.0674 1H1189.93C1196.01 1 1200.93 5.92487 1200.93 12V51H1.06738V12Z" className="fill-white"></path>
-                    <circle cx="27" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
-                    <circle cx="47" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
-                    <circle cx="67" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
-                    <path d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z" fill="#F5F5F5"></path>
-                    <image href="/modules/backoffice.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom1)"></image>
+                  {/* Cloud Infrastructure */}
+                  <g className="opacity-90">
+                    {/* Cloud shape */}
+                    <path d="M80 60C80 45 95 30 120 30C130 15 150 5 180 5C210 5 230 25 240 40C260 40 280 55 280 70C280 85 260 100 240 100H120C100 100 80 85 80 60Z" fill="#E3F2FD" stroke="#1976D2" strokeWidth="2"/>
+
+                    {/* Server icons in cloud */}
+                    <rect x="140" y="45" width="30" height="20" rx="3" fill="#1976D2" opacity="0.8"/>
+                    <rect x="140" y="70" width="30" height="20" rx="3" fill="#1976D2" opacity="0.6"/>
+                    <rect x="140" y="95" width="30" height="20" rx="3" fill="#1976D2" opacity="0.4"/>
+
+                    {/* Database icon */}
+                    <ellipse cx="200" cy="55" rx="12" ry="6" fill="#4CAF50"/>
+                    <rect x="188" y="55" width="24" height="15" rx="3" fill="#4CAF50"/>
+                    <ellipse cx="200" cy="70" rx="12" ry="6" fill="#4CAF50"/>
                   </g>
-                  <defs>
-                    <clipPath id="path1">
-                      <rect width="1203" height="753" fill="white"></rect>
-                    </clipPath>
-                    <clipPath id="roundedBottom1">
-                      <path d="M1 52H1201V741C1201 747.075 1196.08 752 1190 752H12C5.92486 752 1 747.075 1 741V52Z" fill="white"></path>
-                    </clipPath>
-                  </defs>
+
+                  {/* Users/Devices */}
+                  <g>
+                    {/* Laptop */}
+                    <rect x="400" y="80" width="50" height="30" rx="3" fill="#F5F5F5" stroke="#9E9E9E" strokeWidth="2"/>
+                    <rect x="408" y="84" width="34" height="22" fill="#1976D2" opacity="0.3"/>
+                    <rect x="415" y="110" width="20" height="2" fill="#9E9E9E"/>
+
+                    {/* Mobile device */}
+                    <rect x="450" y="120" width="15" height="25" rx="2" fill="#F5F5F5" stroke="#9E9E9E" strokeWidth="1"/>
+                    <rect x="452" y="122" width="11" height="18" fill="#1976D2" opacity="0.3"/>
+
+                    {/* Desktop */}
+                    <rect x="380" y="140" width="40" height="25" rx="3" fill="#F5F5F5" stroke="#9E9E9E" strokeWidth="2"/>
+                    <rect x="388" y="144" width="24" height="17" fill="#1976D2" opacity="0.3"/>
+                    <rect x="395" y="170" width="8" height="10" fill="#9E9E9E"/>
+                    <rect x="390" y="180" width="18" height="2" fill="#9E9E9E"/>
+                  </g>
+
+                  {/* Connection lines */}
+                  <g stroke="#1976D2" strokeWidth="2" fill="none" opacity="0.6">
+                    <path d="M280 70 Q340 50 400 95" strokeDasharray="4,4">
+                      <animate attributeName="stroke-dashoffset" values="0;8" dur="2s" repeatCount="indefinite"/>
+                    </path>
+                    <path d="M280 75 Q350 60 450 135" strokeDasharray="4,4">
+                      <animate attributeName="stroke-dashoffset" values="0;8" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+                    </path>
+                    <path d="M280 80 Q320 90 380 155" strokeDasharray="4,4">
+                      <animate attributeName="stroke-dashoffset" values="0;8" dur="2s" repeatCount="indefinite" begin="1s"/>
+                    </path>
+                  </g>
+
+                  {/* Labels */}
+                  <text x="180" y="25" textAnchor="middle" className="fill-gray-700 text-sm font-medium">Chmura SaaS</text>
+                  <text x="425" y="70" textAnchor="middle" className="fill-gray-700 text-xs">Laptop</text>
+                  <text x="457" y="155" textAnchor="middle" className="fill-gray-700 text-xs">Mobile</text>
+                  <text x="400" y="135" textAnchor="middle" className="fill-gray-700 text-xs">Desktop</text>
+
+                  {/* Benefits icons */}
+                  <g>
+                    {/* Security shield */}
+                    <path d="M40 150 L40 165 L55 172 L70 165 L70 150 L55 143 Z" fill="#4CAF50" opacity="0.8"/>
+                    <path d="M50 158 L53 161 L60 154" stroke="white" strokeWidth="1.5" fill="none"/>
+
+                    {/* Update arrows */}
+                    <g transform="translate(40, 180)">
+                      <path d="M0 8 L8 0 L16 8 M8 0 L8 16" stroke="#FF9800" strokeWidth="1.5" fill="none"/>
+                      <path d="M20 8 L28 0 L36 8 M28 0 L28 16" stroke="#FF9800" strokeWidth="1.5" fill="none"/>
+                    </g>
+
+                    {/* Availability icon */}
+                    <circle cx="55" cy="220" r="12" fill="#2196F3" opacity="0.8"/>
+                    <path d="M50 220 L55 225 L60 220" stroke="white" strokeWidth="1.5" fill="none"/>
+                  </g>
+
+                  {/* Benefit labels */}
+                  <text x="55" y="140" textAnchor="middle" className="fill-gray-600 text-xs">Bezpieczeństwo</text>
+                  <text x="55" y="175" textAnchor="middle" className="fill-gray-600 text-xs">Aktualizacje</text>
+                  <text x="55" y="210" textAnchor="middle" className="fill-gray-600 text-xs">Dostępność</text>
                 </svg>
                 <div className="absolute bottom-0 left-0 h-32 w-full bg-gradient-to-t from-neutral-50 pointer-events-none"></div>
               </div>
@@ -122,7 +178,7 @@ export default function MetodyPlatnosciPage() {
                   <p className="text-foreground mb-4">
                     Jeśli preferujesz pełną kontrolę nad oprogramowaniem i chcesz dostosować system do specyficznych procesów wewnętrznych swojej organizacji, model licencyjny jest dla Ciebie. Nabycie licencji daje Ci swobodę integracji z istniejącą infrastrukturą IT.
                   </p>
-                  <div className="space-y-2 mb-6">
+                  <div className="space-y-2 mb-2">
                     <div className="flex items-center text-sm text-foreground">
                       <Check className="text-green-500 mr-2 w-4 h-4" />
                       <span>Pełna kontrola systemu</span>
@@ -142,31 +198,109 @@ export default function MetodyPlatnosciPage() {
                   </div>
                 </div>
                 <svg
-                  width="1203"
-                  height="753"
-                  viewBox="0 0 1203 753"
+                  width="600"
+                  height="300"
+                  viewBox="0 0 600 300"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className="-mb-32 mt-4 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
+                  className="-mb-32 mt-2 max-h-64 w-full px-4 select-none drop-shadow-[0_0_28px_rgba(0,0,0,.1)] group-hover:translate-y-[-10px] transition-all duration-300"
                 >
-                  <g clipPath="url(#path2)">
-                    <path d="M0 52H1202V741C1202 747.627 1196.63 753 1190 753H12C5.37258 753 0 747.627 0 741V52Z" className="fill-[#E5E5E5]"></path>
-                    <path fillRule="evenodd" clipRule="evenodd" d="M0 12C0 5.37258 5.37258 0 12 0H1190C1196.63 0 1202 5.37258 1202 12V52H0L0 12Z" className="fill-[#E5E5E5]"></path>
-                    <path fillRule="evenodd" clipRule="evenodd" d="M1.06738 12C1.06738 5.92487 5.99225 1 12.0674 1H1189.93C1196.01 1 1200.93 5.92487 1200.93 12V51H1.06738V12Z" className="fill-white"></path>
-                    <circle cx="27" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
-                    <circle cx="47" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
-                    <circle cx="67" cy="25" r="6" className="fill-[#E5E5E5]"></circle>
-                    <path d="M286 17C286 13.6863 288.686 11 292 11H946C949.314 11 952 13.6863 952 17V35C952 38.3137 949.314 41 946 41H292C288.686 41 286 38.3137 286 35V17Z" fill="#F5F5F5"></path>
-                    <image href="/modules/ksiegowosc.png" width="1200" height="700" x="1" y="52" preserveAspectRatio="xMidYMid slice" clipPath="url(#roundedBottom2)"></image>
+                  {/* Local Infrastructure */}
+                  <g className="opacity-90">
+                    {/* Server rack */}
+                    <rect x="80" y="60" width="120" height="160" rx="8" fill="#2C3E50" stroke="#34495E" strokeWidth="2"/>
+
+                    {/* Server units in rack */}
+                    <rect x="90" y="70" width="100" height="25" rx="2" fill="#3498DB" opacity="0.8"/>
+                    <rect x="90" y="100" width="100" height="25" rx="2" fill="#3498DB" opacity="0.6"/>
+                    <rect x="90" y="130" width="100" height="25" rx="2" fill="#3498DB" opacity="0.4"/>
+                    <rect x="90" y="160" width="100" height="25" rx="2" fill="#3498DB" opacity="0.2"/>
+                    <rect x="90" y="190" width="100" height="25" rx="2" fill="#3498DB" opacity="0.1"/>
+
+                    {/* Database server */}
+                    <rect x="90" y="220" width="100" height="25" rx="2" fill="#E74C3C" opacity="0.8"/>
+
+                    {/* Network cables */}
+                    <path d="M200 95 L250 95" stroke="#7F8C8D" strokeWidth="3" fill="none"/>
+                    <path d="M200 125 L250 125" stroke="#7F8C8D" strokeWidth="3" fill="none"/>
+                    <path d="M200 155 L250 155" stroke="#7F8C8D" strokeWidth="3" fill="none"/>
+                    <path d="M200 185 L250 185" stroke="#7F8C8D" strokeWidth="3" fill="none"/>
+                    <path d="M200 215 L250 215" stroke="#7F8C8D" strokeWidth="3" fill="none"/>
+                    <path d="M200 235 L250 235" stroke="#7F8C8D" strokeWidth="3" fill="none"/>
                   </g>
-                  <defs>
-                    <clipPath id="path2">
-                      <rect width="1203" height="753" fill="white"></rect>
-                    </clipPath>
-                    <clipPath id="roundedBottom2">
-                      <path d="M1 52H1201V741C1201 747.075 1196.08 752 1190 752H12C5.92486 752 1 747.075 1 741V52Z" fill="white"></path>
-                    </clipPath>
-                  </defs>
+
+                  {/* Local Network */}
+                  <g>
+                    {/* Network switch */}
+                    <rect x="250" y="80" width="60" height="40" rx="4" fill="#34495E" stroke="#2C3E50" strokeWidth="2"/>
+                    <rect x="255" y="85" width="50" height="30" fill="#3498DB" opacity="0.3"/>
+
+                    {/* Local computers */}
+                    <rect x="350" y="100" width="50" height="30" rx="3" fill="#F5F5F5" stroke="#9E9E9E" strokeWidth="2"/>
+                    <rect x="358" y="104" width="34" height="22" fill="#3498DB" opacity="0.3"/>
+                    <rect x="365" y="130" width="20" height="2" fill="#9E9E9E"/>
+
+                    <rect x="420" y="100" width="50" height="30" rx="3" fill="#F5F5F5" stroke="#9E9E9E" strokeWidth="2"/>
+                    <rect x="428" y="104" width="34" height="22" fill="#3498DB" opacity="0.3"/>
+                    <rect x="435" y="130" width="20" height="2" fill="#9E9E9E"/>
+
+                    {/* Admin workstation */}
+                    <rect x="380" y="150" width="60" height="40" rx="4" fill="#F5F5F5" stroke="#9E9E9E" strokeWidth="2"/>
+                    <rect x="388" y="154" width="44" height="32" fill="#3498DB" opacity="0.3"/>
+                    <rect x="395" y="190" width="30" height="2" fill="#9E9E9E"/>
+                    <rect x="390" y="195" width="40" height="2" fill="#9E9E9E"/>
+                  </g>
+
+                  {/* Connection lines */}
+                  <g stroke="#3498DB" strokeWidth="2" fill="none" opacity="0.6">
+                    <path d="M310 100 L350 115" strokeDasharray="3,3">
+                      <animate attributeName="stroke-dashoffset" values="0;6" dur="3s" repeatCount="indefinite"/>
+                    </path>
+                    <path d="M310 100 L420 115" strokeDasharray="3,3">
+                      <animate attributeName="stroke-dashoffset" values="0;6" dur="3s" repeatCount="indefinite" begin="1s"/>
+                    </path>
+                    <path d="M310 100 L380 170" strokeDasharray="3,3">
+                      <animate attributeName="stroke-dashoffset" values="0;6" dur="3s" repeatCount="indefinite" begin="2s"/>
+                    </path>
+                  </g>
+
+                  {/* Labels */}
+                  <text x="140" y="50" textAnchor="middle" className="fill-gray-700 text-sm font-medium">Lokalna infrastruktura</text>
+                  <text x="280" y="75" textAnchor="middle" className="fill-gray-700 text-xs">Switch</text>
+                  <text x="375" y="90" textAnchor="middle" className="fill-gray-700 text-xs">Komputer 1</text>
+                  <text x="445" y="90" textAnchor="middle" className="fill-gray-700 text-xs">Komputer 2</text>
+                  <text x="410" y="145" textAnchor="middle" className="fill-gray-700 text-xs">Admin</text>
+
+                  {/* Control icons */}
+                  <g>
+                    {/* Control panel */}
+                    <rect x="40" y="150" width="30" height="20" rx="3" fill="#8E44AD" opacity="0.8"/>
+                    <rect x="45" y="155" width="20" height="10" fill="white" opacity="0.3"/>
+
+                    {/* Customization tools */}
+                    <g transform="translate(40, 180)">
+                      <rect x="0" y="0" width="15" height="15" rx="2" fill="#F39C12" opacity="0.8"/>
+                      <path d="M3 3 L12 12 M12 3 L3 12" stroke="white" strokeWidth="1" fill="none"/>
+                    </g>
+
+                    {/* Integration icon */}
+                    <g transform="translate(40, 210)">
+                      <rect x="0" y="0" width="15" height="15" rx="2" fill="#27AE60" opacity="0.8"/>
+                      <path d="M3 7 L7 11 L12 2" stroke="white" strokeWidth="1.5" fill="none"/>
+                    </g>
+
+                    {/* Ownership icon */}
+                    <g transform="translate(40, 240)">
+                      <rect x="0" y="0" width="15" height="15" rx="2" fill="#E67E22" opacity="0.8"/>
+                      <path d="M7 3 L7 12 M3 7 L11 7" stroke="white" strokeWidth="1" fill="none"/>
+                    </g>
+                  </g>
+
+                  {/* Control labels */}
+                  <text x="55" y="145" textAnchor="middle" className="fill-gray-600 text-xs">Kontrola</text>
+                  <text x="55" y="175" textAnchor="middle" className="fill-gray-600 text-xs">Dostosowanie</text>
+                  <text x="55" y="205" textAnchor="middle" className="fill-gray-600 text-xs">Integracja</text>
+                  <text x="55" y="235" textAnchor="middle" className="fill-gray-600 text-xs">Własność</text>
                 </svg>
                 <div className="absolute bottom-0 left-0 h-32 w-full bg-gradient-to-t from-neutral-50 pointer-events-none"></div>
               </div>
