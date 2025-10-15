@@ -31,9 +31,15 @@ export default function VideoBasic({
     setIsPlaying(false);
   };
 
+  const aspectRatio = width / height;
+
   return (
-    <div className={`relative border rounded-lg shadow-lg max-w-screen-lg ${className}`}>
-      <div className="relative cursor-pointer group rounded-md p-0 ring-1 ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10 backdrop-blur-md">
+    <div className={`relative border rounded-lg shadow-lg max-w-screen-lg w-full ${className}`}>
+      <div
+        className="relative cursor-pointer group rounded-md p-0 ring-1 ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10 backdrop-blur-md"
+        style={{ aspectRatio: aspectRatio }}
+      >
+        {/* Ukryte wideo do preload metadanych */}
         {!isPlaying ? (
           <>
             <Image
@@ -41,11 +47,11 @@ export default function VideoBasic({
               src={thumbnailSrc}
               width={width}
               height={height}
-              className="transition-all duration-200 ease-out group-hover:brightness-[0.8] rounded-md border"
+              className="relative z-10 transition-all duration-200 ease-out group-hover:brightness-[0.8] rounded-md border w-full h-full object-cover"
               priority
             />
             <div
-              className="absolute inset-0 flex items-center justify-center group-hover:scale-100 scale-[0.9] transition-all duration-200 ease-out rounded-2xl"
+              className="absolute inset-0 z-20 flex items-center justify-center group-hover:scale-100 scale-[0.9] transition-all duration-200 ease-out rounded-2xl"
               onClick={handlePlay}
             >
               <div className="z-30 bg-primary/10 flex items-center justify-center rounded-full backdrop-blur-md size-28">
@@ -57,7 +63,7 @@ export default function VideoBasic({
           </>
         ) : (
           <video
-            className="w-full h-auto rounded-md border"
+            className="w-full h-full rounded-md border object-cover"
             controls
             autoPlay
             onEnded={handleVideoEnd}

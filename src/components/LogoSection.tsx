@@ -1,20 +1,23 @@
+/* eslint-disable @next/next/no-img-element */
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 
 interface Company {
   name: string;
   logo: string;
+  height: number;
+  url: string;
 }
 
 const LogoSection: React.FC = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const partners: Company[] = [
-    { name: 'SIBS', logo: '/partners/sibs.svg' },
-    { name: 'vlayer', logo: '/partners/vlayer.svg' },
-    { name: 'QSecurities', logo: '/partners/qsecurities.png' },
+    { name: 'QSecurities', url: 'https://qsecurities.com/pl/', logo: '/partners/qsecurities.png', height: 40 },
+    { name: 'SIBS', url: 'https://www.sibs.com/', logo: '/partners/sibs.png', height: 25 },
+    { name: 'vlayer', url: 'https://www.vlayer.xyz/', logo: '/partners/vlayer.png', height: 34 },
+    { name: 'vouch', url: 'https://www.getvouch.io/', logo: '/partners/vouch.svg', height: 25 },
   ];
 
   // Create 4 sets for continuous scrolling
@@ -23,14 +26,14 @@ const LogoSection: React.FC = () => {
 
   return (
     <section id="logos" className="bg-gray-50 transition-colors duration-300">
-      <div className="container mx-auto px-4 md:px-8 py-24">
+      <div className="container mx-auto px-4 md:px-8 py-24 pb-16">
         <h3 className="text-center text-sm font-semibold text-gray-500 transition-colors duration-300">
           NASI PARTNERZY
         </h3>
 
         <div className="relative mt-6">
           <div
-            className={`group flex overflow-hidden p-2 gap-4 flex-row max-w-full ${
+            className={`group flex overflow-hidden p-2 gap-10 flex-row max-w-full ${
               isPaused ? '[animation-play-state:paused]' : ''
             }`}
             onMouseEnter={() => setIsPaused(true)}
@@ -39,7 +42,7 @@ const LogoSection: React.FC = () => {
             {logoSets.map((logos, setIndex) => (
               <div
                 key={setIndex}
-                className="flex shrink-0 justify-around gap-4 animate-marquee flex-row"
+                className="flex shrink-0 justify-around gap-10 animate-marquee flex-row items-center"
                 style={{
                   animationPlayState: isPaused ? 'paused' : 'running'
                 }}
@@ -47,20 +50,16 @@ const LogoSection: React.FC = () => {
                 {logos.map((logo: Company, index: number) => (
                   <div
                     key={`${setIndex}-${index}`}
-                    className="group/logo cursor-pointer transition-all duration-300 hover:scale-110"
+                    className="group/logo cursor-pointer transition-all duration-300 hover:scale-105"
                     onClick={() => {
-                      console.log(`Clicked on ${logo.name}`);
-                      // Add click handler logic here
+                      window.open(logo.url, '_blank');
                     }}
                   >
-                    <Image
+                    <img
                       src={logo.logo}
                       alt={`${logo.name} logo`}
-                      width={112}
-                      height={40}
-                      className="h-10 w-28 grayscale opacity-30
-                               group-hover/logo:opacity-60 group-hover/logo:grayscale-0
-                               transition-all duration-300 ease-in-out"
+                      className="object-contain grayscale-100 hover:grayscale-0 opacity-30 hover:opacity-80 transition-all duration-300 ease-in-out"
+                      style={{ height: `${logo.height}px`, width: 'auto' }}
                       loading="lazy"
                       decoding="async"
                     />

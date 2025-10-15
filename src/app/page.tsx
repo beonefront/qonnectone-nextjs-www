@@ -3,7 +3,7 @@ import CtaSection from "@/components/CTASection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
-// import LogoSection from "@/components/LogoSection";
+import LogoSection from "@/components/LogoSection";
 import Navigation from "@/components/Navigation";
 import PricingSection from "@/components/PricingSection";
 import ProblemComparisonSection from "@/components/ProblemComparisonSection";
@@ -17,7 +17,7 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       {/* <VideoSection /> */}
-      {/* <LogoSection /> */}
+      <LogoSection />
       <ProblemSection />
       <SolutionSection />
       <ProblemComparisonSection />
