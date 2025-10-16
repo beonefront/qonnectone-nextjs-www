@@ -36,7 +36,7 @@ export default function VideoBasic({
   return (
     <div className={`relative border rounded-lg shadow-lg max-w-screen-lg w-full ${className}`}>
       <div
-        className="relative cursor-pointer group rounded-md p-0 ring-1 ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10 backdrop-blur-md"
+        className="relative cursor-pointer group rounded-md p-0 ring-1 ring-slate-200/50 dark:bg-gray-900/70 dark:ring-white/10 backdrop-blur-md w-full"
         style={{ aspectRatio: aspectRatio }}
       >
         {/* Ukryte wideo do preload metadanych */}

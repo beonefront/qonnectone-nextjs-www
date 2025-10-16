@@ -60,18 +60,16 @@ export default function HeroSection() {
             </div>
           </FadeIn>
 
-          <FadeIn delay={0.5}>
-            <div className="relative mx-auto flex w-full items-center justify-center">
-              <VideoBasic
-                thumbnailSrc="/admin-panel.png"
-                videoSrc="/video/system.mov"
-                alt="Hero Video"
-                width={3546}
-                height={1808}
-                className="mt-16"
-              />
-            </div>
-          </FadeIn>
+          <div className="relative mx-auto flex w-full items-center justify-center">
+            <VideoBasic
+              thumbnailSrc="/admin-panel.png"
+              videoSrc="/video/system.mov"
+              alt="Hero Video"
+              width={3546}
+              height={1808}
+              className="mt-16"
+            />
+          </div>
 
           <FadeIn delay={0.6}>
             <p className="mt-5 text-sm text-foreground/70">Odblokuj potencjał biznesowy i zarabiaj więcej</p>
