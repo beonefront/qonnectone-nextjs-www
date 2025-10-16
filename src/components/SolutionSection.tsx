@@ -1,17 +1,21 @@
+import FadeIn from './animations/FadeIn';
+
 export default function SolutionSection() {
   return (
     <section id="solution">
       <div className="bg-neutral-100">
         <div className="relative container mx-auto px-4 py-16 max-w-7xl">
-          <div className="text-center space-y-4 pb-6 mx-auto">
-            <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">FUNKCJE I MODUŁY</h2>
-            <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
-              Narzędzia dla firm i nadzorowanych instytucji finansowych
-            </h3>
-            <p className="mt-6 text-lg leading-8 text-slate-600 max-w-2xl mx-auto">
-              Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne zyski.
-            </p>
-          </div>
+          <FadeIn>
+            <div className="text-center space-y-4 pb-6 mx-auto">
+              <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">FUNKCJE I MODUŁY</h2>
+              <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
+                Narzędzia dla firm i nadzorowanych instytucji finansowych
+              </h3>
+              <p className="mt-6 text-lg leading-8 text-slate-600 max-w-2xl mx-auto">
+                Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne zyski.
+              </p>
+            </div>
+          </FadeIn>
 
           <div className="mx-auto mt-16 grid max-w-sm grid-cols-1 gap-6 text-gray-500 md:max-w-3xl md:grid-cols-2 xl:grid-rows-2 md:grid-rows-3 xl:max-w-6xl xl:auto-rows-fr xl:grid-cols-3">
             {/* Card 1 */}

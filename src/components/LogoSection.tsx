@@ -2,6 +2,7 @@
 'use client';
 
 import { useState } from 'react';
+import FadeIn from './animations/FadeIn';
 
 interface Company {
   name: string;
@@ -27,9 +28,11 @@ const LogoSection: React.FC = () => {
   return (
     <section id="logos" className="bg-gray-50 transition-colors duration-300">
       <div className="container mx-auto px-4 md:px-8 py-24 pb-16">
-        <h3 className="text-center text-sm font-semibold text-gray-500 transition-colors duration-300">
-          NASI PARTNERZY
-        </h3>
+        <FadeIn>
+          <h3 className="text-center text-sm font-semibold text-gray-500 transition-colors duration-300">
+            NASI PARTNERZY
+          </h3>
+        </FadeIn>
 
         <div className="relative mt-6">
           <div
