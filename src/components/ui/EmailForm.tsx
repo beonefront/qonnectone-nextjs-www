@@ -95,7 +95,7 @@ export const EmailForm: React.FC<EmailFormProps> = ({ onSubmit, onClose }) => {
           <label htmlFor="acceptTerms" className="text-sm text-gray-600 leading-relaxed">
             Akceptuję{' '}
             <a
-              href="/regulamin"
+              href="/polityka-prywatnosci"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 underline"
@@ -106,7 +106,16 @@ export const EmailForm: React.FC<EmailFormProps> = ({ onSubmit, onClose }) => {
           </label>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-3 pt-2">
+        <div className="flex flex-col sm:flex-row justify-end gap-3 pt-2">
+          <button
+            type="button"
+            onClick={onClose}
+            disabled={isLoading}
+            className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors disabled:opacity-50 cursor-pointer"
+          >
+            Anuluj
+          </button>
+
           <button
             type="submit"
             disabled={isLoading}
@@ -135,15 +144,6 @@ export const EmailForm: React.FC<EmailFormProps> = ({ onSubmit, onClose }) => {
             ) : (
               'Wyślij'
             )}
-          </button>
-
-          <button
-            type="button"
-            onClick={onClose}
-            disabled={isLoading}
-            className="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 border border-gray-300 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors disabled:opacity-50"
-          >
-            Anuluj
           </button>
         </div>
       </form>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Montserrat, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { CookieConsent } from "@/components/CookieConsent";
+import { AnalyticsProvider } from "@/components/AnalyticsProvider";
 
 const geistSans = Geist({
   subsets: ["latin"],
@@ -67,6 +69,8 @@ export default function RootLayout({
       </head>
       <body className="antialiased font-sans">
         {children}
+        <CookieConsent />
+        <AnalyticsProvider />
       </body>
     </html>
   );

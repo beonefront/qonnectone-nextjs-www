@@ -127,14 +127,12 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-slate-800/50">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-slate-500 text-xs">
-              © 2025 Qonnect. Wszystkie prawa zastrzeżone.
+              © {new Date().getFullYear()} Qonnect. Wszystkie prawa zastrzeżone.
             </p>
             <div className="flex space-x-6">
               {[
-                { href: "#", label: "Regulamin" },
-                { href: "#", label: "Polityka prywatności" },
-                { href: "#", label: "Cookies" },
-                { href: "#", label: "RODO" }
+                { href: "/polityka-prywatnosci", label: "Polityka prywatności" },
+                { href: "/cookies", label: "Polityka cookies" },
               ].map((link) => (
                 <Link
                   key={link.label}
