@@ -23,8 +23,28 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Qonnect",
-  description: "Your Complete API Platform",
+  title: "QonnectOne",
+  description: "Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych.",
+  openGraph: {
+    title: "QonnectOne",
+    description: "Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "QonnectOne Logo",
+      },
+    ],
+    locale: "pl_PL",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "QonnectOne",
+    description: "Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych.",
+    images: ["/logo.png"],
+  },
 };
 
 export default function RootLayout({
@@ -38,6 +58,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="QonnectOne" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
       </head>
       <body className="antialiased font-sans">
         {children}
