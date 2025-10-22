@@ -40,12 +40,25 @@ export const EmailForm: React.FC<EmailFormProps> = ({ onSubmit, onClose }) => {
     setIsLoading(true);
 
     try {
-      // Symulacja wysyłania danych
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send email');
+      }
+
       onSubmit(email);
       setEmail('');
       onClose();
-    } catch {
+    } catch (error) {
+      console.error('Email sending error:', error);
       setError('Wystąpił błąd podczas wysyłania. Spróbuj ponownie.');
     } finally {
       setIsLoading(false);
