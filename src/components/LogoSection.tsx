@@ -15,7 +15,8 @@ const LogoSection: React.FC = () => {
   const [isPaused, setIsPaused] = useState(false);
 
   const partners: Company[] = [
-    { name: 'QSecurities', url: 'https://qsecurities.com/pl/', logo: '/partners/qsecurities.png', height: 40 },
+    { name: 'QSecurities', url: 'https://qsecurities.com/pl/', logo: '/partners/qsecurities.png', height: 38 },
+    { name: 'easysend', url: 'https://www.easysend.pl/', logo: '/partners/easysend.png', height: 35 },
     { name: 'SIBS', url: 'https://www.sibs.com/', logo: '/partners/sibs.png', height: 25 },
     { name: 'vlayer', url: 'https://www.vlayer.xyz/', logo: '/partners/vlayer.png', height: 34 },
     { name: 'vouch', url: 'https://www.getvouch.io/', logo: '/partners/vouch.svg', height: 25 },
@@ -23,7 +24,7 @@ const LogoSection: React.FC = () => {
 
   // Create 4 sets for continuous scrolling
   const allLogos = [...partners];
-  const logoSets = Array(4).fill(allLogos);
+  const logoSets = Array(5).fill(allLogos);
 
   return (
     <section id="logos" className="bg-gray-50 transition-colors duration-300">
