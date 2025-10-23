@@ -91,7 +91,7 @@ export async function POST(request: NextRequest) {
           <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px; border-radius: 10px 10px 0 0; text-align: center;">
             <h1 style="color: white; margin: 0; font-size: 28px;">✨ Dziękujemy!</h1>
             <p style="color: white; margin: 10px 0 0 0; font-size: 16px; opacity: 0.9;">
-              Twoja wiadomość została otrzymana
+              Twoja wiadomość została dostarczona
             </p>
           </div>
 
@@ -108,8 +108,6 @@ export async function POST(request: NextRequest) {
             <div style="background: white; padding: 25px; border-radius: 8px; border-left: 4px solid #28a745; margin: 25px 0;">
               <h3 style="color: #28a745; margin: 0 0 15px 0; font-size: 18px;">🚀 Co dalej?</h3>
               <ul style="margin: 0; padding-left: 20px; color: #495057;">
-                <li>Nasz zespół przeanalizuje Twoje potrzeby</li>
-                <li>Przygotujemy spersonalizowaną ofertę</li>
                 <li>Skontaktujemy się z Tobą w ciągu 24 godzin</li>
                 <li>Zaproponujemy spotkanie, aby omówić szczegóły</li>
               </ul>

@@ -30,7 +30,7 @@ export default function ModulyPage() {
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">i moduły</span>
               {/* <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">QonnectOne</span> */}
               {/* <div className="flex justify-center mt-2">
-                <Image src="/logo-black.png" alt="QonnectOne" width={270 * 1.2} height={46 * 1.2} />
+                <Image src="/logo.png" alt="QonnectOne" width={270 * 1.2} height={46 * 1.2} />
               </div> */}
             </h1>
             <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">

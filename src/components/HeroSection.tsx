@@ -40,7 +40,7 @@ export default function HeroSection() {
             <div className="flex w-full max-w-2xl flex-col space-y-4 overflow-hidden pt-8">
               <h1 className="text-center text-4xl justify-center flex font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
                 {/* <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">QonnectOne</span> */}
-                <Image src="/logo-black.png" alt="QonnectOne" width={270 * 1.25} height={46 * 1.25} />
+                <Image src="/logo.png" alt="QonnectOne" width={270 * 1.25} height={46 * 1.25} />
               </h1>
               <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
                 QonnectOne to rewolucyjna platforma, która wspiera firmy i instytucje nadzorowane w kluczowych obszarach operacyjnych oraz regulacyjnych. Ponadto zapewnia zgodność z przepisami, umożliwia natychmiastowe płatności oraz systematyczne zwiększanie zysków.
