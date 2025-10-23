@@ -5,8 +5,31 @@ import ContactCTA from '@/components/ContactCTA';
 import { Zap, Shield, DollarSign, Scale, Building, AlertTriangle, Clock, TrendingDown, MoreHorizontal, CheckCircle, Users, Lock, ChevronDown } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Business Cases | Qonnect',
-  description: 'Poznaj przypadki użycia i sukcesy naszych klientów',
+  title: 'Business Cases | QonnectOne',
+  description: 'Poznaj przypadki użycia i sukcesy naszych klientów - kompleksowe rozwiązania płatnicze dla instytucji finansowych.',
+  openGraph: {
+    title: 'Business Cases | QonnectOne',
+    description: 'Poznaj przypadki użycia i sukcesy naszych klientów - kompleksowe rozwiązania płatnicze dla instytucji finansowych.',
+    images: [
+      {
+        url: 'https://qonnectone.com/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'QonnectOne Business Cases',
+      },
+    ],
+    locale: 'pl_PL',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Business Cases | QonnectOne',
+    description: 'Poznaj przypadki użycia i sukcesy naszych klientów - kompleksowe rozwiązania płatnicze dla instytucji finansowych.',
+    images: ['https://qonnectone.com/logo.png'],
+  },
+  alternates: {
+    canonical: 'https://qonnectone.com/business-cases'
+  }
 };
 
 export default function BusinessCasesPage() {

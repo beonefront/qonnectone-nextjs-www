@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     description: "Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych.",
     images: [
       {
-        url: "/logo.png",
+        url: "https://qonnectone.com/logo.png",
         width: 1200,
         height: 630,
         alt: "QonnectOne Logo",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "QonnectOne",
     description: "Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych.",
-    images: ["/logo.png"],
+    images: ["https://qonnectone.com/logo.png"],
   },
 };
 
@@ -55,13 +55,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${montserrat.variable}`}>
+    <html lang="pl" className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${montserrat.variable}`}>
       <head>
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="apple-mobile-web-app-title" content="QonnectOne" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link rel="preload" href="/logo.png" as="image" />
+        <link rel="preload" href="/favicon/favicon.ico" as="image" />
+        {/* Font Awesome removed - use Lucide React icons instead */}
         {/* Favicon from realfavicongenerator.net */}
         <link rel="manifest" href="/favicon/manifest.json" />
         <link rel="shortcut icon" href="/favicon/favicon.ico" />
