@@ -22,7 +22,7 @@ export default function ONasPage() {
               <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">O nas</span>
             </h1>
             <p className="mx-auto max-w-3xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
-              Jesteśmy QonnectOne, kompleksową platformą płatniczą SaaS, która rewolucjonizuje rynek, umożliwiając firmom niefinansowym i operatorom płatniczym natychmiastowe wzbogacenie swojej oferty o usługi bankowości wbudowanej (Embedded Banking).
+              Jesteśmy QonnectOne, dostawcą rozwiązania technologicznego w formule SaaS, które rewolucjonizuje rynek, umożliwiając firmom niefinansowym i operatorom płatniczym natychmiastowe wzbogacenie swojej oferty o usługi bankowości wbudowanej (Embedded Banking).
             </p>
             <p className="mx-auto max-w-4xl text-center text-base leading-6 text-foreground/60 sm:text-base sm:leading-7 text-balance">
               Działamy jako centralny hub, integrujący aplikacje klienckie z zewnętrznymi dostawcami usług finansowych (jak np. spersonalizowane karty płatnicze, rachunki rozliczeniowe czy usługi pożyczkowe), a wszystko to za pośrednictwem intuicyjnego API. Nasz model SaaS gwarantuje minimalizację kosztów początkowych i szybkie wdrożenie, jednocześnie zapewniając pełną skalowalność i zgodność z regulacjami (m.in. RODO, DORA, MICA).

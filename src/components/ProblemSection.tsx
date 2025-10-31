@@ -21,7 +21,7 @@ export default function ProblemSection() {
                     <ShieldCheck className="w-6 h-6 text-primary" />
                   </div>
                   <h3 className="text-xl font-semibold">Spełniaj wymogi instytucji nadzorowanych</h3>
-                  <p className="text-muted-foreground">Zapewnij zgodność z regulacjami KNF i UE bez zbędnej papierologii oraz opóźnień.</p>
+                  <p className="text-muted-foreground">Zapewnij zgodność z wymogami prawnymi i regulacyjnymi w sprawny sposób, bez opóźnień.</p>
                 </div>
               </div>
             </div>
@@ -44,8 +44,8 @@ export default function ProblemSection() {
                   <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
                     <CreditCard className="w-6 h-6 text-primary" />
                   </div>
-                  <h3 className="text-xl font-semibold">Realizuj wszystkie metody płatności</h3>
-                  <p className="text-muted-foreground">Obsługuj karty, przelewy, pay‑by‑link, BLIK i portfele w jednym, spójnym procesie.</p>
+                  <h3 className="text-xl font-semibold">Wszystkie metody płatności w jednym miejscu</h3>
+                  <p className="text-muted-foreground">Połącz różne metody płatności w jednym miejscu - od kart i przelewów po BLIK i portfele cyfrowe.</p>
                 </div>
               </div>
             </div>

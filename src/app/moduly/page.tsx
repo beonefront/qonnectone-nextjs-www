@@ -34,7 +34,7 @@ export default function ModulyPage() {
               </div> */}
             </h1>
             <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
-              Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne zyski.
+              Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne oszczędności oraz maksymalizuje potencjał przychodów.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ export default function ModulyPage() {
               <div className="mb-4">
                 <h3 className="font-semibold mb-2 text-primary">Moduł transakcyjny</h3>
                 <p className="text-foreground text-sm mb-4">
-                  Kompleksowa obsługa wszystkich metod płatności w jednym miejscu
+                  Integracja i zarządzanie wszystkimi metodami płatności
                 </p>
               </div>
 
@@ -202,8 +202,8 @@ export default function ModulyPage() {
             <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 rounded-2xl hover:bg-orange-500/10 transition-all duration-500 ease-out">
               <div>
                 <h3 className="font-semibold mb-2 text-primary">Moduł Krypto</h3>
-                <p className="text-foreground">
-                  Umożliwia kompleksową obsługę operacji związanych z aktywami cyfrowymi. Pozwala na bezpieczne depozyty i wypłaty kryptowalut, sprawną wymianę walut cyfrowych oraz generowanie i zarządzanie portfelami dla klientów.
+                <p className="text-foreground">s
+                  Umożliwia kompleksową integrację informacji o aktywach cyfrowych, w tym portfelach klientów i transakcjach w systemach zewnętrznych.
                 </p>
               </div>
               <svg
@@ -279,7 +279,7 @@ export default function ModulyPage() {
               <div>
                 <h3 className="font-semibold mb-2 text-primary">Moduł księgowy</h3>
                 <p className="text-foreground">
-                  Umożliwia kompleksowe rozliczenia transakcji, ułatwia integrację z zewnętrznymi systemami księgowymi oraz generowanie szczegółowych raportów finansowych. Usprawnia zarządzanie finansami i ułatwia audyty.
+                  Umożliwia kompleksowe rozliczenia transakcji we współpracy z certyfikowanymi operatorami, ułatwia integrację z zewnętrznymi systemami księgowymi oraz generowanie szczegółowych raportów finansowych. Usprawnia zarządzanie finansami i ułatwia audyty.
                 </p>
               </div>
               <svg

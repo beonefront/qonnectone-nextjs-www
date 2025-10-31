@@ -57,7 +57,7 @@ export default function BusinessCasesPage() {
               </div>
               <div className="flex items-center text-left bg-green-50 border border-green-100 rounded-lg p-4 hover:bg-green-100 transition-colors">
                 <Shield className="w-6 h-6 text-green-600 mr-3 flex-shrink-0" />
-                <span className="font-inter text-gray-700">Minimalizacja ryzyka</span>
+                <span className="font-inter text-gray-700">Minimalizacja ryzyka awarii i błędów</span>
               </div>
               <div className="flex items-center text-left bg-yellow-50 border border-yellow-100 rounded-lg p-4 hover:bg-yellow-100 transition-colors">
                 <DollarSign className="w-6 h-6 text-yellow-600 mr-3 flex-shrink-0" />
@@ -105,10 +105,10 @@ export default function BusinessCasesPage() {
                 <div className="lg:col-span-1">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">Wprowadzenie</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Krajowa Instytucja Płatnicza (KIP) X, posiadająca podstawową licencję na realizację przekazu płatniczego,
+                    Krajowa Instytucja Płatnicza (KIP) X, posiadająca zezwolenie na świadczenie usług przekazu pieniężnego,
                     stoi przed strategiczną decyzją o rozszerzeniu swojej oferty o nowe, kluczowe produkty, takie jak karty płatnicze
                     i konta IBAN dla swoich klientów. Tradycyjna ścieżka rozwoju wiąże się z szeregiem wyzwań, w tym długotrwałym
-                    procesem regulacyjnym, znacznymi inwestycjami finansowymi i operacyjnymi.
+                    procesem licencyjnym, znacznymi inwestycjami finansowymi i operacyjnymi.
                   </p>
                 </div>
 
@@ -119,8 +119,8 @@ export default function BusinessCasesPage() {
                     <div className="flex items-start">
                       <AlertTriangle className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-gray-900">Długotrwały proces licencyjny</div>
-                        <div className="text-sm text-gray-600">Złożenie wniosku do KNF o rozszerzenie licencji na nowe produkty to proces trwający kilkanaście miesięcy, wymagający przygotowania obszernej dokumentacji i spełnienia rygorystycznych wymogów regulacyjnych.</div>
+                        <div className="font-medium text-gray-900">Złożony proces licencyjny</div>
+                        <div className="text-sm text-gray-600">Złożenie wniosku o rozszerzenie licencji na nowe produkty to proces wymagający przygotowania obszernej dokumentacji i weryfikacji zgodności z określonymi regulacjami. Czas jego realizacji może wynosić nawet kilkanaście miesięcy.</div>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -163,7 +163,7 @@ export default function BusinessCasesPage() {
                       <Users className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
                       <div>
                         <div className="font-medium text-gray-900">Partnerstwo z licencjonowaną instytucją</div>
-                        <div className="text-sm text-gray-600">QonnectOne współpracuje z instytucjami nadzorowanymi, które posiadają już niezbędne, rozszerzone licencje na obsługę kart i kont IBAN.</div>
+                        <div className="text-sm text-gray-600">QonnectOne współpracuje z instytucjami nadzorowanymi, które posiadają już niezbędne, rozszerzone licencje na obsługę kart i kont IBAN. Współpraca odbywa się w modelu Payments as a Service (PaaS) w formule outsourcingu.</div>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -259,9 +259,8 @@ export default function BusinessCasesPage() {
                 <div className="lg:col-span-1">
                   <h3 className="text-lg font-semibold text-gray-900 mb-3">Wprowadzenie</h3>
                   <p className="text-gray-600 leading-relaxed">
-                    Instytucja Nadzorowana Y, posiadająca podstawową licencję na obrót kryptoaktywami, stoi w obliczu znaczących zmian
-                    regulacyjnych związanych z wejściem w życie dyrektywy MiCA (Markets in Crypto-Assets Regulation).
-                    Nowe przepisy wymagają uzyskania rozszerzonych licencji dla kontynuacji działalności, co stwarza poważne wyzwania
+                    VASP, wpisany do rejestru, stoi w obliczu znaczących zmian regulacyjnych związanych z wejściem w życie MiCA (Markets in Crypto-Assets Regulation).
+                    Nowe przepisy wymagają uzyskania odpowiednich zezwoleń dla kontynuacji działalności, co stwarza poważne wyzwania
                     operacyjne i strategiczne dla przedsiębiorstwa.
                   </p>
                 </div>
@@ -273,8 +272,8 @@ export default function BusinessCasesPage() {
                     <div className="flex items-start">
                       <Clock className="w-5 h-5 text-red-500 mt-0.5 mr-2 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-gray-900">Długotrwały proces licencyjny MiCA</div>
-                        <div className="text-sm text-gray-600">Procedura uzyskania licencji zgodnej z MiCA może trwać od 6 do 18 miesięcy, wymagając kompleksowej dokumentacji i spełnienia rygorystycznych wymogów kapitałowych oraz operacyjnych.</div>
+                        <div className="font-medium text-gray-900">Złożony proces licencyjny MiCA</div>
+                        <div className="text-sm text-gray-600">Uzyskanie wymaganego zezwolenia to złożony proces, który może potrwać od kilku do kilkunastu miesięcy, wymagający kompleksowej dokumentacji i spełnienia określonych wymogów kapitałowych oraz operacyjnych.</div>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -316,8 +315,8 @@ export default function BusinessCasesPage() {
                     <div className="flex items-start">
                       <Shield className="w-5 h-5 text-green-500 mt-0.5 mr-2 flex-shrink-0" />
                       <div>
-                        <div className="font-medium text-gray-900">Partnerstwo z licencjonowanym depozytariuszem</div>
-                        <div className="text-sm text-gray-600">Współpraca z instytucjami posiadającymi już licencje MiCA, umożliwiająca działalność pod ich parasolem regulacyjnym.</div>
+                        <div className="font-medium text-gray-900">Partnerstwo z uprawnionym CASP</div>
+                        <div className="text-sm text-gray-600">Współpraca z CASP posiadającymi już licencję zgodnie z MiCA, umożliwiająca działalność pod ich parasolem regulacyjnym (formuła outsourcingu).</div>
                       </div>
                     </div>
                     <div className="flex items-start">

@@ -12,7 +12,7 @@ export default function SolutionSection() {
                 Narzędzia dla firm i nadzorowanych instytucji finansowych
               </h3>
               <p className="mt-6 text-lg leading-8 text-slate-600 max-w-2xl mx-auto">
-                Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne zyski.
+                Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne oszczędności oraz maksymalizuje potencjał przychodów.
               </p>
             </div>
           </FadeIn>
@@ -69,7 +69,7 @@ export default function SolutionSection() {
               <div>
                 <h3 className="font-semibold mb-2 text-primary">Moduł transakcyjny</h3>
                 <p className="text-foreground">
-                  Zapewnia płynną i bezpieczną komunikację z dostawcami płatniczymi oraz efektywne przetwarzanie transakcji finansowych. Skraca czas operacji i zwiększa niezawodność procesów płatniczych.
+                  Zapewnia płynną i bezpieczną komunikację z dostawcami usług płatniczych oraz automatyzuje ich obsługę w jednym miejscu. Skraca czas operacji i zwiększa niezawodność procesów płatniczych.
                 </p>
               </div>
               <svg
@@ -167,7 +167,7 @@ export default function SolutionSection() {
               <div>
                 <h3 className="font-semibold mb-2 text-primary">Moduł Krypto</h3>
                 <p className="text-foreground">
-                Umożliwia kompleksową obsługę operacji związanych z aktywami cyfrowymi. Pozwala na bezpieczne depozyty i wypłaty kryptowalut, sprawną wymianę walut cyfrowych oraz generowanie i zarządzanie portfelami dla klientów.
+                Umożliwia kompleksową integrację informacji o aktywach cyfrowych, w tym portfelach klientów i transakcjach w systemach zewnętrznych.
                 </p>
               </div>
               <div className="inset-0 bg-white/5 [mask-image:linear-gradient(to_bottom,white,transparent)] absolute -bottom-full">

@@ -115,7 +115,7 @@ export default function ProblemComparisonSection() {
                 </li>
                 <li className="flex items-start">
                   <Check className="w-4 h-4 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span className="text-green-700 text-sm leading-relaxed">Większe przychody</span>
+                  <span className="text-green-700 text-sm leading-relaxed">Maksymalizacja potencjału przychodów</span>
                 </li>
               </ul>
               </div>

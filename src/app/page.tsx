@@ -13,17 +13,17 @@ import SolutionSection from "@/components/SolutionSection";
 // import VideoSection from "@/components/VideoSection";
 
 export const metadata: Metadata = {
-  title: 'QonnectOne - Kompleksowe rozwiązania płatnicze',
-  description: 'Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych. Bezpieczeństwo, innowacyjność i zgodność z regulacjami.',
+  title: 'QonnectOne - Rozwiązania do integracji płatności',
+  description: 'Kompleksowe rozwiązania do integracji płatności dla i nadzorowanych instytucji finansowych. Bezpieczeństwo, innowacyjność i zgodność z regulacjami.',
   openGraph: {
-    title: 'QonnectOne - Kompleksowe rozwiązania płatnicze',
-    description: 'Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych. Bezpieczeństwo, innowacyjność i zgodność z regulacjami.',
+    title: 'QonnectOne - Rozwiązania do integracji płatności',
+    description: 'Kompleksowe rozwiązania do integracji płatności dla i nadzorowanych instytucji finansowych. Bezpieczeństwo, innowacyjność i zgodność z regulacjami.',
     images: [
       {
         url: 'https://qonnectone.com/logo.png',
         width: 1200,
         height: 630,
-        alt: 'QonnectOne - Kompleksowe rozwiązania płatnicze',
+        alt: 'QonnectOne - Rozwiązania do integracji płatności',
       },
     ],
     locale: 'pl_PL',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'QonnectOne - Kompleksowe rozwiązania płatnicze',
-    description: 'Kompleksowe rozwiązania płatnicze dla firm i nadzorowanych instytucji finansowych. Bezpieczeństwo, innowacyjność i zgodność z regulacjami.',
+    title: 'QonnectOne - Rozwiązania do integracji płatności',
+    description: 'Kompleksowe rozwiązania do integracji płatności dla i nadzorowanych instytucji finansowych. Bezpieczeństwo, innowacyjność i zgodność z regulacjami.',
     images: ['https://qonnectone.com/logo.png'],
   },
   alternates: {
