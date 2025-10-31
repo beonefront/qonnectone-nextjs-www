@@ -1,11 +1,13 @@
 'use client';
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { Link, usePathname } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navigation() {
+  const t = useTranslations('navigation');
   const pathname = usePathname();
 
   // Scroll state to nudge the bar up when user scrolls
@@ -38,12 +40,12 @@ export default function Navigation() {
   }, [isMobileMenuOpen]);
 
   const navItems = useMemo(() => [
-    { href: "/", label: "Strona główna" },
-    { href: "/moduly", label: "Moduły" },
-    { href: "/modele-wspolpracy", label: "Modele współpracy" },
-    { href: "/business-cases", label: "Business Cases" },
-    { href: "/o-nas", label: "O nas" },
-  ], []);
+    { href: "/", label: t("home") },
+    { href: "/moduly", label: t("modules") },
+    { href: "/modele-wspolpracy", label: t("cooperationModels") },
+    { href: "/business-cases", label: t("businessCases") },
+    { href: "/o-nas", label: t("about") },
+  ], [t]);
 
   const isActive = (href: string) => {
     if (href === "/") return pathname === "/";
@@ -125,6 +127,12 @@ export default function Navigation() {
                 </span>
               </Link>
             ))}
+
+            {/* Language Switcher */}
+            <div className="h-6 w-px bg-gray-300/50 mx-1" />
+            <div className="px-2">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
 
@@ -145,30 +153,33 @@ export default function Navigation() {
               </Link>
             </div>
 
-            {/* Hamburger Menu Button */}
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="relative z-50 flex h-10 w-10 items-center justify-center rounded-lg bg-white/60 transition-colors hover:bg-white/80"
-              aria-label="Toggle menu"
-            >
-              <div className="flex flex-col space-y-1">
-                <span
-                  className={`block h-0.5 w-5 bg-gray-900 transition-all duration-300 ${
-                    isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''
-                  }`}
-                />
-                <span
-                  className={`block h-0.5 w-5 bg-gray-900 transition-all duration-300 ${
-                    isMobileMenuOpen ? 'opacity-0' : ''
-                  }`}
-                />
-                <span
-                  className={`block h-0.5 w-5 bg-gray-900 transition-all duration-300 ${
-                    isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''
-                  }`}
-                />
-              </div>
-            </button>
+            <div className="flex items-center gap-3">
+              <LanguageSwitcher />
+              {/* Hamburger Menu Button */}
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="relative z-50 flex h-10 w-10 items-center justify-center rounded-lg bg-white/60 transition-colors hover:bg-white/80"
+                aria-label="Toggle menu"
+              >
+                <div className="flex flex-col space-y-1">
+                  <span
+                    className={`block h-0.5 w-5 bg-gray-900 transition-all duration-300 ${
+                      isMobileMenuOpen ? 'rotate-45 translate-y-1.5' : ''
+                    }`}
+                  />
+                  <span
+                    className={`block h-0.5 w-5 bg-gray-900 transition-all duration-300 ${
+                      isMobileMenuOpen ? 'opacity-0' : ''
+                    }`}
+                  />
+                  <span
+                    className={`block h-0.5 w-5 bg-gray-900 transition-all duration-300 ${
+                      isMobileMenuOpen ? '-rotate-45 -translate-y-1.5' : ''
+                    }`}
+                  />
+                </div>
+              </button>
+            </div>
           </div>
         </div>
       </nav>

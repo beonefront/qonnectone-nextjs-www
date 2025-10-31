@@ -1,0 +1,338 @@
+{
+  "common": {
+    "contact": "Skontaktuj się z nami",
+    "learnMore": "Poznaj więcej",
+    "readMore": "Czytaj więcej"
+  },
+  "navigation": {
+    "home": "Strona główna",
+    "modules": "Moduły",
+    "cooperationModels": "Modele współpracy",
+    "businessCases": "Business Cases",
+    "about": "O nas"
+  },
+  "hero": {
+    "newBadge": "📣 Nowość",
+    "newBadgeText": "Poznaj moduły QonnectOne",
+    "description": "QonnectOne to rewolucyjne rozwiązanie technologiczne, które wspiera firmy i instytucje nadzorowane w kluczowych obszarach operacyjnych oraz regulacyjnych. Ponadto zapewnia zgodność z przepisami, zapewnia obsługę natychmiastowych płatności oraz wspiera systematyczny rozwój przychodów dzięki automatyzacji procesów.",
+    "unlock": "Odblokuj potencjał biznesowy i zarabiaj więcej"
+  },
+  "footer": {
+    "description": "Kompleksowe rozwiązania dla integracji płatności firm i nadzorowanych instytucji finansowych. Bezpieczeństwo, innowacyjność i zgodność z regulacjami.",
+    "solutions": "Rozwiązania",
+    "company": "Firma",
+    "support": "Wsparcie",
+    "systemModules": "Moduły systemu",
+    "cooperationModels": "Modele współpracy",
+    "about": "O nas",
+    "businessCases": "Business Cases",
+    "contact": "Kontakt",
+    "copyright": "© {year} Qonnect. Wszystkie prawa zastrzeżone.",
+    "privacyPolicy": "Polityka prywatności",
+    "cookiePolicy": "Polityka cookies"
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "3 KLUCZOWE PYTANIA",
+    "q1": {
+      "question": "1. Dlaczego właśnie Qonnect?",
+      "answer": "Ponieważ oferta dopasowana jest do konkretnych wymagań Twojej firmy. Nasi programiści są w stanie szybko dopasować fragmenty aplikacji do twojej branży oraz indywidualnych wymagań."
+    },
+    "q2": {
+      "question": "2. Dlaczego korzystać z zewnętrznego partnera zamiast własnego systemu?",
+      "answer": "Prace nad dedykowanym systemem informatycznym to koszty oraz ryzyko. Z nami jesteś w stanie zrobić to w rekordowym czasie, wyprzedzić konkurencję i korzystać z benefitów dopracowanego już systemu."
+    },
+    "q3": {
+      "question": "3. Czym jest aplikacja SAAS?",
+      "answer": "Aplikacja SaaS (Software as a Service) to oprogramowanie udostępniane użytkownikom przez Internet w modelu abonamentowym. Nie wymaga instalacji na komputerze – korzystasz z niego przez przeglądarkę. Wszystkie dane i aktualizacje są utrzymywane w chmurze przez dostawcę usługi."
+    },
+    "caseStudies": {
+      "text": "Poznaj <b>realne historie naszych klientów</b> i zobacz, jak dzięki <b>naszej platformie</b> zwiększyli efektywność i zyski.",
+      "button": "Przeczytaj Bussiness Cases"
+    }
+  },
+  "cta": {
+    "title": "Gotowy, aby zacząć?",
+    "subtitle": "Skontaktuj się z nami już dziś.",
+    "scheduleButton": "Umów spotkanie",
+    "emailButton": "Zostaw swój e-mail",
+    "thankYouAlert": "Dziękujemy! Skontaktujemy się z Tobą na adres: {email}"
+  },
+  "problem": {
+    "sectionTitle": "Problem",
+    "sectionSubtitle": "Problemy, które rozwiązujemy",
+    "card1": {
+      "title": "Spełniaj wymogi instytucji nadzorowanych",
+      "description": "Zapewnij zgodność z wymogami prawnymi i regulacyjnymi w sprawny sposób, bez opóźnień."
+    },
+    "card2": {
+      "title": "Pozyskuj partnerów i korzystaj z ich licencji i produktów",
+      "description": "Szybko łącz się z partnerami i wykorzystuj ich licencje, API oraz produkty w jednym ekosystemie."
+    },
+    "card3": {
+      "title": "Wszystkie metody płatności w jednym miejscu",
+      "description": "Połącz różne metody płatności w jednym miejscu - od kart i przelewów po BLIK i portfele cyfrowe."
+    },
+    "card4": {
+      "title": "Automatyzuj proces obsługi klientów",
+      "description": "Usprawnij onboarding, KYC, rozliczenia i komunikację, redukując ręczną pracę zespołu."
+    },
+    "card5": {
+      "title": "Korzystaj ze wsparcia IT",
+      "description": "Korzystaj z pomocy ekspertów przy integracjach, bezpieczeństwie oraz utrzymaniu systemów."
+    },
+    "card6": {
+      "title": "Przeciwdziałaj praniu brudnych pieniędzy (AML)",
+      "description": "Monitoruj transakcje, wykrywaj ryzyka i spełniaj obowiązki raportowe zgodnie z AML/CFT."
+    }
+  },
+  "solution": {
+    "sectionTitle": "FUNKCJE I MODUŁY",
+    "sectionSubtitle": "Narzędzia dla firm i nadzorowanych instytucji finansowych",
+    "sectionDescription": "Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne oszczędności oraz maksymalizuje potencjał przychodów.",
+    "aml": {
+      "title": "Moduł AML / KYC",
+      "description": "Automatyzuje procesy weryfikacji tożsamości klientów i monitoruje transakcje pod kątem podejrzanych aktywności. Zapewnia pełną zgodność z przepisami AML/CFT, minimalizując ryzyko prawne i operacyjne."
+    },
+    "transaction": {
+      "title": "Moduł transakcyjny",
+      "description": "Zapewnia płynną i bezpieczną komunikację z dostawcami usług płatniczych oraz automatyzuje ich obsługę w jednym miejscu. Skraca czas operacji i zwiększa niezawodność procesów płatniczych."
+    },
+    "crypto": {
+      "title": "Moduł Krypto",
+      "description": "Umożliwia kompleksową integrację informacji o aktywach cyfrowych, w tym portfelach klientów i transakcjach w systemach zewnętrznych."
+    },
+    "reporting": {
+      "title": "Moduł raportowania",
+      "description": "Automatyzuje przygotowanie i wysyłkę raportów do regulatorów (np. KNF, NBP, GIIF). Zapewnia kompletność, walidację danych i śledzenie statusów, ograniczając obciążenie zespołów."
+    },
+    "accounting": {
+      "title": "Moduł księgowy",
+      "description": "Umożliwia kompleksowe rozliczenia transakcji we współpracy z certyfikowanymi operatorami, ułatwia integrację z zewnętrznymi systemami księgowymi oraz generowanie szczegółowych raportów finansowych."
+    },
+    "admin": {
+      "title": "Moduł administracyjny",
+      "description": "Ułatwia intuicyjne zarządzanie bazą danych klientów fizycznych i instytucjonalnych. Umożliwia efektywną rejestrację, segmentację, obsługę zgłoszeń oraz personalizację komunikacji."
+    },
+    "backoffice": {
+      "title": "Moduł Backoffice",
+      "description": "To centralny punkt kontroli i zarządzania wszystkimi aspektami platformy. Zapewnia pełną transparentność operacyjną, monitoring transakcji, ułatwia zarządzanie użytkownikami i wszelkie usprawnienia."
+    },
+    "api": {
+      "title": "Moduł API / Plugin",
+      "description": "Oferujemy elastyczne narzędzia integracyjne, które umożliwiają szybkie i bezproblemowe połączenie z dowolną platformą e-commerce naszych Partnerów za pomocą zaawansowanego REST API oraz dedykowanych pluginów."
+    }
+  },
+  "problemComparison": {
+    "sectionTitle": "BŁYSKAWICZNA AKCEPTACJA PROCESÓW",
+    "sectionSubtitle": "Problemy i brak popularnych metod ich rozwiązania",
+    "problemsTitle": "PROBLEMY",
+    "solutionsTitle": "ROZWIĄZANIE",
+    "problems": {
+      "p1": "Rygorystyczne obowiązki regulacyjne",
+      "p2": "Brak wymaganych licencji",
+      "p3": "Brak popularnych metod płatności",
+      "p4": "Ręczna obsługa klientów",
+      "p5": "Wysokie koszty rozbudowy systemu IT",
+      "p6": "Wdrożenie systemu trwa nawet 18 miesięcy",
+      "p7": "Konkurencja ze strony gigantów",
+      "p8": "Brak przestrzeni na dynamiczny rozwój",
+      "p9": "Utrata potencjalnych klientów"
+    },
+    "solutions": {
+      "s1": "Spełnienie wymogi prawnych",
+      "s2": "Korzystanie z licencji partnerów",
+      "s3": "Jednoczesna integracja wielu systemów płatniczych",
+      "s4": "Automatyzacja obsługi klientów",
+      "s5": "Niskie koszty operacyjne przy pełnym wsparciu technicznym",
+      "s6": "Wdrożenie trwa 2-3 miesiące",
+      "s7": "Znacznie większa konkurencyjność",
+      "s8": "Skalowalność i rozwój",
+      "s9": "Maksymalizacja potencjału przychodów"
+    },
+    "ctaTitle": "Zajmujemy się tym, co dla Ciebie jest przeszkodą",
+    "ctaDescription": "– utrzymaniem systemów, formalnościami licencyjnymi, integracją IT oraz technicznym wsparciem rozwoju Twojego biznesu."
+  },
+  "pricing": {
+    "sectionTitle": "MODELE WSPÓŁPRACY",
+    "sectionSubtitle": "Sprawdź dostępne modele współpracy",
+    "saas": {
+      "title": "Model SaaS",
+      "description": "Wygodne rozwiązanie w chmurze"
+    },
+    "license": {
+      "title": "Model Licencyjny",
+      "description": "Pełna kontrola nad systemem"
+    }
+  },
+  "businessCasesPage": {
+    "hero": {
+      "title1": "Business",
+      "title2": "Cases",
+      "description": "Odkryj, jak nasze rozwiązania pomagają w przyspieszeniu wzrostu, minimalizacji ryzyka i spełnieniu wymogów regulacyjnych w różnych sektorach.",
+      "benefit1": "Szybkie wejście na rynek",
+      "benefit2": "Minimalizacja ryzyka awarii i błędów",
+      "benefit3": "Redukcja kosztów operacyjnych",
+      "benefit4": "Pełna zgodność z regulacjami"
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "O nas",
+      "description": "Jesteśmy QonnectOne, dostawcą rozwiązania technologicznego w formule SaaS, które rewolucjonizuje rynek, umożliwiając firmom niefinansowym i operatorom płatniczym natychmiastowe wzbogacenie swojej oferty o usługi bankowości wbudowanej (Embedded Banking).",
+      "subtitle": "Działamy jako centralny hub, integrujący aplikacje klienckie z zewnętrznymi dostawcami usług finansowych (jak np. spersonalizowane karty płatnicze, rachunki rozliczeniowe czy usługi pożyczkowe), a wszystko to za pośrednictwem intuicyjnego API. Nasz model SaaS gwarantuje minimalizację kosztów początkowych i szybkie wdrożenie, jednocześnie zapewniając pełną skalowalność i zgodność z regulacjami (m.in. RODO, DORA, MICA)."
+    },
+    "mission": {
+      "title": "Misja",
+      "description": "Naszą misją jest przekształcanie złożoności w przewagę konkurencyjną dla naszych klientów. Dążymy do tego, by każde przedsiębiorstwo mogło \"wbudować\" płynne, natywne i bezpieczne doświadczenia finansowe bezpośrednio w swoje produkty i platformy, zwiększając tym samym lojalność klientów i generując nowe strumienie przychodów. Dostarczamy infrastrukturę (silnik BaaS), która pozwala firmom niefinansowym angażować większą część klientów, bez konieczności polegania na zewnętrznych portalach bankowych tworzyć bardziej \"płynne, wciągające doświadczenie użytkownika\" (\"seamless, sticky user experience\"), zwiększając zaangażowanie i lojalność klientów."
+    },
+    "vision": {
+      "title": "Wizja",
+      "description": "Właśnie dlatego dostarczamy systemy, które nie tylko gwarantują pełną zgodność z prawem, ale także optymalizują procesy operacyjne, redukują ryzyko i otwierają nowe możliwości rozwoju. Dzięki naszemu doświadczeniu i głębokiej znajomości branży, stajemy się niezawodnym partnerem w budowaniu bezpiecznej i efektywnej przyszłości cyfrowej."
+    },
+    "business": {
+      "title": "Rozumiemy biznes naszych Partnerów",
+      "subtitle": "Dlatego zapewniamy bezpieczeństwo, skalowalność i rozwój",
+      "p1": "Wybierając QonnectOne, zyskujesz nie tylko zaawansowane technologie, ale przede wszystkim partnera, który aktywnie wspiera Twój biznes w dynamicznym środowisku regulacyjnym. Zapewniamy, że Twoje operacje będą zawsze zgodne z najwyższymi standardami bezpieczeństwa i przepisów.",
+      "p2": "Dzięki integracji z QonnectOne nie tracisz cennego czasu i zasobów na budowanie nowego systemu od podstaw, rozszerzanie istniejących rozwiązań czy skomplikowany proces pozyskiwania licencji.",
+      "p3": "Nie musisz też szukać i integrować się z wieloma dostawcami, co generuje dodatkowe koszty i złożoność. Integrując się z nami, otrzymujesz kompletne narzędzie informatyczne oraz możliwość skorzystania z licencji naszych Partnerów.",
+      "highlight": "Po Twojej stronie pozostaje to, co najważniejsze: rozwój biznesu."
+    }
+  },
+  "modulesPage": {
+    "hero": {
+      "title1": "Funkcje",
+      "title2": "i moduły",
+      "description": "Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne oszczędności oraz maksymalizuje potencjał przychodów.",
+      "subtitle": "Kompleksowe narzędzia dla nadzorowanych instytucji finansowych"
+    },
+    "section": {
+      "title": "FUNKCJE I MODUŁY QONNECTONE",
+      "subtitle": "Zaawansowane moduły systemu",
+      "description": "Kompleksowe rozwiązania dostosowane do potrzeb instytucji finansowych"
+    },
+    "transaction": {
+      "title": "Moduł transakcyjny",
+      "description": "Integracja i zarządzanie wszystkimi metodami płatności",
+      "cards": "Karty",
+      "cardsDesc": "Visa, MC, Amex",
+      "blik": "BLIK",
+      "blikDesc": "Płatności mobilne",
+      "transfers": "Przelewy",
+      "transfersDesc": "Banki PL",
+      "wallets": "Portfele",
+      "walletsDesc": "Apple Pay, PayPal",
+      "installments": "Raty",
+      "installmentsDesc": "BNPL, 0-24m",
+      "crypto": "Crypto",
+      "cryptoDesc": "BTC, ETH, SOL"
+    },
+    "aml": {
+      "title": "Moduł AML",
+      "description": "Automatyzacja compliance i przeciwdziałania praniu pieniędzy"
+    },
+    "cryptoModule": {
+      "title": "Moduł Krypto",
+      "description": "Pełna obsługa aktywów cyfrowych i blockchain"
+    },
+    "reporting": {
+      "title": "Raportowanie",
+      "description": "Automatyczne raporty do regulatorów"
+    },
+    "accounting": {
+      "title": "Moduł księgowy",
+      "description": "Kompleksowe rozliczenia i integracje księgowe"
+    },
+    "admin": {
+      "title": "Moduł administracyjny",
+      "description": "Zarządzanie klientami i dokumentacją"
+    },
+    "backoffice": {
+      "title": "Backoffice",
+      "description": "Centralny panel kontroli i zarządzania"
+    },
+    "apiPlugin": {
+      "title": "Moduł API / Plugin",
+      "description": "Elastyczne integracje z e-commerce"
+    },
+    "cta": {
+      "title": "Gotowy, aby zacząć?",
+      "subtitle": "Sprawdź dostępne modele współpracy",
+      "saasTitle": "Model SaaS",
+      "saasDesc": "Wygodne rozwiązanie w chmurze",
+      "licenseTitle": "Model Licencyjny",
+      "licenseDesc": "Pełna kontrola nad systemem",
+      "contactButton": "Skontaktuj się z nami"
+    }
+  },
+  "cooperationPage": {
+    "hero": {
+      "title1": "Modele",
+      "title2": "współpracy",
+      "description": "Doskonale rozumiemy, że każdy biznes ma unikalne potrzeby i strategię rozwoju. Właśnie dlatego oferujemy nasze innowacyjne systemy informatyczne w elastycznych modelach, które idealnie dopasowują się do Twoich wymagań, infrastruktury oraz budżetu."
+    },
+    "models": {
+      "sectionTitle": "MODELE WSPÓŁPRACY",
+      "sectionSubtitle": "Wybierz model dla Twojego biznesu",
+      "sectionDescription": "Elastyczne modele dostosowane do Twoich potrzeb i budżetu",
+      "saas": {
+        "badge": "Najpopularniejszy",
+        "title": "Model SaaS",
+        "description": "Postaw na wygodę i efektywność, korzystając z naszych rozwiązań jako usługi w chmurze. Eliminuje potrzebę instalacji, utrzymania i zarządzania infrastrukturą IT. My zajmiemy się bezpieczeństwem, dostępnością i wydajnością.",
+        "feature1": "Brak instalacji i utrzymania",
+        "feature2": "Bezpieczeństwo w chmurze",
+        "feature3": "Wysoka dostępność",
+        "feature4": "Koncentracja na biznesie"
+      },
+      "license": {
+        "title": "Model Licencyjny",
+        "description": "Jeśli preferujesz pełną kontrolę nad oprogramowaniem i chcesz dostosować system do specyficznych procesów wewnętrznych swojej organizacji, model licencyjny jest dla Ciebie. Nabycie licencji daje Ci swobodę integracji z istniejącą infrastrukturą IT.",
+        "feature1": "Pełna kontrola systemu",
+        "feature2": "Dostosowanie do procesów",
+        "feature3": "Integracja z IT",
+        "feature4": "Własność licencji"
+      }
+    },
+    "cta": {
+      "title": "Gotowy, aby zacząć?",
+      "subtitle": "Skontaktuj się z nami",
+      "description": "Nie jesteś pewien, który model jest najlepszy dla Twojego biznesu? Nasz zespół ekspertów pomoże Ci wybrać optymalne rozwiązanie.",
+      "call": "Zadzwoń",
+      "write": "Napisz",
+      "schedule": "Umów spotkanie",
+      "consultation": "Bezpłatna konsultacja",
+      "scheduleButton": "Umów spotkanie"
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "QonnectOne - Rozwiązania do integracji płatności",
+      "description": "Kompleksowe rozwiązania do integracji płatności dla i nadzorowanych instytucji finansowych. Bezpieczeństwo, innowacyjność i zgodność z regulacjami."
+    },
+    "cooperationModels": {
+      "title": "Modele współpracy | QonnectOne",
+      "description": "Poznaj nasze modele współpracy - SaaS i licencyjny. Wybierz rozwiązanie dopasowane do potrzeb Twojej firmy."
+    },
+    "about": {
+      "title": "O nas | QonnectOne",
+      "description": "Poznaj historię i misję firmy QonnectOne - integrujemy biznes płatniczy za pomocą multi-funkcjonalnej platformy dla instytucji nadzorowanych."
+    },
+    "modules": {
+      "title": "Funkcje i moduły | QonnectOne",
+      "description": "Poznaj zaawansowane moduły systemu QonnectOne - kompleksowe rozwiązania dla instytucji finansowych."
+    },
+    "businessCases": {
+      "title": "Business Cases | QonnectOne",
+      "description": "Poznaj przypadki użycia i sukcesy naszych klientów - kompleksowe rozwiązania płatnicze dla instytucji finansowych."
+    },
+    "cookies": {
+      "title": "Polityka Cookies | QonnectOne",
+      "description": "Polityka plików cookies serwisu QonnectOne."
+    },
+    "privacy": {
+      "title": "Polityka Prywatności | QonnectOne",
+      "description": "Polityka prywatności serwisu QonnectOne."
+    }
+  }
+}
+

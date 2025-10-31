@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { Modal } from './ui/Modal';
 import { EmailForm } from './ui/EmailForm';
 import { Mail, Calendar } from 'lucide-react';
@@ -9,12 +10,12 @@ import FadeIn from './animations/FadeIn';
 import StaggerContainer from './animations/StaggerContainer';
 
 const CTASection = () => {
+  const t = useTranslations('cta');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleEmailSubmit = (email: string) => {
     console.log('Email submitted:', email);
-    // Tutaj możesz dodać logikę wysyłania emaila do API
-    alert(`Dziękujemy! Skontaktujemy się z Tobą na adres: ${email}`);
+    alert(t('thankYouAlert', { email }));
   };
 
   return (
@@ -24,10 +25,10 @@ const CTASection = () => {
           <FadeIn>
             <div className="text-center space-y-4 pb-6 mx-auto">
               <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">
-                Gotowy, aby zacząć?
+                {t('title')}
               </h2>
               <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
-                Skontaktuj się z nami już dziś.
+                {t('subtitle')}
               </h3>
             </div>
           </FadeIn>
@@ -38,7 +39,7 @@ const CTASection = () => {
                 className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2 cursor-pointer"
               >
                 <Calendar className="h-6 w-6" />
-                Umów spotkanie
+                {t('scheduleButton')}
               </button>
             </div>
             <div>
@@ -47,7 +48,7 @@ const CTASection = () => {
                 className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-white border border-input shadow-xs hover:bg-gray-50 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-foreground flex gap-2 cursor-pointer"
               >
                 <Mail className="h-6 w-6" />
-                Zostaw swój e-mail
+                {t('emailButton')}
               </button>
             </div>
           </StaggerContainer>

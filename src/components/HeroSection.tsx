@@ -1,6 +1,7 @@
 'use client';
 
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 import { ChevronRight, Phone } from "lucide-react";
@@ -10,6 +11,8 @@ import VideoBasic from "./VideoBasic";
 import FadeIn from "./animations/FadeIn";
 
 export default function HeroSection() {
+  const t = useTranslations('hero');
+  const tCommon = useTranslations('common');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleEmailSubmit = (email: string) => {
@@ -29,9 +32,9 @@ export default function HeroSection() {
               className="flex w-auto items-center space-x-2 rounded-full bg-primary/20 px-2 py-1 ring-1 ring-accent whitespace-pre"
             >
               <div className="w-fit rounded-full bg-accent px-2 py-0.5 text-center text-xs font-medium text-primary sm:text-sm">
-                📣 Nowość
+                {t('newBadge')}
               </div>
-              <p className="text-xs font-medium text-primary sm:text-sm">Poznaj moduły QonnectOne</p>
+              <p className="text-xs font-medium text-primary sm:text-sm">{t('newBadgeText')}</p>
               <ChevronRight className="ml-1 w-3 h-3 text-primary" />
             </Link>
           </FadeIn>
@@ -43,7 +46,7 @@ export default function HeroSection() {
                 <Image src="/logo.png" alt="QonnectOne" width={270 * 1.25} height={46 * 1.25} />
               </h1>
               <p className="mx-auto max-w-2xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
-                QonnectOne to rewolucyjne rozwiązanie technologiczne, które wspiera firmy i instytucje nadzorowane w kluczowych obszarach operacyjnych oraz regulacyjnych. Ponadto zapewnia zgodność z przepisami, zapewnia obsługę natychmiastowych płatności oraz wspiera systematyczny rozwój przychodów dzięki automatyzacji procesów.
+                {t('description')}
               </p>
             </div>
           </FadeIn>
@@ -55,7 +58,7 @@ export default function HeroSection() {
                 className="items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-primary/50 focus-visible:ring-[3px] bg-primary shadow-xs hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full sm:w-auto text-background flex gap-2 cursor-pointer"
               >
                 <Phone className="size-4" />
-                Skontaktuj się z nami
+                {tCommon('contact')}
               </button>
             </div>
           </FadeIn>
@@ -72,7 +75,7 @@ export default function HeroSection() {
           </div>
 
           <FadeIn delay={0.6}>
-            <p className="mt-5 text-sm text-foreground/70">Odblokuj potencjał biznesowy i zarabiaj więcej</p>
+            <p className="mt-5 text-sm text-foreground/70">{t('unlock')}</p>
           </FadeIn>
         </div>
       </section>

@@ -1,9 +1,13 @@
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { PrimaryButton } from "./ui/PrimaryButton";
 import FadeIn from "./animations/FadeIn";
 import StaggerContainer from "./animations/StaggerContainer";
 
 export default function PricingSection() {
+  const t = useTranslations('pricing');
+  const tCommon = useTranslations('common');
+
   return (
     <section id="pricing">
       <div className="bg-primary/5">
@@ -11,10 +15,10 @@ export default function PricingSection() {
           <FadeIn>
             <div className="text-center space-y-4 pb-12 mx-auto">
               <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">
-                MODELE WSPÓŁPRACY
+                {t('sectionTitle')}
               </h2>
               <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
-                Sprawdź dostępne modele współpracy
+                {t('sectionSubtitle')}
               </h3>
             </div>
           </FadeIn>
@@ -27,13 +31,13 @@ export default function PricingSection() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
                     <span className="text-3xl">☁️</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Model SaaS</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{t('saas.title')}</h3>
                   <p className="text-muted-foreground">
-                    Wygodne rozwiązanie w chmurze
+                    {t('saas.description')}
                   </p>
                 </div>
                 <Link href="/modele-wspolpracy" className="mt-4 inline-block">
-                  <PrimaryButton>Czytaj więcej</PrimaryButton>
+                  <PrimaryButton>{tCommon('readMore')}</PrimaryButton>
                 </Link>
               </div>
             </div>
@@ -45,13 +49,13 @@ export default function PricingSection() {
                   <div className="inline-flex items-center justify-center w-16 h-16 bg-purple-100 rounded-full mb-4">
                     <span className="text-3xl">🏢</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-3">Model Licencyjny</h3>
+                  <h3 className="text-xl font-semibold text-foreground mb-3">{t('license.title')}</h3>
                   <p className="text-muted-foreground">
-                    Pełna kontrola nad systemem
+                    {t('license.description')}
                   </p>
                 </div>
                 <Link href="/modele-wspolpracy" className="mt-4 inline-block">
-                  <PrimaryButton>Czytaj więcej</PrimaryButton>
+                  <PrimaryButton>{tCommon('readMore')}</PrimaryButton>
                 </Link>
               </div>
             </div>
