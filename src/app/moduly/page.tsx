@@ -202,7 +202,7 @@ export default function ModulyPage() {
             <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 rounded-2xl hover:bg-orange-500/10 transition-all duration-500 ease-out">
               <div>
                 <h3 className="font-semibold mb-2 text-primary">Moduł Krypto</h3>
-                <p className="text-foreground">s
+                <p className="text-foreground">
                   Umożliwia kompleksową integrację informacji o aktywach cyfrowych, w tym portfelach klientów i transakcjach w systemach zewnętrznych.
                 </p>
               </div>
