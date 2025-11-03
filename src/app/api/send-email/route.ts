@@ -125,7 +125,7 @@ export async function POST(request: NextRequest) {
             <div style="text-align: center; margin-top: 30px;">
               <p style="color: #6c757d; font-size: 14px; margin: 0;">
                 <strong>Potrzebujesz pilnej pomocy?</strong><br>
-                Napisz do nas: <a href="mailto:office@qonnectone.com" style="color: #667eea;">office@qonnectone.com</a>
+                Napisz do nas: <a href="mailto:hello@qonnectone.com" style="color: #667eea;">hello@qonnectone.com</a>
               </p>
             </div>
           </div>
