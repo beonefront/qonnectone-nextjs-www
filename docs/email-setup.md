@@ -30,7 +30,7 @@ Create a `.env.local` file in your project root with:
 RESEND_API_KEY=your_actual_api_key_here
 
 # Email Configuration
-INTERNAL_EMAIL=office@qonnectone.com
+INTERNAL_EMAIL=hello@qonnectone.com
 ```
 
 ### 4. Verify Domain (Optional but Recommended)
@@ -43,13 +43,13 @@ INTERNAL_EMAIL=office@qonnectone.com
 1. Start your development server: `npm run dev`
 2. Go to your website and try submitting the email form
 3. Check that you receive:
-   - Internal notification at office@qonnectone.com
+   - Internal notification at hello@qonnectone.com
    - Confirmation email at the submitted address
 
 ## Email Templates
 
 ### Internal Notification Email
-- **To**: office@qonnectone.com
+- **To**: hello@qonnectone.com
 - **Subject**: "Nowy lead - formularz kontaktowy"
 - **Content**: Professional template with lead details and next steps
 

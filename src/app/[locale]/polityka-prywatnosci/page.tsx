@@ -129,7 +129,7 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
                     <Mail className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">E-mail:</p>
-                      <p className="text-foreground/70">office@qonnectone.com</p>
+                      <p className="text-foreground/70">hello@qonnectone.com</p>
                     </div>
                   </div>
                   <div className="flex items-start">
@@ -162,7 +162,7 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
                 </p>
                 <div className="space-y-2">
                   <p className="text-foreground/70">
-                    <strong>E-mail:</strong> office@qonnectone.com
+                    <strong>E-mail:</strong> hello@qonnectone.com
                   </p>
                   <p className="text-foreground/70">
                     <strong>Adres:</strong> ul. Lęborska 3B, 80-386 Gdańsk
@@ -359,7 +359,7 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
               <div className="bg-muted/30 border border-border rounded-xl p-6">
                 <h3 className="text-lg font-semibold text-foreground mb-4">Wycofanie zgody</h3>
                 <p className="text-foreground/70 leading-relaxed mb-4">
-                  Jeżeli Dane osobowe przetwarzamy na podstawie zgody – Użytkownik ma prawo do jej wycofania w dowolnym momencie. Wycofać zgodę można przesyłając do Spółki e-mail na adres: <strong>office@qonnectone.com</strong>
+                  Jeżeli Dane osobowe przetwarzamy na podstawie zgody – Użytkownik ma prawo do jej wycofania w dowolnym momencie. Wycofać zgodę można przesyłając do Spółki e-mail na adres: <strong>hello@qonnectone.com</strong>
                 </p>
                 <p className="text-foreground/70 leading-relaxed">
                   Cofnięcie zgody pozostaje bez wpływu na zgodność z prawem przetwarzania Danych przed momentem cofnięcia zgody ani w zakresie, w jakim Dane osobowe są przetwarzane w oparciu o inną podstawę przetwarzania danych.

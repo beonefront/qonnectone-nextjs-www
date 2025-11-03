@@ -256,7 +256,7 @@ export default function CookiesPage() {
                     <Mail className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Mailowo na adres:</p>
-                      <p className="text-foreground/70">office@qonnectone.com</p>
+                      <p className="text-foreground/70">hello@qonnectone.com</p>
                     </div>
                   </div>
                 </div>

@@ -145,7 +145,7 @@ export default function ModeleWspolpracyClient() {
               <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 text-center">
                 <Mail className="h-8 w-8 mx-auto mb-4 text-primary" />
                 <h3 className="font-semibold mb-2 text-foreground">{t('cta.write')}</h3>
-                <p className="text-slate-600 text-sm">office@qonnectone.com</p>
+                <p className="text-slate-600 text-sm">hello@qonnectone.com</p>
               </div>
               <div className="bg-white/80 backdrop-blur-sm rounded-lg p-6 text-center">
                 <Calendar className="h-8 w-8 mx-auto mb-4 text-primary" />

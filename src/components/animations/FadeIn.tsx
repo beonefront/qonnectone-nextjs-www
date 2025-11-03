@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { ReactNode } from 'react';
+import { useLocale } from 'next-intl';
 
 interface FadeInProps {
   children: ReactNode;
@@ -18,6 +19,8 @@ export default function FadeIn({
   direction = 'up',
   className = ''
 }: FadeInProps) {
+  const locale = useLocale();
+
   const getInitialTransform = () => {
     switch (direction) {
       case 'up':
@@ -50,6 +53,7 @@ export default function FadeIn({
 
   return (
     <motion.div
+      key={`fadein-${locale}`}
       initial={getInitialTransform()}
       whileInView={getAnimateTransform()}
       viewport={{ once: true, margin: "-100px" }}
