@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
+import { Linkedin } from "lucide-react";
 import { useTranslations } from "next-intl";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -39,7 +40,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className={`fab fa-linkedin text-sm`}></i>
+                <Linkedin className="h-4 w-4" />
               </Link>
             </div>
           </div>

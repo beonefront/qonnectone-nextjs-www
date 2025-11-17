@@ -571,6 +571,82 @@
       }
     }
   },
+  "modulesPage": {
+    "hero": {
+      "title1": "Features",
+      "title2": "and modules",
+      "description": "Our integrated platform includes a suite of advanced modules that support key operational and regulatory areas. This way QonnectOne ensures smooth operations, compliance, efficiency and tangible savings while maximizing revenue potential.",
+      "tagline": "Comprehensive tools for supervised financial institutions"
+    },
+    "modulesSection": {
+      "eyebrow": "QONNECTONE FEATURES & MODULES",
+      "title": "Advanced system modules",
+      "description": "Comprehensive solutions tailored to the needs of financial institutions",
+      "transaction": {
+        "title": "Transaction module",
+        "description": "Integrate and manage every payment method",
+        "methods": {
+          "cards": { "title": "Cards", "subtitle": "Visa, MC, Amex" },
+          "blik": { "title": "BLIK", "subtitle": "Mobile payments" },
+          "transfers": { "title": "Bank transfers", "subtitle": "Polish banks" },
+          "wallets": { "title": "Digital wallets", "subtitle": "Apple Pay, PayPal" },
+          "installments": { "title": "Installments", "subtitle": "BNPL, 0-24m" },
+          "crypto": { "title": "Crypto", "subtitle": "BTC, ETH, SOL" }
+        },
+        "compliance": "Compliance with PCI DSS, PSD2 and EU regulations"
+      },
+      "items": {
+        "aml": {
+          "title": "AML / KYC module",
+          "description": "Automates customer identity verification and monitors transactions for suspicious activity. Ensures full AML/CFT compliance while minimizing legal and operational risk."
+        },
+        "crypto": {
+          "title": "Crypto module",
+          "description": "Enables comprehensive integration of digital asset data, including customer wallets and transactions handled in external systems."
+        },
+        "reporting": {
+          "title": "Reporting module",
+          "description": "Automates the preparation and submission of reports to regulators (e.g., KNF, NBP, GIIF). Guarantees completeness, data validation and status tracking to reduce team workload."
+        },
+        "accounting": {
+          "title": "Accounting module",
+          "description": "Delivers full transaction settlement with certified operators, simplifies integrations with external accounting systems and generates detailed financial reports. Streamlines financial management and audits."
+        },
+        "administration": {
+          "title": "Administration module",
+          "description": "Simplifies intuitive management of consumer and institutional customer databases. Enables efficient onboarding, segmentation, ticket handling and personalized communication to boost satisfaction."
+        },
+        "backoffice": {
+          "title": "Backoffice module",
+          "description": "Serves as the control center for the entire platform. Provides operational transparency, transaction monitoring, user management and continuous improvements for support and finance teams."
+        },
+        "api": {
+          "title": "API / Plugin module",
+          "description": "We offer flexible integration tools that let partners connect any e-commerce platform via advanced REST APIs and dedicated plugins."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Ready to get started?",
+      "title": "Available cooperation models",
+      "description": "Discover every cooperation model tailored to your business.",
+      "saas": {
+        "title": "SaaS model",
+        "subtitle": "Software as a Service",
+        "feature1": "Convenient cloud-based delivery",
+        "feature2": "Fast implementation and rollout",
+        "feature3": "Regular updates and support"
+      },
+      "license": {
+        "title": "License model",
+        "subtitle": "On-Premise Solution",
+        "feature1": "Full control over the system",
+        "feature2": "Maximum data security",
+        "feature3": "Customization for specific needs"
+      },
+      "linkText": "Learn more about cooperation models"
+    }
+  },
   "cooperationPage": {
     "hero": {
       "title1": "Cooperation",

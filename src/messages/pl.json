@@ -735,6 +735,82 @@
       }
     }
   },
+  "modulesPage": {
+    "hero": {
+      "title1": "Funkcje",
+      "title2": "i moduły",
+      "description": "Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne oszczędności oraz maksymalizuje potencjał przychodów.",
+      "tagline": "Kompleksowe narzędzia dla nadzorowanych instytucji finansowych"
+    },
+    "modulesSection": {
+      "eyebrow": "FUNKCJE I MODUŁY QONNECTONE",
+      "title": "Zaawansowane moduły systemu",
+      "description": "Kompleksowe rozwiązania dostosowane do potrzeb instytucji finansowych",
+      "transaction": {
+        "title": "Moduł transakcyjny",
+        "description": "Integracja i zarządzanie wszystkimi metodami płatności",
+        "methods": {
+          "cards": { "title": "Karty", "subtitle": "Visa, MC, Amex" },
+          "blik": { "title": "BLIK", "subtitle": "Płatności mobilne" },
+          "transfers": { "title": "Przelewy", "subtitle": "Banki PL" },
+          "wallets": { "title": "Portfele", "subtitle": "Apple Pay, PayPal" },
+          "installments": { "title": "Raty", "subtitle": "BNPL, 0-24m" },
+          "crypto": { "title": "Crypto", "subtitle": "BTC, ETH, SOL" }
+        },
+        "compliance": "Zgodność z PCI DSS, PSD2 i regulacjami UE"
+      },
+      "items": {
+        "aml": {
+          "title": "Moduł AML / KYC",
+          "description": "Automatyzuje procesy weryfikacji tożsamości klientów i monitoruje transakcje pod kątem podejrzanych aktywności. Zapewnia pełną zgodność z przepisami AML/CFT, minimalizując ryzyko prawne i operacyjne."
+        },
+        "crypto": {
+          "title": "Moduł Krypto",
+          "description": "Umożliwia kompleksową integrację informacji o aktywach cyfrowych, w tym portfelach klientów i transakcjach w systemach zewnętrznych."
+        },
+        "reporting": {
+          "title": "Moduł raportowania",
+          "description": "Automatyzuje przygotowanie i wysyłkę raportów do regulatorów (np. KNF, NBP, GIIF). Zapewnia kompletność, walidację danych i śledzenie statusów, ograniczając obciążenie zespołów."
+        },
+        "accounting": {
+          "title": "Moduł księgowy",
+          "description": "Umożliwia kompleksowe rozliczenia transakcji we współpracy z certyfikowanymi operatorami, ułatwia integrację z zewnętrznymi systemami księgowymi oraz generowanie szczegółowych raportów finansowych. Usprawnia zarządzanie finansami i ułatwia audyty."
+        },
+        "administration": {
+          "title": "Moduł administracyjny",
+          "description": "Ułatwia intuicyjne zarządzanie bazą danych klientów fizycznych i instytucjonalnych. Umożliwia efektywną rejestrację, segmentację, obsługę zgłoszeń oraz personalizację komunikacji, co podnosi satysfakcję klientów."
+        },
+        "backoffice": {
+          "title": "Moduł Backoffice",
+          "description": "Centralny punkt kontroli i zarządzania wszystkimi aspektami platformy. Zapewnia pełną transparentność operacyjną, monitoring transakcji, zarządzanie użytkownikami oraz wspiera pracę działów supportu i księgowości."
+        },
+        "api": {
+          "title": "Moduł API / Plugin",
+          "description": "Oferujemy elastyczne narzędzia integracyjne, które umożliwiają szybkie i bezproblemowe połączenie z dowolną platformą e-commerce naszych Partnerów za pomocą zaawansowanego REST API oraz dedykowanych pluginów."
+        }
+      }
+    },
+    "cta": {
+      "eyebrow": "Gotowy, aby zacząć?",
+      "title": "Dostępne modele współpracy",
+      "description": "Poznaj wszystkie modele współpracy dostosowane do Twojego biznesu",
+      "saas": {
+        "title": "Model SaaS",
+        "subtitle": "Software as a Service",
+        "feature1": "Wygodne rozwiązanie w chmurze",
+        "feature2": "Szybka implementacja i wdrożenie",
+        "feature3": "Regularne aktualizacje i wsparcie"
+      },
+      "license": {
+        "title": "Model Licencyjny",
+        "subtitle": "On-Premise Solution",
+        "feature1": "Pełna kontrola nad systemem",
+        "feature2": "Maksymalne bezpieczeństwo danych",
+        "feature3": "Dostosowanie do indywidualnych potrzeb"
+      },
+      "linkText": "Czytaj więcej o modelach współpracy"
+    }
+  },
   "cooperationPage": {
     "hero": {
       "title1": "Modele",
