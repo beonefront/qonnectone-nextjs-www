@@ -1,18 +1,21 @@
+import { useTranslations } from 'next-intl';
 import FadeIn from './animations/FadeIn';
 
 export default function SolutionSection() {
+  const t = useTranslations('solution');
+
   return (
     <section id="solution">
       <div className="bg-neutral-100">
         <div className="relative container mx-auto px-4 py-16 max-w-7xl">
           <FadeIn>
             <div className="text-center space-y-4 pb-6 mx-auto">
-              <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">FUNKCJE I MODUŁY</h2>
+              <h2 className="text-sm text-primary font-mono font-medium tracking-wider uppercase">{t('sectionTitle')}</h2>
               <h3 className="mx-auto mt-4 max-w-xs text-3xl font-semibold sm:max-w-none sm:text-4xl md:text-5xl">
-                Narzędzia dla firm i nadzorowanych instytucji finansowych
+                {t('sectionSubtitle')}
               </h3>
               <p className="mt-6 text-lg leading-8 text-slate-600 max-w-2xl mx-auto">
-                Nasza zintegrowana platforma obejmuje szereg zaawansowanych modułów, które wspierają kluczowe obszary działalności operacyjnej i regulacyjnej. Tym samym QonnectOne zapewnia płynne funkcjonowanie, zgodność, wydajność oraz wymierne oszczędności oraz maksymalizuje potencjał przychodów.
+                {t('sectionDescription')}
               </p>
             </div>
           </FadeIn>
@@ -21,9 +24,9 @@ export default function SolutionSection() {
             {/* Card 1 */}
             <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 rounded-2xl hover:bg-red-500/10 transition-all duration-500 ease-out">
               <div>
-                <h3 className="font-semibold mb-2 text-primary">Moduł AML / KYC</h3>
+                <h3 className="font-semibold mb-2 text-primary">{t('aml.title')}</h3>
                 <p className="text-foreground">
-                  Automatyzuje procesy weryfikacji tożsamości klientów i monitoruje transakcje pod kątem podejrzanych aktywności. Zapewnia pełną zgodność z przepisami AML/CFT, minimalizując ryzyko prawne i operacyjne.
+                  {t('aml.description')}
                 </p>
               </div>
               <svg
@@ -67,9 +70,9 @@ export default function SolutionSection() {
             {/* Card 2 */}
             <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 rounded-2xl order-3 xl:order-none hover:bg-blue-500/10 transition-all duration-500 ease-out">
               <div>
-                <h3 className="font-semibold mb-2 text-primary">Moduł transakcyjny</h3>
+                <h3 className="font-semibold mb-2 text-primary">{t('transaction.title')}</h3>
                 <p className="text-foreground">
-                  Zapewnia płynną i bezpieczną komunikację z dostawcami usług płatniczych oraz automatyzuje ich obsługę w jednym miejscu. Skraca czas operacji i zwiększa niezawodność procesów płatniczych.
+                  {t('transaction.description')}
                 </p>
               </div>
               <svg
@@ -113,9 +116,9 @@ export default function SolutionSection() {
             {/* Card 3 */}
             <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 rounded-2xl md:row-span-2 hover:bg-orange-500/10 transition-all duration-500 ease-out">
               <div>
-                <h3 className="font-semibold mb-2 text-primary">Raportowanie</h3>
+                <h3 className="font-semibold mb-2 text-primary">{t('reporting.title')}</h3>
                 <p className="text-foreground">
-                Automatyzuje przygotowanie i wysyłkę raportów do regulatorów (np. KNF, NBP, GIIF). Zapewnia kompletność, walidację danych i śledzenie statusów, ograniczając obciążenie zespołów.
+                {t('reporting.description')}
                 </p>
               </div>
               <canvas
@@ -165,9 +168,9 @@ export default function SolutionSection() {
             {/* Card 4 */}
             <div className="group relative items-start overflow-hidden bg-neutral-50 p-6 rounded-2xl flex-row order-4 md:col-span-2 md:flex-row xl:order-none hover:bg-green-500/10 transition-all duration-500 ease-out">
               <div>
-                <h3 className="font-semibold mb-2 text-primary">Moduł Krypto</h3>
+                <h3 className="font-semibold mb-2 text-primary">{t('crypto.title')}</h3>
                 <p className="text-foreground">
-                Umożliwia kompleksową integrację informacji o aktywach cyfrowych, w tym portfelach klientów i transakcjach w systemach zewnętrznych.
+                {t('crypto.description')}
                 </p>
               </div>
               <div className="inset-0 bg-white/5 [mask-image:linear-gradient(to_bottom,white,transparent)] absolute -bottom-full">

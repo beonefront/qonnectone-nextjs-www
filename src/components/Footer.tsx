@@ -1,7 +1,14 @@
+'use client';
+
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Footer() {
+  const t = useTranslations('footer');
+  const currentYear = new Date().getFullYear();
+
   return (
     <footer className="bg-slate-900/95 backdrop-blur-sm border-t border-slate-800/50">
       <div className="max-w-7xl mx-auto px-6 py-12">
@@ -19,26 +26,21 @@ export default function Footer() {
               />
             </div>
             <p className="text-slate-400 text-sm leading-relaxed mb-8 max-w-md">
-              Kompleksowe rozwiązania dla integracji płatności firm i nadzorowanych instytucji finansowych.
-              Bezpieczeństwo, innowacyjność i zgodność z regulacjami.
+              {t('description')}
             </p>
 
             {/* Social links */}
             <div className="flex space-x-3">
-              {[
-                { href: "https://www.linkedin.com/company/109154246", icon: "fab fa-linkedin", label: "LinkedIn" },
-              ].map((social) => (
-                <Link
-                  key={social.label}
-                  href={social.href}
-                  className="w-9 h-9 rounded-lg bg-slate-800/60 hover:bg-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
-                  aria-label={social.label}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className={`${social.icon} text-sm`}></i>
-                </Link>
-              ))}
+              <Link
+                key="LinkedIn"
+                href="https://www.linkedin.com/company/109154246"
+                className="w-9 h-9 rounded-lg bg-slate-800/60 hover:bg-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className={`fab fa-linkedin text-sm`}></i>
+              </Link>
             </div>
           </div>
 
@@ -48,12 +50,12 @@ export default function Footer() {
               {/* Solutions */}
               <div>
                 <h3 className="text-white font-medium text-sm uppercase tracking-wider mb-4">
-                  Rozwiązania
+                  {t('solutions')}
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    { href: "/moduly", label: "Moduły systemu" },
-                    { href: "/modele-wspolpracy", label: "Modele współpracy" },
+                    { href: "/moduly", label: t('systemModules') },
+                    { href: "/modele-wspolpracy", label: t('cooperationModels') },
                     // { href: "/#features", label: "Funkcje" },
                     // { href: "/#integrations", label: "Integracje" },
                     // { href: "/#pricing", label: "Cennik" }
@@ -73,12 +75,12 @@ export default function Footer() {
               {/* Company */}
               <div>
                 <h3 className="text-white font-medium text-sm uppercase tracking-wider mb-4">
-                  Firma
+                  {t('company')}
                 </h3>
                 <ul className="space-y-3">
                   {[
-                    { href: "/o-nas", label: "O nas" },
-                    { href: "/business-cases", label: "Business Cases" },
+                    { href: "/o-nas", label: t('about') },
+                    { href: "/business-cases", label: t('businessCases') },
                     // { href: "/#stats", label: "Statystyki" },
                     // { href: "/#trusted-companies", label: "Nasi klienci" },
                     // { href: "#", label: "Kariera" }
@@ -98,15 +100,12 @@ export default function Footer() {
               {/* Support */}
               <div>
                 <h3 className="text-white font-medium text-sm uppercase tracking-wider mb-4">
-                  Wsparcie
+                  {t('support')}
                 </h3>
                 <ul className="space-y-3">
                   {[
                     { href: "/#faq", label: "FAQ" },
                     { href: "mailto:hello@qonnectone.com", label: "Kontakt" },
-                    // { href: "/o-nas", label: "Dokumentacja API" },
-                    // { href: "/o-nas", label: "Centrum pomocy" },
-                    // { href: "#", label: "Status systemu" }
                   ].map((link) => (
                     <li key={link.label}>
                       <Link
@@ -127,21 +126,29 @@ export default function Footer() {
         <div className="mt-12 pt-6 border-t border-slate-800/50">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
             <p className="text-slate-500 text-xs">
-              © {new Date().getFullYear()} Qonnect. Wszystkie prawa zastrzeżone.
+              {t('copyright', { year: currentYear })}
             </p>
-            <div className="flex space-x-6">
-              {[
-                { href: "/polityka-prywatnosci", label: "Polityka prywatności" },
-                { href: "/cookies", label: "Polityka cookies" },
-              ].map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-slate-500 hover:text-slate-300 text-xs transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+              {/* Language Switcher */}
+              <div className="scale-90 origin-center">
+                <LanguageSwitcher variant="footer" />
+              </div>
+
+              {/* Legal Links */}
+              <div className="flex space-x-6">
+                {[
+                  { href: "/polityka-prywatnosci", label: t('privacyPolicy') },
+                  { href: "/cookies", label: t('cookiePolicy') },
+                ].map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="text-slate-500 hover:text-slate-300 text-xs transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

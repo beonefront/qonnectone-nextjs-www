@@ -1,0 +1,874 @@
+{
+  "common": {
+    "contact": "Contact us",
+    "learnMore": "Learn more",
+    "readMore": "Read more"
+  },
+  "navigation": {
+    "home": "Home",
+    "modules": "Modules",
+    "cooperationModels": "Cooperation Models",
+    "businessCases": "Business Cases",
+    "about": "About"
+  },
+  "hero": {
+    "newBadge": "📣 New",
+    "newBadgeText": "Discover QonnectOne modules",
+    "description": "QonnectOne is a revolutionary technological solution that supports companies and supervised institutions in key operational and regulatory areas. Additionally, it ensures regulatory compliance, provides instant payment processing, and supports systematic revenue growth through process automation.",
+    "unlock": "Unlock business potential and earn more"
+  },
+  "footer": {
+    "description": "Comprehensive solutions for payment integration for companies and supervised financial institutions. Security, innovation and regulatory compliance.",
+    "solutions": "Solutions",
+    "company": "Company",
+    "support": "Support",
+    "systemModules": "System Modules",
+    "cooperationModels": "Cooperation Models",
+    "about": "About",
+    "businessCases": "Business Cases",
+    "contact": "Contact",
+    "copyright": "© {year} Qonnect. All rights reserved.",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy"
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "3 KEY QUESTIONS",
+    "q1": {
+      "question": "1. Why Qonnect?",
+      "answer": "Because the offer is tailored to the specific requirements of your company. Our developers can quickly adapt parts of the application to your industry and individual requirements."
+    },
+    "q2": {
+      "question": "2. Why use an external partner instead of your own system?",
+      "answer": "Developing a dedicated IT system involves costs and risks. With us, you can do it in record time, get ahead of the competition and benefit from a well-developed system."
+    },
+    "q3": {
+      "question": "3. What is a SaaS application?",
+      "answer": "A SaaS (Software as a Service) application is software made available to users over the Internet on a subscription basis. It does not require installation on a computer - you use it through a browser. All data and updates are maintained in the cloud by the service provider."
+    },
+    "caseStudies": {
+      "text": "Discover <b>real stories from our clients</b> and see how they increased efficiency and profits thanks to <b>our platform</b>.",
+      "button": "Read Business Cases"
+    }
+  },
+  "cta": {
+    "title": "Ready to get started?",
+    "subtitle": "Contact us today.",
+    "scheduleButton": "Schedule a meeting",
+    "emailButton": "Leave your email",
+    "thankYouAlert": "Thank you! We will contact you at: {email}"
+  },
+  "contactCTA": {
+    "title": "Need a similar solution?",
+    "description": "Get in touch to discuss how QonnectOne can accelerate the growth of your financial institution or company and help meet regulatory requirements."
+  },
+  "privacy": {
+    "hero": {
+      "title": "Privacy Policy",
+      "subtitle": "Privacy Policy for the websites operated by QonnectOne Sp. z o.o. based in Gdańsk",
+      "description": "This Privacy Policy sets out the rules for processing and protecting the personal data of users of QonnectOne websites in accordance with the GDPR."
+    },
+    "definitions": {
+      "title": "Definitions used in this Privacy Policy",
+      "cards": [
+        {
+          "icon": "users",
+          "title": "User",
+          "description": "A natural person, legal person or organisational unit without legal personality that uses the electronic services provided through the websites referred to in point 2."
+        },
+        {
+          "icon": "shield",
+          "title": "Personal data",
+          "description": "Information about an identified or identifiable natural person; an identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, identification number, location data, online identifier or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person."
+        },
+        {
+          "icon": "fileText",
+          "title": "Company / Data Controller",
+          "description": "QonnectOne spółka z ograniczoną odpowiedzialnością with its registered office in Gdańsk, ul. Lęborska 3B, 80-386 Gdańsk, entered into the register of entrepreneurs kept by the District Court Gdańsk-Północ in Gdańsk, 7th Commercial Division of the National Court Register, KRS: 0001160997, REGON: 54115490, NIP: 5842865648; share capital: PLN 750,000."
+        },
+        {
+          "icon": "eye",
+          "title": "Websites",
+          "description": "Websites hosted under the domain www.qonnectone.com, each of which is individually referred to as the “Website”."
+        },
+        {
+          "icon": "lock",
+          "title": "GDPR",
+          "description": "Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, repealing Directive 95/46/EC."
+        }
+      ]
+    },
+    "controller": {
+      "title": "Data Controller information",
+      "contactCard": {
+        "title": "Contact details",
+        "fields": [
+          {
+            "icon": "mapPin",
+            "label": "Registered address",
+            "value": "ul. Lęborska 3B, 80-386 Gdańsk, Poland"
+          },
+          {
+            "icon": "mail",
+            "label": "E-mail",
+            "value": "hello@qonnectone.com"
+          },
+          {
+            "icon": "doc",
+            "label": "KRS",
+            "value": "0001160997"
+          },
+          {
+            "icon": "doc",
+            "label": "REGON",
+            "value": "54115490"
+          },
+          {
+            "icon": "doc",
+            "label": "NIP",
+            "value": "5842865648"
+          }
+        ]
+      },
+      "dpoCard": {
+        "title": "Data Protection Officer",
+        "description": "The Data Controller has appointed a Data Protection Officer (DPO). You can contact the DPO in any matter related to the processing of personal data by the Controller.",
+        "details": [
+          {
+            "label": "E-mail",
+            "value": "hello@qonnectone.com"
+          },
+          {
+            "label": "Address",
+            "value": "ul. Lęborska 3B, 80-386 Gdańsk, Poland"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "title": "Sources of personal data",
+      "intro": "The Data Controller collects personal data through:",
+      "items": [
+        "information and data voluntarily entered into Website forms",
+        "storing cookies on end user devices",
+        "collecting web server logs",
+        "recording connection parameters (timestamps, IP address)"
+      ],
+      "autoTitle": "Data collected automatically",
+      "autoParagraphs": [
+        "Information about certain User behaviours is logged on the server layer. These data are used to administer the Website and ensure the smooth operation of the services provided.",
+        "The Controller does not obtain personal data from third parties. All data are provided voluntarily by the User."
+      ]
+    },
+    "purposes": {
+      "title": "Purposes of processing and legal basis",
+      "cards": [
+        {
+          "title": "1. Website usage",
+          "description": "Personal data are processed to provide website functionality and maintain the connection. The legal basis is the Controller’s legitimate interest (Art. 6(1)(f) GDPR)."
+        },
+        {
+          "title": "2. Account registration and payment services",
+          "description": "Data provided in the registration form are used to conclude and perform electronic service agreements, money remittance services, handle complaints and execute payment orders (Art. 6(1)(b) GDPR)."
+        },
+        {
+          "title": "3. Marketing of own products and services",
+          "description": "Processing is based on the Company’s legitimate interest (Art. 6(1)(f) GDPR), namely direct marketing. Commercial information is sent electronically only with the User’s consent."
+        },
+        {
+          "title": "4. Contact form",
+          "description": "Data are processed under the Company’s legitimate interest consisting of responding to incoming enquiries (Art. 6(1)(f) GDPR)."
+        }
+      ]
+    },
+    "recipients": {
+      "title": "Recipients of personal data",
+      "paragraphs": [
+        "Personal data may be transferred to entities that technically deliver certain services, in particular payment service providers or other partners supporting the Controller.",
+        "We may engage processors such as IT and e-mail providers, technology vendors, accountants and companies that destroy data media.",
+        "Personal data may also be disclosed to entities authorised to request them under applicable law."
+      ]
+    },
+    "retention": {
+      "title": "Data retention periods",
+      "intro": "Personal data are stored for the period necessary to achieve the processing purpose:",
+      "items": [
+        {
+          "label": "Contract performance",
+          "description": "for the duration of the contract"
+        },
+        {
+          "label": "Website functionality",
+          "description": "for the duration of the connection"
+        },
+        {
+          "label": "Legal obligations",
+          "description": "for the period required to fulfil statutory duties"
+        },
+        {
+          "label": "Claims",
+          "description": "for the limitation period of potential claims"
+        },
+        {
+          "label": "Marketing",
+          "description": "until consent is withdrawn or the processing purpose is fully achieved"
+        }
+      ]
+    },
+    "rights": {
+      "title": "Rights of data subjects",
+      "basic": {
+        "title": "Core rights",
+        "intro": "The User has the right to:",
+        "items": [
+          "access personal data",
+          "request rectification of inaccurate data",
+          "request erasure of personal data",
+          "restrict processing",
+          "data portability"
+        ]
+      },
+      "withdrawal": {
+        "title": "Withdrawal of consent",
+        "paragraphs": [
+          "If we process data on the basis of consent, the User may withdraw it at any time by sending an e-mail to hello@qonnectone.com.",
+          "Withdrawal of consent does not affect the lawfulness of processing carried out before its withdrawal nor processing performed on other legal grounds."
+        ]
+      },
+      "complaint": {
+        "title": "Right to lodge a complaint",
+        "description": "The User may lodge a complaint with a data protection supervisory authority in the EU member state of their habitual residence, workplace or the place of the alleged infringement. In Poland this is the President of the Personal Data Protection Office (PUODO), ul. Stawki 2, 00-193 Warsaw, phone: +48 22 531 03 00."
+      }
+    },
+    "cookies": {
+      "title": "Cookies",
+      "cards": [
+        {
+          "title": "What are cookies?",
+          "paragraphs": [
+            "Cookies are small text files stored on the User’s device to enable use of the Website.",
+            "They usually contain the website name, storage duration on the device and a unique identifier."
+          ]
+        },
+        {
+          "title": "Types of cookies",
+          "paragraphs": [
+            "The Website uses two types of cookies:"
+          ],
+          "list": [
+            "session cookies – temporary files stored until logging out, leaving the website or closing the browser",
+            "persistent cookies – stored on the device for the time specified in their parameters or until deleted by the User"
+          ]
+        },
+        {
+          "title": "Purposes of cookies",
+          "list": [
+            "creating statistics that help us understand how Users interact with the Website",
+            "maintaining the User session after logging in so login data do not need to be re-entered on each page"
+          ]
+        },
+        {
+          "title": "Managing cookies",
+          "paragraphs": [
+            "Web browsers usually allow cookies to be stored on the device by default. Users can change these settings at any time.",
+            "Limiting or disabling cookies may affect some Website functionalities."
+          ]
+        }
+      ]
+    },
+    "final": {
+      "title": "Final provisions",
+      "cards": [
+        {
+          "title": "Effective date",
+          "paragraphs": [
+            "This Privacy Policy together with the Cookie Policy has been in force since 1 September 2025."
+          ]
+        },
+        {
+          "title": "Policy changes",
+          "paragraphs": [
+            "We reserve the right to amend the Privacy Policy and Cookie Policy at any time. The updated text will be available on the main pages of the Websites under “Privacy Policy”.",
+            "Users will be informed about planned changes at least one week in advance, together with the scope of changes and the effective date. If a User does not accept the changes, the electronic service agreement will terminate at the end of the notice period."
+          ]
+        }
+      ]
+    }
+  },
+  "problem": {
+    "sectionTitle": "Problem",
+    "sectionSubtitle": "Problems we solve",
+    "card1": {
+      "title": "Meet the requirements of supervised institutions",
+      "description": "Ensure compliance with legal and regulatory requirements efficiently, without delays."
+    },
+    "card2": {
+      "title": "Acquire partners and use their licenses and products",
+      "description": "Quickly connect with partners and leverage their licenses, APIs, and products in one ecosystem."
+    },
+    "card3": {
+      "title": "All payment methods in one place",
+      "description": "Combine various payment methods in one place - from cards and transfers to BLIK and digital wallets."
+    },
+    "card4": {
+      "title": "Automate customer service process",
+      "description": "Streamline onboarding, KYC, settlements and communication, reducing manual team work."
+    },
+    "card5": {
+      "title": "Use IT support",
+      "description": "Get help from experts with integrations, security, and system maintenance."
+    },
+    "card6": {
+      "title": "Prevent money laundering (AML)",
+      "description": "Monitor transactions, detect risks and meet reporting obligations in accordance with AML/CFT."
+    }
+  },
+  "solution": {
+    "sectionTitle": "FEATURES AND MODULES",
+    "sectionSubtitle": "Tools for companies and supervised financial institutions",
+    "sectionDescription": "Our integrated platform includes a range of advanced modules that support key operational and regulatory areas. Thus, QonnectOne ensures smooth operation, compliance, efficiency and measurable savings while maximizing revenue potential.",
+    "aml": {
+      "title": "AML / KYC Module",
+      "description": "Automates customer identity verification processes and monitors transactions for suspicious activity. Ensures full compliance with AML/CFT regulations, minimizing legal and operational risk."
+    },
+    "transaction": {
+      "title": "Transaction Module",
+      "description": "Provides smooth and secure communication with payment service providers and automates their handling in one place. Shortens operation time and increases reliability of payment processes."
+    },
+    "crypto": {
+      "title": "Crypto Module",
+      "description": "Enables comprehensive integration of digital asset information, including client wallets and transactions in external systems."
+    },
+    "reporting": {
+      "title": "Reporting Module",
+      "description": "Automates the preparation and submission of reports to regulators (e.g. KNF, NBP, GIIF). Ensures completeness, data validation and status tracking, reducing team burden."
+    },
+    "accounting": {
+      "title": "Accounting Module",
+      "description": "Enables comprehensive transaction settlements in cooperation with certified operators, facilitates integration with external accounting systems and generates detailed financial reports."
+    },
+    "admin": {
+      "title": "Administrative Module",
+      "description": "Facilitates intuitive management of individual and institutional client databases. Enables efficient registration, segmentation, ticket handling and communication personalization."
+    },
+    "backoffice": {
+      "title": "Backoffice Module",
+      "description": "This is the central point of control and management of all aspects of the platform. Provides full operational transparency, transaction monitoring, facilitates user management and all improvements."
+    },
+    "api": {
+      "title": "API / Plugin Module",
+      "description": "We offer flexible integration tools that enable quick and seamless connection to any of our Partners' e-commerce platforms using advanced REST API and dedicated plugins."
+    }
+  },
+  "problemComparison": {
+    "sectionTitle": "LIGHTNING-FAST PROCESS ACCEPTANCE",
+    "sectionSubtitle": "Problems and lack of popular methods to solve them",
+    "problemsTitle": "PROBLEMS",
+    "solutionsTitle": "SOLUTION",
+    "problems": {
+      "p1": "Rigorous regulatory obligations",
+      "p2": "Lack of required licenses",
+      "p3": "Lack of popular payment methods",
+      "p4": "Manual customer service",
+      "p5": "High costs of IT system expansion",
+      "p6": "System implementation takes up to 18 months",
+      "p7": "Competition from giants",
+      "p8": "No room for dynamic development",
+      "p9": "Loss of potential customers"
+    },
+    "solutions": {
+      "s1": "Meeting legal requirements",
+      "s2": "Using partner licenses",
+      "s3": "Simultaneous integration of multiple payment systems",
+      "s4": "Customer service automation",
+      "s5": "Low operating costs with full technical support",
+      "s6": "Implementation takes 2-3 months",
+      "s7": "Significantly greater competitiveness",
+      "s8": "Scalability and development",
+      "s9": "Revenue potential maximization"
+    },
+    "ctaTitle": "We handle what is an obstacle for you",
+    "ctaDescription": "– system maintenance, licensing formalities, IT integration and technical support for your business development."
+  },
+  "pricing": {
+    "sectionTitle": "COOPERATION MODELS",
+    "sectionSubtitle": "Check available cooperation models",
+    "saas": {
+      "title": "SaaS Model",
+      "description": "Convenient cloud solution"
+    },
+    "license": {
+      "title": "License Model",
+      "description": "Full control over the system"
+    }
+  },
+  "businessCasesPage": {
+    "hero": {
+      "title1": "Business",
+      "title2": "Cases",
+      "description": "Discover how our solutions help accelerate growth, minimize risk and meet regulatory requirements across different sectors.",
+      "benefit1": "Fast market entry",
+      "benefit2": "Minimizing the risk of failures and errors",
+      "benefit3": "Reduction of operational costs",
+      "benefit4": "Full compliance with regulations"
+    },
+    "section": {
+      "title": "BUSINESS CASES",
+      "subtitle": "Example use case scenarios",
+      "description": "Benefits and measurable business results achieved through our solutions"
+    },
+    "case1": {
+      "badge": "Payment institutions",
+      "title": "Expanding Payment Offerings for National Payment Institution X",
+      "introTitle": "Introduction",
+      "introText": "National Payment Institution (NPI) X, holding a license for money transfer services, faces a strategic decision to expand its offering with new, key products such as payment cards and IBAN accounts for its customers. The traditional development path involves a series of challenges, including a lengthy licensing process, significant financial and operational investments.",
+      "challengesTitle": "Challenges of the traditional \"build from scratch\" approach",
+      "challenge1Title": "Complex licensing process",
+      "challenge1Text": "Submitting an application to extend the license for new products is a process that requires preparation of extensive documentation and verification of compliance with specific regulations. Its implementation time can be up to several months.",
+      "challenge2Title": "Significant financial investments",
+      "challenge2Text": "Building your own transaction system from scratch, integration with various providers (banks, card schemes, AML/KYC service providers) and hiring a specialized team.",
+      "challenge3Title": "High business and operational risk",
+      "challenge3Text": "Project complexity, potential delays in the licensing process and system construction, as well as lack of guarantee of market success for new products.",
+      "challenge4Title": "Lack of flexibility",
+      "challenge4Text": "Once built, the system may be difficult to adapt in the face of changing market or regulatory requirements.",
+      "solutionTitle": "Solution: Partnership with QonnectOne",
+      "solutionIntro": "QonnectOne offers an alternative approach that allows NPI X to scale business quickly and efficiently, bypassing most of the challenges mentioned above:",
+      "solution1Title": "Ready-to-integrate transaction system",
+      "solution1Text": "QonnectOne provides a complete, proven IT system that is ready to integrate with NPI X's existing transaction side.",
+      "solution2Title": "Partnership with a licensed institution",
+      "solution2Text": "QonnectOne cooperates with supervised institutions that already have the necessary, extended licenses to handle cards and IBAN accounts. The cooperation takes place in the Payments as a Service (PaaS) model in an outsourcing formula.",
+      "solution3Title": "Fast market entry (Time-to-Market)",
+      "solution3Text": "Integration with QonnectOne allows for a significant reduction of the time needed to launch new products from months to weeks.",
+      "resultsTitle": "Key results",
+      "result1Value": "4-6 weeks",
+      "result1Label": "Time-to-Market",
+      "result2Value": "70%",
+      "result2Label": "Cost reduction",
+      "result3Value": "Minimized",
+      "result3Label": "Business risk",
+      "result4Value": "100%",
+      "result4Label": "Business focus",
+      "detailsTitle": "More details about the solution",
+      "benefitsTitle": "Additional benefits of partnering with QonnectOne:",
+      "benefit1Title": "Cost and risk minimization:",
+      "benefit1Text": "NPI X avoids huge initial financial outlays related to system construction and licensing process. Instead of asset investment, this model is based on operating costs (subscription, commissions).",
+      "benefit2Title": "Business model validation:",
+      "benefit2Text": "QonnectOne enables NPI X to quickly and efficiently test a new business model on the real market. This allows you to verify demand, optimize processes and collect valuable data.",
+      "benefit3Title": "Focus on business development:",
+      "benefit3Text": "Cooperation with QonnectOne frees NPI X from technological and regulatory burdens, allowing full focus on customer acquisition, brand building and developing business relationships.",
+      "summaryTitle": "Summary:",
+      "summaryText": "For National Payment Institution X, seeking to expand its offering with payment cards and IBAN accounts, partnership with QonnectOne represents a strategic and optimal solution. It allows for a significant reduction of time to market, reduction of financial outlays and minimization of business and operational risk. Instead of a complex and costly path of independent development, NPI X receives a complete IT tool and support of a licensed partner, which enables quick verification and scaling of a new business model."
+    },
+    "case2": {
+      "badge": "Cryptocurrencies and digital assets",
+      "title": "Business Continuity and MiCA Compliance for Cryptocurrency Institution Y",
+      "introTitle": "Introduction",
+      "introText": "VASP, registered, faces significant regulatory changes related to the entry into force of MiCA (Markets in Crypto-Assets Regulation). New regulations require obtaining appropriate permits to continue operations, which creates serious operational and strategic challenges for the enterprise.",
+      "challengesTitle": "Challenges related to MiCA implementation",
+      "challenge1Title": "Complex MiCA licensing process",
+      "challenge1Text": "Obtaining the required permit is a complex process that can take from several to several months, requiring comprehensive documentation and meeting specific capital and operational requirements.",
+      "challenge2Title": "Operational activity blockade",
+      "challenge2Text": "Without an appropriate MiCA license, the institution cannot continue servicing clients in the field of crypto assets, which means a complete suspension of revenues from this segment.",
+      "challenge3Title": "Risk of losing market position",
+      "challenge3Text": "Competitors who obtain a MiCA license faster or have alternative solutions may take over clients and market position while waiting for a license.",
+      "challenge4Title": "High compliance costs",
+      "challenge4Text": "Adapting systems, processes and the team to MiCA requirements requires significant investments without a guarantee of obtaining a license.",
+      "solutionTitle": "Solution: Partnership with QonnectOne",
+      "solutionIntro": "QonnectOne offers a comprehensive solution that allows for business continuity during the transition period:",
+      "solution1Title": "MiCA-compliant ready system",
+      "solution1Text": "A complete transaction system already adapted to MiCA requirements, ready for immediate integration with the client's infrastructure.",
+      "solution2Title": "Partnership with authorized CASP",
+      "solution2Text": "Cooperation with CASPs already holding a license in accordance with MiCA, enabling operations under their regulatory umbrella (outsourcing formula).",
+      "solution3Title": "Business continuity without interruptions",
+      "solution3Text": "Continuation of customer service and revenue generation from the first day of solution implementation.",
+      "resultsTitle": "Key results",
+      "result1Value": "100%",
+      "result1Label": "Business continuity",
+      "result2Value": "Secured",
+      "result2Label": "Revenue and position",
+      "result3Value": "No pressure",
+      "result3Label": "Own MiCA license",
+      "result4Value": "Full compliance",
+      "result4Label": "From day one",
+      "detailsTitle": "More details about the solution",
+      "benefitsTitle": "Key benefits of partnership in the context of MiCA:",
+      "benefit1Title": "Business continuity assurance:",
+      "benefit1Text": "Institution Y can continue servicing its cryptocurrency clients without interruption, maintaining revenues and business relationships while waiting for its own MiCA license.",
+      "benefit2Title": "No time pressure:",
+      "benefit2Text": "Possibility to calmly prepare and submit a high-quality license application without pressure related to loss of revenue or market position.",
+      "benefit3Title": "Competitive advantage:",
+      "benefit3Text": "While competitors may struggle with business interruptions, Institution Y maintains full operability and can even acquire new clients.",
+      "benefit4Title": "Regulatory risk reduction:",
+      "benefit4Text": "Operating under the license of an experienced partner minimizes the risk of MiCA violations and ensures full compliance from day one.",
+      "summaryTitle": "Strategic significance of the solution:",
+      "summaryText": "For Supervised Institution Y, facing the challenge of MiCA implementation, partnership with QonnectOne represents not only a transitional solution, but a strategic element of a long-term business strategy. It enables maintaining competitiveness at a key moment of regulatory transformation of the cryptocurrency sector, while ensuring the peace and financial stability necessary to successfully obtain its own MiCA license."
+    }
+  },
+  "aboutPage": {
+    "hero": {
+      "title": "About Us",
+      "description": "We are QonnectOne, a provider of a technological solution in the SaaS formula, which revolutionizes the market, enabling non-financial companies and payment operators to immediately enrich their offer with embedded banking services.",
+      "subtitle": "We act as a central hub, integrating client applications with external financial service providers (such as personalized payment cards, settlement accounts or loan services), all through an intuitive API. Our SaaS model guarantees minimization of initial costs and quick implementation, while ensuring full scalability and compliance with regulations (including GDPR, DORA, MICA)."
+    },
+    "mission": {
+      "title": "Mission",
+      "description": "Our mission is to transform complexity into a competitive advantage for our clients. We strive to enable every enterprise to \"embed\" smooth, native and secure financial experiences directly into their products and platforms, thereby increasing customer loyalty and generating new revenue streams. We provide infrastructure (BaaS engine) that allows non-financial companies to engage a larger portion of customers, without having to rely on external banking portals to create a more \"seamless, sticky user experience\", increasing customer engagement and loyalty."
+    },
+    "vision": {
+      "title": "Vision",
+      "description": "That's why we deliver systems that not only guarantee full legal compliance, but also optimize operational processes, reduce risk and open up new development opportunities. Thanks to our experience and deep industry knowledge, we become a reliable partner in building a safe and efficient digital future."
+    },
+    "business": {
+      "title": "We understand our Partners' business",
+      "subtitle": "That's why we provide security, scalability and growth",
+      "p1": "By choosing QonnectOne, you gain not only advanced technologies, but above all a partner who actively supports your business in a dynamic regulatory environment. We ensure that your operations will always comply with the highest security and regulatory standards.",
+      "p2": "Thanks to integration with QonnectOne, you don't waste valuable time and resources on building a new system from scratch, expanding existing solutions or a complicated process of obtaining licenses.",
+      "p3": "You also don't have to search for and integrate with many providers, which generates additional costs and complexity. By integrating with us, you receive a complete IT tool and the opportunity to use our Partners' licenses.",
+      "highlight": "What remains on your side is what matters most: business development."
+    },
+    "whyUs": {
+      "sectionTitle": "WHY US?",
+      "sectionSubtitle": "Our hallmark is experience, expertise and a deep understanding of business needs.",
+      "cards": {
+        "specialization": {
+          "title": "Industry specialization",
+          "description": "We have deep, practical knowledge of market and regulatory requirements across supervised sectors."
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "We continuously enhance our solutions to address current challenges and anticipate future trends in the payments industry."
+        },
+        "flexibility": {
+          "title": "Flexibility",
+          "description": "Our modular approach and flexible delivery models ensure the system adapts to your company's needs and growth pace."
+        },
+        "experts": {
+          "title": "Expert support",
+          "description": "Our experienced team assists you at every stage – from needs analysis and implementation to ongoing optimisation."
+        }
+      }
+    },
+    "compliance": {
+      "title": "Comprehensive security and compliance",
+      "subtitle": "We focus on the highest standards of information security and data privacy.",
+      "items": {
+        "gdpr": {
+          "title": "GDPR compliance",
+          "description": "Full adherence to the General Data Protection Regulation, guaranteeing customer privacy protection."
+        },
+        "dora": {
+          "title": "DORA (Digital Operational Resilience Act)",
+          "description": "We prepare our solutions for full compliance with the upcoming digital operational resilience requirements for the financial sector."
+        },
+        "audits": {
+          "title": "Security audits & penetration tests",
+          "description": "We perform regular audits and penetration tests to quickly detect and eliminate potential vulnerabilities."
+        },
+        "knf": {
+          "title": "KNF requirements for NPI & SPI",
+          "description": "The platform is designed to meet all requirements of the Polish Financial Supervision Authority for national and small payment institutions."
+        }
+      }
+    }
+  },
+  "modulesPage": {
+    "hero": {
+      "title1": "Features",
+      "title2": "and Modules",
+      "description": "Our integrated platform includes a range of advanced modules that support key operational and regulatory areas. Thus, QonnectOne ensures smooth operation, compliance, efficiency and measurable savings while maximizing revenue potential.",
+      "subtitle": "Comprehensive tools for supervised financial institutions"
+    },
+    "section": {
+      "title": "QONNECTONE FEATURES AND MODULES",
+      "subtitle": "Advanced system modules",
+      "description": "Comprehensive solutions tailored to the needs of financial institutions"
+    },
+    "transaction": {
+      "title": "Transaction Module",
+      "description": "Integration and management of all payment methods",
+      "cards": "Cards",
+      "cardsDesc": "Visa, MC, Amex",
+      "blik": "BLIK",
+      "blikDesc": "Mobile payments",
+      "transfers": "Transfers",
+      "transfersDesc": "PL Banks",
+      "wallets": "Wallets",
+      "walletsDesc": "Apple Pay, PayPal",
+      "installments": "Installments",
+      "installmentsDesc": "BNPL, 0-24m",
+      "crypto": "Crypto",
+      "cryptoDesc": "BTC, ETH, SOL"
+    },
+    "aml": {
+      "title": "AML Module",
+      "description": "Compliance automation and anti-money laundering"
+    },
+    "cryptoModule": {
+      "title": "Crypto Module",
+      "description": "Full support for digital assets and blockchain"
+    },
+    "reporting": {
+      "title": "Reporting",
+      "description": "Automatic reports to regulators"
+    },
+    "accounting": {
+      "title": "Accounting Module",
+      "description": "Comprehensive settlements and accounting integrations"
+    },
+    "admin": {
+      "title": "Administrative Module",
+      "description": "Client and documentation management"
+    },
+    "backoffice": {
+      "title": "Backoffice",
+      "description": "Central control and management panel"
+    },
+    "apiPlugin": {
+      "title": "API / Plugin Module",
+      "description": "Flexible e-commerce integrations"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Check available cooperation models",
+      "saasTitle": "SaaS Model",
+      "saasDesc": "Convenient cloud solution",
+      "licenseTitle": "License Model",
+      "licenseDesc": "Full control over the system",
+      "contactButton": "Contact us"
+    }
+  },
+  "cooperationPage": {
+    "hero": {
+      "title1": "Cooperation",
+      "title2": "Models",
+      "description": "We perfectly understand that every business has unique needs and development strategy. That's why we offer our innovative IT systems in flexible models that perfectly adapt to your requirements, infrastructure and budget."
+    },
+    "models": {
+      "sectionTitle": "COOPERATION MODELS",
+      "sectionSubtitle": "Choose the model for your business",
+      "sectionDescription": "Flexible models tailored to your needs and budget",
+      "saas": {
+        "badge": "Most Popular",
+        "title": "SaaS Model",
+        "description": "Choose convenience and efficiency by using our solutions as a cloud service. Eliminates the need for installation, maintenance and IT infrastructure management. We'll handle security, availability and performance.",
+        "feature1": "No installation and maintenance",
+        "feature2": "Cloud security",
+        "feature3": "High availability",
+        "feature4": "Business focus"
+      },
+      "license": {
+        "title": "License Model",
+        "description": "If you prefer full control over the software and want to adapt the system to the specific internal processes of your organization, the license model is for you. Acquiring a license gives you the freedom to integrate with existing IT infrastructure.",
+        "feature1": "Full system control",
+        "feature2": "Process customization",
+        "feature3": "IT integration",
+        "feature4": "License ownership"
+      }
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Contact us",
+      "description": "Not sure which model is best for your business? Our team of experts will help you choose the optimal solution.",
+      "call": "Call",
+      "write": "Write",
+      "schedule": "Schedule a meeting",
+      "consultation": "Free consultation",
+      "scheduleButton": "Schedule a meeting"
+    }
+  },
+  "cookiesPage": {
+    "hero": {
+      "title": "Cookie Policy",
+      "subtitle": "Privacy and cookie policy on the website of QonnectOne sp. z o.o.",
+      "description": "This Cookie Policy defines how cookies are used on www.qonnectone.com and explains how we process personal data in line with GDPR."
+    },
+    "companyInfo": {
+      "title": "Company information",
+      "cards": [
+        {
+          "icon": "fileText",
+          "title": "Responsibility for content",
+          "paragraphs": [
+            "All content published on www.qonnectone.com is managed by QonnectOne sp. z o.o., ul. Lęborska 3B, 80-386 Gdańsk (the \"Company\")."
+          ]
+        },
+        {
+          "icon": "alertTriangle",
+          "title": "External links",
+          "paragraphs": [
+            "The Company's website may contain links to other sites that are outside our control and are not covered by this privacy policy. We recommend reviewing the privacy policies of every website you visit."
+          ]
+        }
+      ]
+    },
+    "personalData": {
+      "title": "Processing of personal data",
+      "cards": [
+        {
+          "title": "Contact and sharing data",
+          "paragraphs": [
+            "During your visit you may contact the Company by sending an email or calling one of the phone numbers provided on the website, which means you decide to share personal data with us.",
+            "Providing data is voluntary, yet in most cases it is necessary for us to return your message or call."
+          ]
+        },
+        {
+          "title": "GDPR compliance",
+          "paragraphs": [
+            "Your personal data is processed in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data (GDPR) and applicable Polish law.",
+            "Detailed information about personal data processing by QonnectOne sp. z o.o. is available at www.qonnectone.com/dane_osobowe, including information clauses tailored to the purpose of your inquiry."
+          ]
+        }
+      ]
+    },
+    "cookiesSection": {
+      "title": "Cookies",
+      "cards": [
+        {
+          "icon": "cookie",
+          "title": "Cookie notice",
+          "paragraphs": [
+            "During your first visit you were informed that we use cookies. The Company's internal servers and third-party IT providers (which may be located outside the European Economic Area) automatically log visit data using your IP address.",
+            "The administrator installs cookies that are necessary to provide our services and to analyse statistics."
+          ]
+        },
+        {
+          "title": "Managing cookies",
+          "paragraphs": [
+            "Cookies are used with your consent. You can manage them by changing the settings of your web browser. Instructions are published by each browser vendor (e.g. Chrome, Firefox, Microsoft Edge, Opera).",
+            "Keeping your browser in its default setting allows cookies to be stored and your personal data to be processed."
+          ]
+        }
+      ]
+    },
+    "retention": {
+      "title": "How long do we process personal data?",
+      "cards": [
+        {
+          "icon": "clock",
+          "title": "Storage rules",
+          "paragraphs": [
+            "We store information and personal data no longer than necessary to achieve the purposes for which they were collected.",
+            "Detailed retention periods for specific data subjects are described in the information clauses available at www.qonnectone.com/dokumenty."
+          ]
+        }
+      ]
+    },
+    "recipients": {
+      "title": "Who can receive personal data?",
+      "cards": [
+        {
+          "title": "Sharing rules",
+          "paragraphs": [
+            "We do not transfer personal data collected via the website to third parties for commercial or marketing purposes.",
+            "Sharing data with third parties may be required in connection with services provided to the Company (e.g. IT hosting, recruitment, audit, advisory).",
+            "We reserve the right to disclose personal data when required by law or when an authorised authority formally requests it and we are obliged to comply."
+          ]
+        }
+      ]
+    },
+    "rights": {
+      "title": "Rights of individuals who share data with the Company",
+      "cards": [
+        {
+          "title": "Fundamental rights",
+          "intro": "In connection with personal data processing you have the right to:",
+          "list": [
+            "request access to your personal data or rectification if it is inaccurate",
+            "request erasure, restriction of processing or data portability, in cases provided for by law",
+            "object to the processing of your data"
+          ]
+        },
+        {
+          "title": "Right to lodge a complaint",
+          "paragraphs": [
+            "If you believe that QonnectOne sp. z o.o. processes your personal data in breach of data protection regulations, you may file a complaint with the President of the Personal Data Protection Office (PUODO), ul. Stawki 2, 00-193 Warsaw, Poland.",
+            "Instructions on how to submit a complaint are available at https://uodo.gov.pl/."
+          ]
+        },
+        {
+          "title": "Withdrawal of consent",
+          "paragraphs": [
+            "If processing is based on consent, you may withdraw it at any time. Withdrawal does not affect the lawfulness of processing carried out before the withdrawal."
+          ]
+        },
+        {
+          "title": "Information about rights",
+          "paragraphs": [
+            "Whenever you provide personal data you are informed about all applicable rights."
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "cards": [
+        {
+          "title": "Contact details",
+          "intro": "For matters related to this document or the processing of your personal data, please contact us:",
+          "methods": [
+            {
+              "icon": "mapPin",
+              "label": "By post:",
+              "lines": [
+                "QonnectOne sp. z o.o.",
+                "Ul. Lęborska 3B",
+                "80-386 Gdańsk",
+                "Poland",
+                "with a note \"personal data\""
+              ]
+            },
+            {
+              "icon": "mail",
+              "label": "By email:",
+              "lines": [
+                "hello@qonnectone.com"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "updates": {
+      "title": "Changes to the privacy policy document",
+      "cards": [
+        {
+          "title": "Updates",
+          "paragraphs": [
+            "The Company reserves the right to periodically review and update this document."
+          ]
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "home": {
+      "title": "QonnectOne - Payment Integration Solutions",
+      "description": "Comprehensive payment integration solutions for and supervised financial institutions. Security, innovation and regulatory compliance."
+    },
+    "cooperationModels": {
+      "title": "Cooperation Models | QonnectOne",
+      "description": "Learn about our cooperation models - SaaS and license. Choose a solution tailored to your company's needs."
+    },
+    "about": {
+      "title": "About Us | QonnectOne",
+      "description": "Learn about the history and mission of QonnectOne - integrating payment business with a multi-functional platform for supervised institutions."
+    },
+    "modules": {
+      "title": "Features and Modules | QonnectOne",
+      "description": "Discover the advanced modules of the QonnectOne system - comprehensive solutions for financial institutions."
+    },
+    "businessCases": {
+      "title": "Business Cases | QonnectOne",
+      "description": "Discover use cases and success stories of our clients - comprehensive payment solutions for financial institutions."
+    },
+    "cookies": {
+      "title": "Cookie Policy | QonnectOne",
+      "description": "Cookie policy of the QonnectOne service."
+    },
+    "privacy": {
+      "title": "Privacy Policy | QonnectOne",
+      "description": "Privacy policy of the QonnectOne service."
+    }
+  }
+}
+
