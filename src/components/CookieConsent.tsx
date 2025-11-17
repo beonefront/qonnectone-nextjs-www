@@ -1,9 +1,11 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useTranslations } from 'next-intl';
 import { PrimaryButton } from './ui/PrimaryButton';
 
 export const CookieConsent: React.FC = () => {
+  const t = useTranslations('cookieConsent');
   const [isVisible, setIsVisible] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
@@ -62,16 +64,18 @@ export const CookieConsent: React.FC = () => {
             {/* Content */}
             <div className="flex-1 text-center sm:text-left">
               <p className="text-sm text-gray-700 leading-relaxed">
-                Ta strona korzysta z ciasteczek aby świadczyć usługi na najwyższym poziomie.
-                Dalsze korzystanie ze strony oznacza, że akceptujesz&nbsp;
-                <a
-                  href="/polityka-prywatnosci"
-                  className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  regulamin
-                </a>.
+                {t.rich('message', {
+                  privacyPolicy: (chunks) => (
+                    <a
+                      href="/polityka-prywatnosci"
+                      className="text-blue-600 hover:text-blue-800 underline transition-colors duration-200"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {chunks}
+                    </a>
+                  ),
+                })}
               </p>
             </div>
 
@@ -81,10 +85,10 @@ export const CookieConsent: React.FC = () => {
                 onClick={handleReject}
                 className="px-4 py-2 text-sm font-medium text-gray-600 hover:text-gray-800 transition-colors duration-200 border border-gray-300 rounded-md hover:border-gray-400 hover:bg-gray-50"
               >
-                Odrzuć
+                {t('reject')}
               </button>
               <PrimaryButton onClick={handleAccept}>
-                Akceptuj wszystkie
+                {t('acceptAll')}
               </PrimaryButton>
             </div>
           </div>

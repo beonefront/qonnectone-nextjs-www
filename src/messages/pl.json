@@ -31,6 +31,11 @@
     "privacyPolicy": "Polityka prywatności",
     "cookiePolicy": "Polityka cookies"
   },
+  "cookieConsent": {
+    "message": "Ta strona korzysta z plików cookie, aby świadczyć usługi na najwyższym poziomie. Dalsze korzystanie ze strony oznacza, że akceptujesz naszą <privacyPolicy>politykę prywatności</privacyPolicy>.",
+    "reject": "Odrzuć",
+    "acceptAll": "Akceptuj wszystkie"
+  },
   "faq": {
     "title": "FAQ",
     "subtitle": "3 KLUCZOWE PYTANIA",
@@ -57,6 +62,18 @@
     "scheduleButton": "Umów spotkanie",
     "emailButton": "Zostaw swój e-mail",
     "thankYouAlert": "Dziękujemy! Skontaktujemy się z Tobą na adres: {email}"
+  },
+  "notFound": {
+    "badge": "404 — Strona nie istnieje",
+    "title": "Zaginęliśmy w cyfrowym kosmosie",
+    "description": "Wygląda na to, że ścieżka, której szukasz, nie jest jeszcze dostępna. Sprawdź adres lub wróć do głównej nawigacji, aby kontynuować podróż.",
+    "ctaPrimary": "Wróć na stronę główną",
+    "hintTitle": "Podpowiedzi nawigacyjne",
+    "hintItems": {
+      "first": "• Sprawdź moduły produktowe w sekcji Moduły",
+      "second": "• Odwiedź stronę główną, aby zobaczyć nowości",
+      "third": "• Skontaktuj się, jeśli potrzebujesz wsparcia"
+    }
   },
   "contactCTA": {
     "title": "Potrzebujesz podobnego rozwiązania?",

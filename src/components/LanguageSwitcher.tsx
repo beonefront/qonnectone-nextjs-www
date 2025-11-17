@@ -24,7 +24,7 @@ export default function LanguageSwitcher({ variant = 'navigation' }: LanguageSwi
   };
 
   const buttonStyles = variant === 'footer'
-    ? (isActive: boolean) => `px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+    ? (isActive: boolean) => `px-3 py-1.5 rounded-md text-sm font-medium transition-colors cursor-pointer ${
         isActive
           ? 'bg-slate-700/80 text-white'
           : 'bg-slate-800/60 text-slate-400 hover:bg-slate-700/60 hover:text-white'

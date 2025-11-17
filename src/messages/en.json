@@ -31,6 +31,11 @@
     "privacyPolicy": "Privacy Policy",
     "cookiePolicy": "Cookie Policy"
   },
+  "cookieConsent": {
+    "message": "This website uses cookies to deliver the best experience. By continuing to browse you accept our <privacyPolicy>privacy policy</privacyPolicy>.",
+    "reject": "Reject",
+    "acceptAll": "Accept all"
+  },
   "faq": {
     "title": "FAQ",
     "subtitle": "3 KEY QUESTIONS",
@@ -57,6 +62,18 @@
     "scheduleButton": "Schedule a meeting",
     "emailButton": "Leave your email",
     "thankYouAlert": "Thank you! We will contact you at: {email}"
+  },
+  "notFound": {
+    "badge": "404 — Page not found",
+    "title": "We got lost in the digital cosmos",
+    "description": "It looks like the path you're trying to reach isn't available yet. Double-check the address or head back to the main navigation to keep exploring.",
+    "ctaPrimary": "Back to homepage",
+    "hintTitle": "Navigation tips",
+    "hintItems": {
+      "first": "• Explore the product modules in the Modules section",
+      "second": "• Visit the homepage to see what's new",
+      "third": "• Contact us if you need support"
+    }
   },
   "contactCTA": {
     "title": "Need a similar solution?",
