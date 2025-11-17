@@ -5,6 +5,95 @@ import Footer from '@/components/Footer';
 import CTASection from '@/components/CTASection';
 import { Shield, FileText, Users, Eye, Lock, Mail, MapPin } from 'lucide-react';
 
+const iconMap = {
+  users: Users,
+  shield: Shield,
+  fileText: FileText,
+  eye: Eye,
+  lock: Lock,
+  mapPin: MapPin,
+  mail: Mail,
+  doc: FileText,
+} as const;
+
+type IconKey = keyof typeof iconMap;
+
+type HeroSection = {
+  title: string;
+  subtitle: string;
+  description: string;
+};
+
+type DefinitionSection = {
+  title: string;
+  cards: Array<{ icon: IconKey; title: string; description: string }>;
+};
+
+type ControllerSection = {
+  title: string;
+  contactCard: {
+    title: string;
+    fields: Array<{ icon: IconKey; label: string; value: string }>;
+  };
+  dpoCard: {
+    title: string;
+    description: string;
+    details: Array<{ label: string; value: string }>;
+  };
+};
+
+type SourcesSection = {
+  title: string;
+  intro: string;
+  items: string[];
+  autoTitle: string;
+  autoParagraphs: string[];
+};
+
+type PurposeSection = {
+  title: string;
+  cards: Array<{ title: string; description: string }>;
+};
+
+type RecipientsSection = {
+  title: string;
+  paragraphs: string[];
+};
+
+type RetentionSection = {
+  title: string;
+  intro: string;
+  items: Array<{ label: string; description: string }>;
+};
+
+type RightsSection = {
+  title: string;
+  basic: { title: string; intro: string; items: string[] };
+  withdrawal: { title: string; paragraphs: string[] };
+  complaint: { title: string; description: string };
+};
+
+type CookiesSection = {
+  title: string;
+  cards: Array<{ title: string; paragraphs?: string[]; list?: string[] }>;
+};
+
+type FinalSection = {
+  title: string;
+  cards: Array<{ title: string; paragraphs: string[] }>;
+};
+
+const BulletList = ({ items }: { items: string[] }) => (
+  <ul className="space-y-2 text-foreground/70">
+    {items.map((item) => (
+      <li key={item} className="flex items-start">
+        <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0" />
+        <span>{item}</span>
+      </li>
+    ))}
+  </ul>
+);
+
 type Props = {
   params: Promise<{ locale: string }>;
 };
@@ -28,6 +117,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function PolitykaPrywatnosciPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'privacy' });
+
+  const hero = t.raw('hero') as HeroSection;
+  const definitions = t.raw('definitions') as DefinitionSection;
+  const controller = t.raw('controller') as ControllerSection;
+  const sources = t.raw('sources') as SourcesSection;
+  const purposes = t.raw('purposes') as PurposeSection;
+  const recipients = t.raw('recipients') as RecipientsSection;
+  const retention = t.raw('retention') as RetentionSection;
+  const rights = t.raw('rights') as RightsSection;
+  const cookies = t.raw('cookies') as CookiesSection;
+  const finalSection = t.raw('final') as FinalSection;
+
   return (
     <div className="bg-gray-50 text-gray-800">
       <Navigation />
@@ -37,13 +140,13 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="relative flex w-full flex-col items-center justify-start px-4 pt-32 sm:px-6 sm:pt-24 md:pt-32 lg:px-8">
           <div className="flex w-full max-w-4xl flex-col space-y-4 overflow-hidden py-8 pb-16">
             <h1 className="text-center text-4xl font-medium leading-tight text-foreground sm:text-5xl md:text-6xl">
-              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">Polityka Prywatności</span>
+              <span className="inline-block px-1 md:px-2 text-balance font-montserrat font-semibold">{hero.title}</span>
             </h1>
             <p className="mx-auto max-w-3xl text-center text-base leading-7 text-foreground/70 sm:text-lg sm:leading-8 text-balance">
-              Polityka Prywatności serwisów internetowych QonnectOne Sp. z o.o. z siedzibą w Gdańsku
+              {hero.subtitle}
             </p>
             <p className="mx-auto max-w-4xl text-center text-base leading-6 text-foreground/60 sm:text-base sm:leading-7 text-balance">
-              Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych użytkowników serwisów internetowych QonnectOne zgodnie z Rozporządzeniem RODO.
+              {hero.description}
             </p>
           </div>
         </div>
@@ -54,54 +157,23 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Definicje terminów użytych w Polityce Prywatności
+              {definitions.title}
             </h2>
             <div className="space-y-6">
-              <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center">
-                  <Users className="w-5 h-5 text-primary mr-2" />
-                  Użytkownik
-                </h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Osoba fizyczna, osoba prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej korzystająca z usług świadczonych drogą elektroniczną za pośrednictwem serwisów internetowych wskazanych w pkt. 2.
-                </p>
-              </div>
-              <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center">
-                  <Shield className="w-5 h-5 text-primary mr-2" />
-                  Dane osobowe
-                </h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Informacje o zidentyfikowanej lub możliwej do zidentyfikowania osobie fizycznej (&ldquo;osobie, której dane dotyczą&rdquo;); możliwa do zidentyfikowania osoba fizyczna to osoba, którą można bezpośrednio lub pośrednio zidentyfikować, w szczególności na podstawie identyfikatora takiego jak imię i nazwisko, numer identyfikacyjny, dane o lokalizacji, identyfikator internetowy lub jeden bądź kilka szczególnych czynników określających fizyczną, fizjologiczną, genetyczną, psychiczną, ekonomiczną, kulturową lub społeczną tożsamość osoby fizycznej.
-                </p>
-              </div>
-              <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center">
-                  <FileText className="w-5 h-5 text-primary mr-2" />
-                  Spółka, Administrator Danych Osobowych
-                </h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  QonnectOne Spółka z ograniczoną odpowiedzialnością z siedzibą w Gdańsku, ul. Lęborska 3B, 80-386 Gdańsk, wpisaną do rejestru przedsiębiorców przez Sąd Rejonowy Gdańsk - Północ w Gdańsku, VII Wydział Gospodarczy Krajowego Rejestru Sądowego, pod numerem KRS: 0001160997 REGON 54115490 NIP: 5842865648; kapitał zakładowy: 750 000 zł.
-                </p>
-              </div>
-              <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center">
-                  <Eye className="w-5 h-5 text-primary mr-2" />
-                  Serwisy
-                </h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Serwisy internetowe umieszczone w domenach internetowych: www.qonnectone.com, z których każdy odrębnie określany jest dalej jako &ldquo;Serwis&rdquo;.
-                </p>
-              </div>
-              <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center">
-                  <Lock className="w-5 h-5 text-primary mr-2" />
-                  RODO
-                </h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE.
-                </p>
-              </div>
+              {definitions.cards.map((card) => {
+                const Icon = iconMap[card.icon];
+                return (
+                  <div className="bg-muted/30 border border-border rounded-xl p-6" key={card.title}>
+                    <h3 className="text-lg font-semibold text-foreground mb-3 flex items-center">
+                      <Icon className="w-5 h-5 text-primary mr-2" />
+                      {card.title}
+                    </h3>
+                    <p className="text-foreground/70 leading-relaxed">
+                      {card.description}
+                    </p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>
@@ -112,61 +184,37 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Informacje o Administratorze Danych Osobowych
+              {controller.title}
             </h2>
             <div className="space-y-6">
               <div className="bg-background border border-border rounded-xl p-8">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Dane kontaktowe</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{controller.contactCard.title}</h3>
                 <div className="space-y-4">
-                  <div className="flex items-start">
-                    <MapPin className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">Adres siedziby:</p>
-                      <p className="text-foreground/70">ul. Lęborska 3B, 80-386 Gdańsk</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <Mail className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">E-mail:</p>
-                      <p className="text-foreground/70">hello@qonnectone.com</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <FileText className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">KRS:</p>
-                      <p className="text-foreground/70">0001160997</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <FileText className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">REGON:</p>
-                      <p className="text-foreground/70">54115490</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
-                    <FileText className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                    <div>
-                      <p className="font-medium text-foreground">NIP:</p>
-                      <p className="text-foreground/70">5842865648</p>
-                    </div>
-                  </div>
+                  {controller.contactCard.fields.map((field) => {
+                    const Icon = iconMap[field.icon];
+                    return (
+                      <div className="flex items-start" key={field.label}>
+                        <Icon className="w-5 h-5 text-primary mr-3 mt-1 flex-shrink-0" />
+                        <div>
+                          <p className="font-medium text-foreground">{field.label}</p>
+                          <p className="text-foreground/70">{field.value}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
               <div className="bg-background border border-border rounded-xl p-8">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Inspektor Ochrony Danych</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{controller.dpoCard.title}</h3>
                 <p className="text-foreground/70 leading-relaxed mb-4">
-                  Administrator Danych Osobowych wyznaczył Inspektora Ochrony Danych. Osoby zainteresowane mogą się skontaktować z Inspektorem we wszelkich sprawach dotyczących przetwarzania danych osobowych przez Administratora Danych Osobowych.
+                  {controller.dpoCard.description}
                 </p>
                 <div className="space-y-2">
-                  <p className="text-foreground/70">
-                    <strong>E-mail:</strong> hello@qonnectone.com
-                  </p>
-                  <p className="text-foreground/70">
-                    <strong>Adres:</strong> ul. Lęborska 3B, 80-386 Gdańsk
-                  </p>
+                  {controller.dpoCard.details.map((detail) => (
+                    <p className="text-foreground/70" key={detail.label}>
+                      <strong>{detail.label}:</strong> {detail.value}
+                    </p>
+                  ))}
                 </div>
               </div>
             </div>
@@ -179,40 +227,22 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Źródła Danych osobowych
+              {sources.title}
             </h2>
             <div className="space-y-6">
               <div className="bg-muted/30 border border-border rounded-xl p-6">
                 <p className="text-foreground/70 leading-relaxed mb-4">
-                  Administrator Danych Osobowych pozyskuje Dane osobowe poprzez:
+                  {sources.intro}
                 </p>
-                <ul className="space-y-3 text-foreground/70">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>poprzez informacje i dane dobrowolnie wprowadzone w formularzach Serwisu</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>poprzez zapisywanie w urządzeniach końcowych pliki cookie (tzw. &ldquo;ciasteczka&rdquo;)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>poprzez gromadzenie logów serwera www</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>zapisywanie parametrów połączenia z Serwisem (oznaczenie czasu, adres IP)</span>
-                  </li>
-                </ul>
+                <BulletList items={sources.items} />
               </div>
               <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3">Dane zbierane automatycznie</h3>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  Informacje o niektórych zachowaniach Użytkowników – osób fizycznych - podlegają logowaniu w warstwie serwerowej. Dane te są wykorzystywane w celu administrowania serwisem oraz w celu zapewnienia jak najbardziej sprawnej obsługi świadczonych usług.
-                </p>
-                <p className="text-foreground/70 leading-relaxed">
-                  Administrator Danych Osobowych nie pozyskuje Danych osobowych od podmiotów trzecich. Administrator Danych Osobowych przetwarza Dane osobowe samodzielnie i dobrowolnie podane przez Użytkownika – osobę fizyczną.
-                </p>
+                <h3 className="text-lg font-semibold text-foreground mb-3">{sources.autoTitle}</h3>
+                {sources.autoParagraphs.map((paragraph) => (
+                  <p className="text-foreground/70 leading-relaxed mb-4 last:mb-0" key={paragraph}>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -224,33 +254,17 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Cele przetwarzania i podstawa prawna
+              {purposes.title}
             </h2>
             <div className="space-y-6">
-              <div className="bg-background border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3">1. Korzystanie z Serwisu</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Dane osobowe przetwarzane są w celu udostępnienia funkcjonalności strony internetowej i utrzymania połączenia – podstawą prawną jest realizacja przez Administratora Danych Osobowych prawnie uzasadnionego interesu (art. 6 ust. 1 lit. f RODO).
-                </p>
-              </div>
-              <div className="bg-background border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3">2. Rejestracja konta i usługi płatnicze</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Dane podane w formularzu rejestracyjnym – w celu zawarcia umowy o świadczenie usług drogą elektroniczną, umowy o świadczenie usługi przekazu pieniężnego i ich wykonania, rozpatrywania reklamacji, wykonania usługi płatniczej zgodnie ze zleceniem płatniczym (art. 6 ust. 1 lit. b RODO).
-                </p>
-              </div>
-              <div className="bg-background border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3">3. Marketing własnych produktów i usług</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Podstawą prawną jest realizacja przez Spółkę prawnie uzasadnionego interesu (art. 6 ust. 1 lit. f RODO), gdzie prawnie uzasadnionym interesem Spółki jest marketing bezpośredni, z zastrzeżeniem, że przesyłanie informacji handlowej za pomocą środków komunikacji elektronicznej jest możliwe tylko za zgodą Użytkownika.
-                </p>
-              </div>
-              <div className="bg-background border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-3">4. Formularz kontaktowy</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Podstawą prawną jest realizacja przez Spółkę prawnie uzasadnionego interesu (art. 6 ust. 1 lit. f RODO), gdzie prawnie uzasadnionym interesem Spółki jest udzielenie odpowiedzi na kierowane do Spółki zapytanie.
-                </p>
-              </div>
+              {purposes.cards.map((card) => (
+                <div className="bg-background border border-border rounded-xl p-6" key={card.title}>
+                  <h3 className="text-lg font-semibold text-foreground mb-3">{card.title}</h3>
+                  <p className="text-foreground/70 leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -261,19 +275,15 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Odbiorcy Danych osobowych
+              {recipients.title}
             </h2>
             <div className="space-y-6">
               <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  Dane osobowe mogą być przekazane podmiotom technicznie realizującym niektóre usługi – w szczególności dotyczy to przekazywania informacji do serwisów obsługujących płatności lub też innych podmiotów, z którymi Administrator Danych Osobowych w tym zakresie współpracuje.
-                </p>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  Spółka może Dane osobowe podmiotom, które angażuje jako podmioty przetwarzające, takie jak dostawcy usług informatycznych i poczty e-mail, dostawcy technologii, księgowi i firmy niszczące nośniki danych.
-                </p>
-                <p className="text-foreground/70 leading-relaxed">
-                  Dane osobowe mogą zostać również udostępnione podmiotom uprawnionym do żądania tych danych na mocy obowiązujących przepisów prawa.
-                </p>
+                {recipients.paragraphs.map((paragraph) => (
+                  <p className="text-foreground/70 leading-relaxed mb-4 last:mb-0" key={paragraph}>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
             </div>
           </div>
@@ -285,34 +295,20 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Okres przechowywania Danych osobowych
+              {retention.title}
             </h2>
             <div className="space-y-6">
               <div className="bg-background border border-border rounded-xl p-6">
                 <p className="text-foreground/70 leading-relaxed mb-4">
-                  Dane osobowe będą przechowywane przez okres zależny od celu przetwarzania:
+                  {retention.intro}
                 </p>
                 <ul className="space-y-3 text-foreground/70">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong>Wykonanie umowy:</strong> przez okres obowiązywania umowy</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong>Funkcjonalność Serwisów:</strong> na czas trwania połączenia</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong>Obowiązki prawne:</strong> przez okres niezbędny do realizacji obowiązków ujętych w przepisach</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong>Roszczenia:</strong> przez okres przedawnienia ewentualnych roszczeń</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong>Marketing:</strong> do czasu wycofania zgody lub do momentu całkowitego realizacji celu przetwarzania danych</span>
-                  </li>
+                  {retention.items.map((item) => (
+                    <li className="flex items-start" key={item.label}>
+                      <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                      <span><strong>{item.label}:</strong> {item.description}</span>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -325,50 +321,28 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Prawa podmiotu, którego Dane osobowe dotyczą
+              {rights.title}
             </h2>
             <div className="space-y-6">
               <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Podstawowe prawa</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-4">{rights.basic.title}</h3>
                 <p className="text-foreground/70 leading-relaxed mb-4">
-                  Użytkownikowi – osobie fizycznej przysługuje:
+                  {rights.basic.intro}
                 </p>
-                <ul className="space-y-2 text-foreground/70">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>prawo dostępu do Danych osobowych</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>prawo żądania sprostowania Danych osobowych, jeżeli są nieprawidłowe</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>usunięcia Danych osobowych</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>ograniczenia przetwarzania Danych osobowych</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>przenoszenia Danych osobowych</span>
-                  </li>
-                </ul>
+                <BulletList items={rights.basic.items} />
               </div>
               <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Wycofanie zgody</h3>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  Jeżeli Dane osobowe przetwarzamy na podstawie zgody – Użytkownik ma prawo do jej wycofania w dowolnym momencie. Wycofać zgodę można przesyłając do Spółki e-mail na adres: <strong>hello@qonnectone.com</strong>
-                </p>
-                <p className="text-foreground/70 leading-relaxed">
-                  Cofnięcie zgody pozostaje bez wpływu na zgodność z prawem przetwarzania Danych przed momentem cofnięcia zgody ani w zakresie, w jakim Dane osobowe są przetwarzane w oparciu o inną podstawę przetwarzania danych.
-                </p>
+                <h3 className="text-lg font-semibold text-foreground mb-4">{rights.withdrawal.title}</h3>
+                {rights.withdrawal.paragraphs.map((paragraph) => (
+                  <p className="text-foreground/70 leading-relaxed mb-4 last:mb-0" key={paragraph}>
+                    {paragraph}
+                  </p>
+                ))}
               </div>
               <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Prawo wniesienia skargi</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-4">{rights.complaint.title}</h3>
                 <p className="text-foreground/70 leading-relaxed">
-                  Użytkownikowi – osobie fizycznej - przysługuje również prawo wniesienia skargi do organu nadzorczego zajmującego się ochroną danych osobowych w państwie członkowskim zwykłego pobytu, miejsca pracy Użytkownika – osoby fizycznej - lub miejsca popełnienia domniemanego naruszenia. W przypadku Polski tym organem jest: <strong>Prezes Urzędu Ochrony Danych Osobowych (PUODO)</strong> - Adres: Stawki 2, 00-193 Warszawa, Telefon: 22 531 03 00
+                  {rights.complaint.description}
                 </p>
               </div>
             </div>
@@ -381,56 +355,20 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Cookies
+              {cookies.title}
             </h2>
             <div className="space-y-6">
-              <div className="bg-background border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Co to są cookies?</h3>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  Pliki cookies (tzw. &ldquo;ciasteczka&rdquo;) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika Serwisów i przeznaczone są do korzystania ze stron internetowych Serwisów.
-                </p>
-                <p className="text-foreground/70 leading-relaxed">
-                  Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer.
-                </p>
-              </div>
-              <div className="bg-background border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Rodzaje cookies</h3>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  W przypadku Serwisu, stosowane są dwa rodzaje plików cookies:
-                </p>
-                <ul className="space-y-2 text-foreground/70">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong>Cookies &ldquo;sesyjne&rdquo;:</strong> pliki tymczasowe, które przechowywane są w urządzeniu końcowym Użytkownika do czasu wylogowania, opuszczenia strony internetowej lub wyłączenia oprogramowania (przeglądarki internetowej)</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span><strong>&ldquo;Stałe&rdquo; pliki cookies:</strong> przechowywane są w urządzeniu końcowym Użytkownika przez czas określony w parametrach plików cookies lub do czasu ich usunięcia przez Użytkownika</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-background border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Cele wykorzystania cookies</h3>
-                <ul className="space-y-2 text-foreground/70">
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>tworzenia statystyk, które pomagają zrozumieć, w jaki sposób Użytkownicy Serwisów korzystają ze stron internetowych</span>
-                  </li>
-                  <li className="flex items-start">
-                    <span className="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span>utrzymanie sesji Użytkownika Serwisów (po zalogowaniu), dzięki której Użytkownik nie musi na każdej podstronie Serwisów ponownie wpisywać loginu i hasła</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-background border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Zarządzanie cookies</h3>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  Oprogramowanie do przeglądania stron internetowych (przeglądarka internetowa) zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Użytkownicy Serwisów mogą dokonać zmiany ustawień w tym zakresie.
-                </p>
-                <p className="text-foreground/70 leading-relaxed">
-                  Użytkownik powinien mieć świadomość, że ograniczenie lub wyłączenie stosowania plików cookies może wpłynąć na niektóre funkcjonalności dostępne na stronach internetowych Serwisów.
-                </p>
-              </div>
+              {cookies.cards.map((card) => (
+                <div className="bg-background border border-border rounded-xl p-6" key={card.title}>
+                  <h3 className="text-lg font-semibold text-foreground mb-4">{card.title}</h3>
+                  {card.paragraphs?.map((paragraph) => (
+                    <p className="text-foreground/70 leading-relaxed mb-4 last:mb-0" key={paragraph}>
+                      {paragraph}
+                    </p>
+                  ))}
+                  {card.list && <BulletList items={card.list} />}
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -441,24 +379,19 @@ export default async function PolitykaPrywatnosciPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Postanowienia końcowe
+              {finalSection.title}
             </h2>
             <div className="space-y-6">
-              <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Obowiązywanie</h3>
-                <p className="text-foreground/70 leading-relaxed">
-                  Polityka Prywatności wraz z Polityką Cookies obowiązuje od dnia 1 września 2025 roku.
-                </p>
-              </div>
-              <div className="bg-muted/30 border border-border rounded-xl p-6">
-                <h3 className="text-lg font-semibold text-foreground mb-4">Zmiany w Polityce</h3>
-                <p className="text-foreground/70 leading-relaxed mb-4">
-                  Operator zastrzega sobie prawo do zmiany Polityki Prywatności i Polityki Cookies w każdym czasie. Jednolity tekst polityki prywatności i polityki cookies po zmianach będzie dostępny na głównych stronach Serwisów w zakładce &ldquo;Polityka Prywatności&rdquo;.
-                </p>
-                <p className="text-foreground/70 leading-relaxed">
-                  O planowanej zmianie Operator poinformuje Użytkowników z tygodniowym wyprzedzeniem, ze wskazaniem zakresu zmian i daty rozpoczęcia obowiązywania. W przypadku braku akceptacji zmian przez Użytkownika, umowa o świadczenie usługi elektronicznej rozwiąże się z upływem wskazanego w zawiadomieniu terminu.
-                </p>
-              </div>
+              {finalSection.cards.map((card) => (
+                <div className="bg-muted/30 border border-border rounded-xl p-6" key={card.title}>
+                  <h3 className="text-lg font-semibold text-foreground mb-4">{card.title}</h3>
+                  {card.paragraphs.map((paragraph) => (
+                    <p className="text-foreground/70 leading-relaxed mb-4 last:mb-0" key={paragraph}>
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>

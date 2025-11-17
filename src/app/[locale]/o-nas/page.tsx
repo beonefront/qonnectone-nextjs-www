@@ -35,6 +35,83 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function ONasPage({ params }: Props) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'aboutPage' });
+
+  const whyUsCards = [
+    {
+      key: 'specialization',
+      icon: Building,
+      iconBg: 'bg-blue-500/10',
+      iconHoverBg: 'group-hover:bg-blue-500/20',
+      iconColor: 'text-blue-600',
+      title: t('whyUs.cards.specialization.title'),
+      description: t('whyUs.cards.specialization.description'),
+    },
+    {
+      key: 'innovation',
+      icon: Lightbulb,
+      iconBg: 'bg-purple-500/10',
+      iconHoverBg: 'group-hover:bg-purple-500/20',
+      iconColor: 'text-purple-600',
+      title: t('whyUs.cards.innovation.title'),
+      description: t('whyUs.cards.innovation.description'),
+    },
+    {
+      key: 'flexibility',
+      icon: Target,
+      iconBg: 'bg-green-500/10',
+      iconHoverBg: 'group-hover:bg-green-500/20',
+      iconColor: 'text-green-600',
+      title: t('whyUs.cards.flexibility.title'),
+      description: t('whyUs.cards.flexibility.description'),
+    },
+    {
+      key: 'experts',
+      icon: Users,
+      iconBg: 'bg-orange-500/10',
+      iconHoverBg: 'group-hover:bg-orange-500/20',
+      iconColor: 'text-orange-600',
+      title: t('whyUs.cards.experts.title'),
+      description: t('whyUs.cards.experts.description'),
+    },
+  ];
+
+  const complianceItems = [
+    {
+      key: 'gdpr',
+      icon: Shield,
+      iconBg: 'bg-blue-500/10',
+      iconColor: 'text-blue-600',
+      title: t('compliance.items.gdpr.title'),
+      description: t('compliance.items.gdpr.description'),
+    },
+    {
+      key: 'dora',
+      icon: Server,
+      iconBg: 'bg-purple-500/10',
+      iconColor: 'text-purple-600',
+      title: t('compliance.items.dora.title'),
+      description: t('compliance.items.dora.description'),
+    },
+    {
+      key: 'audits',
+      icon: Search,
+      iconBg: 'bg-green-500/10',
+      iconColor: 'text-green-600',
+      title: t('compliance.items.audits.title'),
+      description: t('compliance.items.audits.description'),
+    },
+    {
+      key: 'knf',
+      icon: Award,
+      iconBg: 'bg-red-500/10',
+      iconColor: 'text-red-600',
+      title: t('compliance.items.knf.title'),
+      description: t('compliance.items.knf.description'),
+    },
+  ];
+
   return (
     <div className="bg-gray-50 text-gray-800">
       <Navigation />
@@ -146,57 +223,34 @@ export default async function ONasPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-semibold text-foreground mb-4 font-montserrat">
-              DLACZEGO MY?
+              {t('whyUs.sectionTitle')}
             </h2>
             <p className="text-xl text-foreground/70">
-              Naszą wizytówką jest doświadczenie, wiedza i znajomość potrzeb biznesu
+              {t('whyUs.sectionSubtitle')}
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-500/20 transition-colors duration-300">
-                <Building className="w-8 h-8 text-blue-600" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
-                Specjalizacja branżowa
-              </h3>
-              <p className="text-foreground/60 text-sm leading-relaxed">
-                Posiadamy głębokie, praktyczne zrozumienie wymagań rynkowych i regulacyjnych w sektorach nadzorowanych
-              </p>
-            </div>
-            <div className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-purple-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-purple-500/20 transition-colors duration-300">
-                <Lightbulb className="w-8 h-8 text-purple-600" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
-                Innowacyjność
-              </h3>
-              <p className="text-foreground/60 text-sm leading-relaxed">
-                Nieustannie doskonalimy nasze rozwiązania, aby sprostać aktualnym wyzwaniom i przewidzieć przyszłe trendy w branży płatniczej
-              </p>
-            </div>
-            <div className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-green-500/20 transition-colors duration-300">
-                <Target className="w-8 h-8 text-green-600" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
-                Elastyczność
-              </h3>
-              <p className="text-foreground/60 text-sm leading-relaxed">
-                Nasze modułowe podejście i elastyczne modele wdrożenia gwarantują, że system idealnie dopasuje się do indywidualnych potrzeb i tempa rozwoju Twojej firmy
-              </p>
-            </div>
-            <div className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300">
-              <div className="w-16 h-16 bg-orange-500/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-orange-500/20 transition-colors duration-300">
-                <Users className="w-8 h-8 text-orange-600" />
-              </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">
-                Wsparcie ekspertów
-              </h3>
-              <p className="text-foreground/60 text-sm leading-relaxed">
-                Nasz doświadczony zespół specjalistów jest gotowy do wsparcia na każdym etapie współpracy – od analizy potrzeb, przez wdrożenie, aż po bieżącą obsługę i optymalizację.
-              </p>
-            </div>
+            {whyUsCards.map((card) => {
+              const Icon = card.icon;
+              return (
+                <div
+                  key={card.key}
+                  className="bg-background border border-border rounded-xl p-6 shadow-sm text-center group hover:shadow-lg transition-shadow duration-300"
+                >
+                  <div
+                    className={`w-16 h-16 ${card.iconBg} rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-300 ${card.iconHoverBg}`}
+                  >
+                    <Icon className={`w-8 h-8 ${card.iconColor}`} />
+                  </div>
+                  <h3 className="text-lg font-semibold text-foreground mb-3">
+                    {card.title}
+                  </h3>
+                  <p className="text-foreground/60 text-sm leading-relaxed">
+                    {card.description}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -206,56 +260,33 @@ export default async function ONasPage({ params }: Props) {
         <div className="container mx-auto px-4 max-w-7xl">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-semibold text-foreground mb-8 text-center font-montserrat">
-              Kompleksowe Bezpieczeństwo i zgodność
+              {t('compliance.title')}
             </h2>
             <p className="text-lg text-foreground/70 text-center mb-10">
-              Kładziemy nacisk na najwyższe standardy ochrony informacji i prywatności danych:
+              {t('compliance.subtitle')}
             </p>
             <div className="space-y-6">
-              <div className="bg-muted/30 border border-border rounded-xl p-6 flex items-start">
-                <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Shield className="w-6 h-6 text-blue-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">RODO / GDPR</h3>
-                  <p className="text-foreground/70">
-                    Pełna zgodność z Rozporządzeniem Ogólnym o Ochronie Danych Osobowych, zapewniająca ochronę prywatności klientów.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-muted/30 border border-border rounded-xl p-6 flex items-start">
-                <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Server className="w-6 h-6 text-purple-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">DORA (Digital Operational Resilience Act)</h3>
-                  <p className="text-foreground/70">
-                    Aktywnie przygotowujemy nasze rozwiązania do pełnej zgodności z nowymi regulacjami dotyczącymi odporności cyfrowej sektora finansowego.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-muted/30 border border-border rounded-xl p-6 flex items-start">
-                <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Search className="w-6 h-6 text-green-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Audyty Bezpieczeństwa / Penetration Tests</h3>
-                  <p className="text-foreground/70">
-                    Regularnie poddajemy nasze systemy rygorystycznym audytom bezpieczeństwa i testom penetracyjnym, aby identyfikować i eliminować potencjalne luki.
-                  </p>
-                </div>
-              </div>
-              <div className="bg-muted/30 border border-border rounded-xl p-6 flex items-start">
-                <div className="w-12 h-12 bg-red-500/10 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
-                  <Award className="w-6 h-6 text-red-600" />
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-foreground mb-2">Zgodność z Wymogami KNF dla KIP MIP</h3>
-                  <p className="text-foreground/70">
-                    Nasz system jest zaprojektowany z myślą o spełnieniu wszystkich wymogów Komisji Nadzoru Finansowego dla Krajowych Instytucji Płatniczych i Małych Instytucji Płatniczych
-                  </p>
-                </div>
-              </div>
+              {complianceItems.map((item) => {
+                const Icon = item.icon;
+                return (
+                  <div
+                    key={item.key}
+                    className="bg-muted/30 border border-border rounded-xl p-6 flex items-start"
+                  >
+                    <div
+                      className={`w-12 h-12 ${item.iconBg} rounded-full flex items-center justify-center mr-4 flex-shrink-0`}
+                    >
+                      <Icon className={`w-6 h-6 ${item.iconColor}`} />
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-semibold text-foreground mb-2">{item.title}</h3>
+                      <p className="text-foreground/70">
+                        {item.description}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

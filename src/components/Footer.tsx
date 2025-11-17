@@ -1,6 +1,9 @@
+'use client';
+
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Footer() {
   const t = useTranslations('footer');
@@ -28,20 +31,16 @@ export default function Footer() {
 
             {/* Social links */}
             <div className="flex space-x-3">
-              {[
-                { href: "https://www.linkedin.com/company/109154246", icon: "fab fa-linkedin", label: "LinkedIn" },
-              ].map((social) => (
-                <Link
-                  key={social.label}
-                  href={social.href}
-                  className="w-9 h-9 rounded-lg bg-slate-800/60 hover:bg-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
-                  aria-label={social.label}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className={`${social.icon} text-sm`}></i>
-                </Link>
-              ))}
+              <Link
+                key="LinkedIn"
+                href="https://www.linkedin.com/company/109154246"
+                className="w-9 h-9 rounded-lg bg-slate-800/60 hover:bg-slate-700/60 flex items-center justify-center text-slate-400 hover:text-white transition-all duration-200"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className={`fab fa-linkedin text-sm`}></i>
+              </Link>
             </div>
           </div>
 
@@ -132,19 +131,27 @@ export default function Footer() {
             <p className="text-slate-500 text-xs">
               {t('copyright', { year: currentYear })}
             </p>
-            <div className="flex space-x-6">
-              {[
-                { href: "/polityka-prywatnosci", label: t('privacyPolicy') },
-                { href: "/cookies", label: t('cookiePolicy') },
-              ].map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-slate-500 hover:text-slate-300 text-xs transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              ))}
+            <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+              {/* Language Switcher */}
+              <div className="scale-90 origin-center">
+                <LanguageSwitcher variant="footer" />
+              </div>
+
+              {/* Legal Links */}
+              <div className="flex space-x-6">
+                {[
+                  { href: "/polityka-prywatnosci", label: t('privacyPolicy') },
+                  { href: "/cookies", label: t('cookiePolicy') },
+                ].map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="text-slate-500 hover:text-slate-300 text-xs transition-colors duration-200"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
             </div>
           </div>
         </div>

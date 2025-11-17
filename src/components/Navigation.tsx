@@ -4,7 +4,6 @@ import { Link, usePathname } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Navigation() {
   const t = useTranslations('navigation');
@@ -127,12 +126,6 @@ export default function Navigation() {
                 </span>
               </Link>
             ))}
-
-            {/* Language Switcher */}
-            <div className="h-6 w-px bg-gray-300/50 mx-1" />
-            <div className="px-2">
-              <LanguageSwitcher />
-            </div>
           </div>
         </div>
 
@@ -154,7 +147,6 @@ export default function Navigation() {
             </div>
 
             <div className="flex items-center gap-3">
-              <LanguageSwitcher />
               {/* Hamburger Menu Button */}
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

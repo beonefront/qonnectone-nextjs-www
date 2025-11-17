@@ -10,7 +10,11 @@ const localeNames: Record<Locale, string> = {
   ua: 'UA',
 };
 
-export default function LanguageSwitcher() {
+interface LanguageSwitcherProps {
+  variant?: 'navigation' | 'footer';
+}
+
+export default function LanguageSwitcher({ variant = 'navigation' }: LanguageSwitcherProps) {
   const locale = useLocale() as Locale;
   const router = useRouter();
   const pathname = usePathname();
@@ -19,17 +23,25 @@ export default function LanguageSwitcher() {
     router.replace(pathname, { locale: newLocale });
   };
 
+  const buttonStyles = variant === 'footer'
+    ? (isActive: boolean) => `px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+        isActive
+          ? 'bg-slate-700/80 text-white'
+          : 'bg-slate-800/60 text-slate-400 hover:bg-slate-700/60 hover:text-white'
+      }`
+    : (isActive: boolean) => `px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
+        isActive
+          ? 'bg-primary text-white'
+          : 'bg-white/60 text-gray-700 hover:bg-white/80'
+      }`;
+
   return (
     <div className="flex items-center gap-2">
       {locales.map((loc) => (
         <button
           key={loc}
           onClick={() => handleLocaleChange(loc)}
-          className={`px-3 py-1.5 rounded-md text-sm font-medium transition-colors ${
-            locale === loc
-              ? 'bg-primary text-white'
-              : 'bg-white/60 text-gray-700 hover:bg-white/80'
-          }`}
+          className={buttonStyles(locale === loc)}
         >
           {localeNames[loc]}
         </button>

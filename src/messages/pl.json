@@ -58,6 +58,407 @@
     "emailButton": "Zostaw swój e-mail",
     "thankYouAlert": "Dziękujemy! Skontaktujemy się z Tobą na adres: {email}"
   },
+  "contactCTA": {
+    "title": "Potrzebujesz podobnego rozwiązania?",
+    "description": "Skontaktuj się z nami, aby omówić jak QonnectOne może przyspieszyć rozwój Twojej instytucji finansowej lub firmy i pomóc w spełnieniu wymogów regulacyjnych."
+  },
+  "privacy": {
+    "hero": {
+      "title": "Polityka Prywatności",
+      "subtitle": "Polityka Prywatności serwisów internetowych QonnectOne Sp. z o.o. z siedzibą w Gdańsku",
+      "description": "Niniejsza Polityka Prywatności określa zasady przetwarzania i ochrony danych osobowych użytkowników serwisów internetowych QonnectOne zgodnie z Rozporządzeniem RODO."
+    },
+    "definitions": {
+      "title": "Definicje terminów użytych w Polityce Prywatności",
+      "cards": [
+        {
+          "icon": "users",
+          "title": "Użytkownik",
+          "description": "Osoba fizyczna, osoba prawna lub jednostka organizacyjna nieposiadająca osobowości prawnej korzystająca z usług świadczonych drogą elektroniczną za pośrednictwem serwisów internetowych wskazanych w pkt. 2."
+        },
+        {
+          "icon": "shield",
+          "title": "Dane osobowe",
+          "description": "Informacje o zidentyfikowanej lub możliwej do zidentyfikowania osobie fizycznej; możliwa do zidentyfikowania osoba fizyczna to osoba, którą można bezpośrednio lub pośrednio zidentyfikować, w szczególności na podstawie identyfikatora takiego jak imię i nazwisko, numer identyfikacyjny, dane o lokalizacji, identyfikator internetowy lub jeden bądź kilka szczególnych czynników określających fizyczną, fizjologiczną, genetyczną, psychiczną, ekonomiczną, kulturową lub społeczną tożsamość osoby fizycznej."
+        },
+        {
+          "icon": "fileText",
+          "title": "Spółka, Administrator Danych Osobowych",
+          "description": "QonnectOne Spółka z ograniczoną odpowiedzialnością z siedzibą w Gdańsku, ul. Lęborska 3B, 80-386 Gdańsk, wpisana do rejestru przedsiębiorców przez Sąd Rejonowy Gdańsk-Północ w Gdańsku, VII Wydział Gospodarczy Krajowego Rejestru Sądowego, pod numerem KRS: 0001160997 REGON: 54115490 NIP: 5842865648; kapitał zakładowy: 750 000 zł."
+        },
+        {
+          "icon": "eye",
+          "title": "Serwisy",
+          "description": "Serwisy internetowe umieszczone w domenie www.qonnectone.com, z których każdy odrębnie określany jest dalej jako „Serwis”."
+        },
+        {
+          "icon": "lock",
+          "title": "RODO",
+          "description": "Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE."
+        }
+      ]
+    },
+    "controller": {
+      "title": "Informacje o Administratorze Danych Osobowych",
+      "contactCard": {
+        "title": "Dane kontaktowe",
+        "fields": [
+          {
+            "icon": "mapPin",
+            "label": "Adres siedziby",
+            "value": "ul. Lęborska 3B, 80-386 Gdańsk"
+          },
+          {
+            "icon": "mail",
+            "label": "E-mail",
+            "value": "hello@qonnectone.com"
+          },
+          {
+            "icon": "doc",
+            "label": "KRS",
+            "value": "0001160997"
+          },
+          {
+            "icon": "doc",
+            "label": "REGON",
+            "value": "54115490"
+          },
+          {
+            "icon": "doc",
+            "label": "NIP",
+            "value": "5842865648"
+          }
+        ]
+      },
+      "dpoCard": {
+        "title": "Inspektor Ochrony Danych",
+        "description": "Administrator Danych Osobowych wyznaczył Inspektora Ochrony Danych. Osoby zainteresowane mogą się z nim skontaktować we wszelkich sprawach dotyczących przetwarzania danych osobowych przez Administratora.",
+        "details": [
+          {
+            "label": "E-mail",
+            "value": "hello@qonnectone.com"
+          },
+          {
+            "label": "Adres",
+            "value": "ul. Lęborska 3B, 80-386 Gdańsk"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "title": "Źródła Danych osobowych",
+      "intro": "Administrator Danych Osobowych pozyskuje dane osobowe poprzez:",
+      "items": [
+        "informacje i dane dobrowolnie wprowadzone w formularzach Serwisu",
+        "zapisywanie w urządzeniach końcowych plików cookie (tzw. „ciasteczka”)",
+        "gromadzenie logów serwera www",
+        "zapisywanie parametrów połączenia z Serwisem (oznaczenie czasu, adres IP)"
+      ],
+      "autoTitle": "Dane zbierane automatycznie",
+      "autoParagraphs": [
+        "Informacje o niektórych zachowaniach Użytkowników podlegają logowaniu w warstwie serwerowej. Dane te są wykorzystywane w celu administrowania Serwisem oraz zapewnienia jak najbardziej sprawnej obsługi świadczonych usług.",
+        "Administrator nie pozyskuje danych osobowych od podmiotów trzecich. Przetwarza wyłącznie dane podane dobrowolnie przez Użytkownika."
+      ]
+    },
+    "purposes": {
+      "title": "Cele przetwarzania i podstawa prawna",
+      "cards": [
+        {
+          "title": "1. Korzystanie z Serwisu",
+          "description": "Dane osobowe przetwarzane są w celu udostępnienia funkcjonalności strony internetowej i utrzymania połączenia – podstawą prawną jest realizacja prawnie uzasadnionego interesu Administratora (art. 6 ust. 1 lit. f RODO)."
+        },
+        {
+          "title": "2. Rejestracja konta i usługi płatnicze",
+          "description": "Dane podane w formularzu rejestracyjnym są wykorzystywane w celu zawarcia i wykonania umowy o świadczenie usług drogą elektroniczną, umowy o świadczenie usługi przekazu pieniężnego, rozpatrywania reklamacji oraz realizacji usług płatniczych (art. 6 ust. 1 lit. b RODO)."
+        },
+        {
+          "title": "3. Marketing własnych produktów i usług",
+          "description": "Podstawą prawną jest realizacja prawnie uzasadnionego interesu Spółki (art. 6 ust. 1 lit. f RODO), gdzie tym interesem jest marketing bezpośredni. Przesyłanie informacji handlowej drogą elektroniczną następuje wyłącznie za zgodą Użytkownika."
+        },
+        {
+          "title": "4. Formularz kontaktowy",
+          "description": "Dane przetwarzane są na podstawie prawnie uzasadnionego interesu Spółki polegającego na udzieleniu odpowiedzi na kierowane zapytania (art. 6 ust. 1 lit. f RODO)."
+        }
+      ]
+    },
+    "recipients": {
+      "title": "Odbiorcy Danych osobowych",
+      "paragraphs": [
+        "Dane osobowe mogą być przekazywane podmiotom technicznie realizującym niektóre usługi – w szczególności serwisom obsługującym płatności lub innym podmiotom współpracującym z Administratorem.",
+        "Spółka może przekazywać dane podmiotom, które angażuje jako podmioty przetwarzające, takim jak dostawcy usług informatycznych i poczty e-mail, dostawcy technologii, księgowi i firmy niszczące nośniki danych.",
+        "Dane osobowe mogą zostać również udostępnione podmiotom uprawnionym do ich żądania na mocy obowiązujących przepisów prawa."
+      ]
+    },
+    "retention": {
+      "title": "Okres przechowywania Danych osobowych",
+      "intro": "Dane osobowe będą przechowywane przez okres zależny od celu przetwarzania:",
+      "items": [
+        {
+          "label": "Wykonanie umowy",
+          "description": "przez okres obowiązywania umowy"
+        },
+        {
+          "label": "Funkcjonalność Serwisów",
+          "description": "na czas trwania połączenia"
+        },
+        {
+          "label": "Obowiązki prawne",
+          "description": "przez okres niezbędny do realizacji obowiązków wynikających z przepisów"
+        },
+        {
+          "label": "Roszczenia",
+          "description": "przez okres przedawnienia ewentualnych roszczeń"
+        },
+        {
+          "label": "Marketing",
+          "description": "do czasu wycofania zgody lub całkowitego zrealizowania celu przetwarzania danych"
+        }
+      ]
+    },
+    "rights": {
+      "title": "Prawa podmiotu, którego dane dotyczą",
+      "basic": {
+        "title": "Podstawowe prawa",
+        "intro": "Użytkownikowi przysługuje:",
+        "items": [
+          "prawo dostępu do danych osobowych",
+          "prawo żądania sprostowania danych osobowych, jeżeli są nieprawidłowe",
+          "prawo żądania usunięcia danych osobowych",
+          "prawo do ograniczenia przetwarzania",
+          "prawo do przenoszenia danych osobowych"
+        ]
+      },
+      "withdrawal": {
+        "title": "Wycofanie zgody",
+        "paragraphs": [
+          "Jeżeli dane osobowe przetwarzane są na podstawie zgody, Użytkownik ma prawo do jej wycofania w dowolnym momencie, wysyłając wiadomość na adres hello@qonnectone.com.",
+          "Cofnięcie zgody nie wpływa na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem ani na przetwarzanie danych oparte na innej podstawie prawnej."
+        ]
+      },
+      "complaint": {
+        "title": "Prawo wniesienia skargi",
+        "description": "Użytkownikowi przysługuje prawo wniesienia skargi do organu nadzorczego ochrony danych osobowych w państwie członkowskim zwykłego pobytu, miejsca pracy lub miejsca popełnienia domniemanego naruszenia. W Polsce organem tym jest Prezes Urzędu Ochrony Danych Osobowych (PUODO), ul. Stawki 2, 00-193 Warszawa, tel. 22 531 03 00."
+      }
+    },
+    "cookies": {
+      "title": "Cookies",
+      "cards": [
+        {
+          "title": "Co to są cookies?",
+          "paragraphs": [
+            "Pliki cookies (tzw. „ciasteczka”) stanowią dane informatyczne, w szczególności pliki tekstowe, które przechowywane są w urządzeniu końcowym Użytkownika i przeznaczone są do korzystania ze stron internetowych Serwisów.",
+            "Cookies zazwyczaj zawierają nazwę strony internetowej, z której pochodzą, czas przechowywania ich na urządzeniu końcowym oraz unikalny numer."
+          ]
+        },
+        {
+          "title": "Rodzaje cookies",
+          "paragraphs": [
+            "W Serwisie stosowane są dwa rodzaje plików cookies:"
+          ],
+          "list": [
+            "cookies „sesyjne” – pliki tymczasowe przechowywane do czasu wylogowania, opuszczenia strony lub wyłączenia przeglądarki",
+            "cookies „stałe” – przechowywane w urządzeniu końcowym przez czas określony w parametrach lub do czasu ich usunięcia przez Użytkownika"
+          ]
+        },
+        {
+          "title": "Cele wykorzystania cookies",
+          "list": [
+            "tworzenie statystyk pomagających zrozumieć, w jaki sposób Użytkownicy korzystają ze stron internetowych",
+            "utrzymanie sesji Użytkownika po zalogowaniu, dzięki czemu nie musi ponownie wpisywać loginu i hasła na każdej podstronie"
+          ]
+        },
+        {
+          "title": "Zarządzanie cookies",
+          "paragraphs": [
+            "Przeglądarka internetowa zazwyczaj domyślnie dopuszcza przechowywanie plików cookies w urządzeniu końcowym Użytkownika. Ustawienia te można zmienić w dowolnym momencie.",
+            "Ograniczenie lub wyłączenie plików cookies może wpłynąć na niektóre funkcjonalności dostępne w Serwisach."
+          ]
+        }
+      ]
+    },
+    "final": {
+      "title": "Postanowienia końcowe",
+      "cards": [
+        {
+          "title": "Obowiązywanie",
+          "paragraphs": [
+            "Polityka Prywatności wraz z Polityką Cookies obowiązuje od 1 września 2025 roku."
+          ]
+        },
+        {
+          "title": "Zmiany w Polityce",
+          "paragraphs": [
+            "Operator zastrzega sobie prawo do zmiany Polityki Prywatności i Polityki Cookies w każdym czasie. Zaktualizowany tekst będzie dostępny na głównych stronach Serwisów w zakładce „Polityka Prywatności”.",
+            "O planowanej zmianie Operator poinformuje Użytkowników z tygodniowym wyprzedzeniem, wskazując zakres zmian i datę ich obowiązywania. Brak akceptacji zmian skutkuje rozwiązaniem umowy o świadczenie usługi elektronicznej z upływem wskazanego terminu."
+          ]
+        }
+      ]
+    }
+  },
+  "cookiesPage": {
+    "hero": {
+      "title": "Polityka Cookies",
+      "subtitle": "Polityka prywatności i plików cookies na stronie internetowej spółki QonnectOne sp. z o.o.",
+      "description": "Niniejsza Polityka Cookies określa zasady wykorzystywania plików cookies na stronie www.qonnectone.com oraz informuje o przetwarzaniu danych osobowych zgodnie z RODO."
+    },
+    "companyInfo": {
+      "title": "Informacje o Spółce",
+      "cards": [
+        {
+          "icon": "fileText",
+          "title": "Odpowiedzialność za treści",
+          "paragraphs": [
+            "Za treści zamieszczone na stronie www.qonnectone.com odpowiada QonnectOne sp. z o.o. z siedzibą w Gdańsku 80-386 Gdańsk ul. Lęborska 3B (dalej \"Spółka\")."
+          ]
+        },
+        {
+          "icon": "alertTriangle",
+          "title": "Linki zewnętrzne",
+          "paragraphs": [
+            "Strona internetowa Spółki może zawierać linki do innych stron, które są poza naszą kontrolą i nie są objęte niniejszą polityką prywatności. Rekomendujemy zapoznanie się z polityką prywatności na innych odwiedzanych przez Państwa stronach internetowych."
+          ]
+        }
+      ]
+    },
+    "personalData": {
+      "title": "Przetwarzanie danych osobowych",
+      "cards": [
+        {
+          "title": "Kontakt i udostępnianie danych",
+          "paragraphs": [
+            "W trakcie wizyty na stronie mogą Państwo skontaktować się z naszą Spółką wysyłając wiadomość e-mail lub dzwoniąc na jeden z podanych numerów telefonicznych, co skutkuje podjęciem decyzji o udostępnieniu nam danych osobowych.",
+            "Udostępnienie przez Państwa danych jest dobrowolne, jednak w większości przypadków może być warunkiem koniecznym do nawiązania kontaktu."
+          ]
+        },
+        {
+          "title": "Zgodność z RODO",
+          "paragraphs": [
+            "Państwa dane osobowe przetwarzane są zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych (RODO) oraz przepisami polskimi.",
+            "Szczegółowe informacje na temat przetwarzania danych osobowych przez QonnectOne sp. z o.o. znajdziecie Państwo na stronie www.qonnectone.com/dane_osobowe, gdzie umieściliśmy wszystkie wymagane informacje, np. klauzule informacyjne dostosowane do celu kontaktu."
+          ]
+        }
+      ]
+    },
+    "cookiesSection": {
+      "title": "Pliki cookies",
+      "cards": [
+        {
+          "icon": "cookie",
+          "title": "Informacja o cookies",
+          "paragraphs": [
+            "W trakcie pierwszej wizyty na stronie zostaliście Państwo poinformowani o wykorzystywaniu przez nas plików cookies. Serwery wewnętrzne Spółki i serwery dostawców usług IT będących osobami trzecimi (które mogą znajdować się poza Europejskim Obszarem Gospodarczym) automatycznie rejestrują dane dotyczące wizyty, opierając się na Państwa adresie IP.",
+            "Administrator za pośrednictwem strony instaluje pliki cookies niezbędne do świadczenia usług oraz analizy statystyk."
+          ]
+        },
+        {
+          "title": "Zarządzanie cookies",
+          "paragraphs": [
+            "Pliki cookies są wykorzystywane za Państwa zgodą. Możecie nimi zarządzać dokonując odpowiednich zmian w ustawieniach przeglądarki internetowej. Szczegóły publikowane są w instrukcjach administratorów przeglądarek (np. Chrome, Firefox, Microsoft Edge, Opera).",
+            "Pozostawienie przeglądarki w domyślnym ustawieniu umożliwia gromadzenie plików cookies i przetwarzanie danych osobowych."
+          ]
+        }
+      ]
+    },
+    "retention": {
+      "title": "Jak długo będziemy przetwarzać dane osobowe?",
+      "cards": [
+        {
+          "icon": "clock",
+          "title": "Zasady przechowywania",
+          "paragraphs": [
+            "Informacje i dane osobowe przechowujemy nie dłużej, niż jest to konieczne do realizacji celów, do jakich zostały zebrane.",
+            "Szczegółowe informacje dotyczące okresu przechowywania danych dla poszczególnych kategorii podmiotów przedstawiono w klauzulach informacyjnych dostępnych na stronie www.qonnectone.com/dokumenty."
+          ]
+        }
+      ]
+    },
+    "recipients": {
+      "title": "Komu możemy ujawniać dane osobowe?",
+      "cards": [
+        {
+          "title": "Zasady udostępniania",
+          "paragraphs": [
+            "Nie przekazujemy danych osobowych pozyskanych za pomocą strony internetowej na rzecz osób trzecich w celach handlowych lub marketingowych.",
+            "Udostępnienie danych stronom trzecim może być konieczne w ramach świadczonych Spółce usług (np. hosting IT, rekrutacja, audyt, doradztwo).",
+            "Zastrzegamy sobie prawo do ujawnienia danych osobowych w przypadkach przewidzianych przez prawo lub na żądanie uprawnionych organów, gdy na Spółce ciąży obowiązek ujawnienia tych danych."
+          ]
+        }
+      ]
+    },
+    "rights": {
+      "title": "Prawa przysługujące osobom przekazującym Spółce dane osobowe",
+      "cards": [
+        {
+          "title": "Podstawowe prawa",
+          "intro": "W związku z przetwarzaniem danych osobowych przysługują Państwu następujące uprawnienia:",
+          "list": [
+            "prawo żądania dostępu do swoich danych osobowych lub ich sprostowania, jeżeli są nieprawidłowe",
+            "prawo do usunięcia danych, ograniczenia przetwarzania danych lub przenoszenia danych do innego administratora danych w sytuacjach przewidzianych przepisami prawa",
+            "prawo wyrażenia sprzeciwu wobec przetwarzania danych"
+          ]
+        },
+        {
+          "title": "Prawo wniesienia skargi",
+          "paragraphs": [
+            "Jeżeli uznacie Państwo, że przetwarzanie Waszych danych osobowych przez QonnectOne sp. z o.o. jest niezgodne z przepisami o ochronie danych, przysługuje prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych, ul. Stawki 2, 00-193 Warszawa.",
+            "Informacje, jak wnieść skargę, dostępne są na stronie https://uodo.gov.pl/."
+          ]
+        },
+        {
+          "title": "Wycofanie zgody",
+          "paragraphs": [
+            "Jeśli podstawą przetwarzania jest zgoda, przysługuje Państwu prawo cofnięcia jej w dowolnym momencie. Cofnięcie zgody pozostaje bez wpływu na zgodność z prawem przetwarzania dokonanego przed jej wycofaniem."
+          ]
+        },
+        {
+          "title": "Informowanie o prawach",
+          "paragraphs": [
+            "W każdej sytuacji, w której podajecie dane osobowe, jesteście informowani o przysługujących Wam uprawnieniach."
+          ]
+        }
+      ]
+    },
+    "contact": {
+      "title": "Kontakt",
+      "cards": [
+        {
+          "title": "Dane kontaktowe",
+          "intro": "W sprawach dotyczących niniejszego dokumentu lub przetwarzania danych osobowych prosimy o kontakt:",
+          "methods": [
+            {
+              "icon": "mapPin",
+              "label": "Listownie na adres siedziby Spółki:",
+              "lines": [
+                "QonnectOne sp. z o.o.",
+                "Ul. Lęborska 3B",
+                "Gdańsk 80-386",
+                "NIP 584-286-56-48",
+                "z dopiskiem \"dane osobowe\""
+              ]
+            },
+            {
+              "icon": "mail",
+              "label": "Mailowo na adres:",
+              "lines": [
+                "hello@qonnectone.com"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "updates": {
+      "title": "Zmiany w dokumencie Polityka prywatności",
+      "cards": [
+        {
+          "title": "Aktualizacje",
+          "paragraphs": [
+            "Spółka zastrzega sobie prawo do okresowej weryfikacji i aktualizacji niniejszego dokumentu."
+          ]
+        }
+      ]
+    }
+  },
   "problem": {
     "sectionTitle": "Problem",
     "sectionSubtitle": "Problemy, które rozwiązujemy",
@@ -173,7 +574,98 @@
       "benefit1": "Szybkie wejście na rynek",
       "benefit2": "Minimalizacja ryzyka awarii i błędów",
       "benefit3": "Redukcja kosztów operacyjnych",
-      "benefit4": "Pełna zgodność z regulacjami"
+      "benefit4": "Zgodność z regulacjami"
+    },
+    "section": {
+      "title": "BUSINESS CASES",
+      "subtitle": "Przykładowe scenariusze użycia",
+      "description": "Korzyści i wymierne rezultaty biznesowe uzyskane dzięki naszym rozwiązaniom"
+    },
+    "case1": {
+      "badge": "Instytucje płatnicze",
+      "title": "Rozszerzenie Oferty Płatniczej dla Krajowej Instytucji Płatniczej X",
+      "introTitle": "Wprowadzenie",
+      "introText": "Krajowa Instytucja Płatnicza (KIP) X, posiadająca zezwolenie na świadczenie usług przekazu pieniężnego, stoi przed strategiczną decyzją o rozszerzeniu swojej oferty o nowe, kluczowe produkty, takie jak karty płatnicze i konta IBAN dla swoich klientów. Tradycyjna ścieżka rozwoju wiąże się z szeregiem wyzwań, w tym długotrwałym procesem licencyjnym, znacznymi inwestycjami finansowymi i operacyjnymi.",
+      "challengesTitle": "Wyzwania tradycyjnego podejścia \"build from scratch\"",
+      "challenge1Title": "Złożony proces licencyjny",
+      "challenge1Text": "Złożenie wniosku o rozszerzenie licencji na nowe produkty to proces wymagający przygotowania obszernej dokumentacji i weryfikacji zgodności z określonymi regulacjami. Czas jego realizacji może wynosić nawet kilkanaście miesięcy.",
+      "challenge2Title": "Znaczące nakłady finansowe",
+      "challenge2Text": "Budowa własnego systemu transakcyjnego od podstaw, integracja z różnymi dostawcami (banki, schematy kartowe, dostawcy usług AML/KYC) oraz zatrudnienie wyspecjalizowanego zespołu.",
+      "challenge3Title": "Wysokie ryzyko biznesowe i operacyjne",
+      "challenge3Text": "Złożoność projektu, potencjalne opóźnienia w procesie licencyjnym i budowie systemu, a także brak gwarancji sukcesu rynkowego dla nowych produktów.",
+      "challenge4Title": "Brak elastyczności",
+      "challenge4Text": "Raz zbudowany system może być trudny do adaptacji w obliczu zmieniających się wymagań rynkowych czy regulacyjnych.",
+      "solutionTitle": "Rozwiązanie: Partnerstwo z QonnectOne",
+      "solutionIntro": "QonnectOne oferuje alternatywne podejście, które pozwala KIP X na szybkie i efektywne skalowanie biznesu, omijając większość wymienionych wyżej wyzwań:",
+      "solution1Title": "Gotowy do integracji system transakcyjny",
+      "solution1Text": "QonnectOne dostarcza kompletny, sprawdzony system informatyczny, który jest gotowy do integracji z istniejącą stroną transakcyjną KIP X.",
+      "solution2Title": "Partnerstwo z licencjonowaną instytucją",
+      "solution2Text": "QonnectOne współpracuje z instytucjami nadzorowanymi, które posiadają już niezbędne, rozszerzone licencje na obsługę kart i kont IBAN. Współpraca odbywa się w modelu Payments as a Service (PaaS) w formule outsourcingu.",
+      "solution3Title": "Szybkie wejście na rynek (Time-to-Market)",
+      "solution3Text": "Integracja z QonnectOne pozwala na znaczne skrócenie czasu potrzebnego na uruchomienie nowych produktów z miesięcy do tygodni.",
+      "resultsTitle": "Kluczowe rezultaty",
+      "result1Value": "4-6 tygodni",
+      "result1Label": "Time-to-Market",
+      "result2Value": "70%",
+      "result2Label": "Redukcja nakładów",
+      "result3Value": "Minimalizacja",
+      "result3Label": "Ryzyka biznesowego",
+      "result4Value": "100%",
+      "result4Label": "Fokus na biznes",
+      "detailsTitle": "Więcej szczegółów o rozwiązaniu",
+      "benefitsTitle": "Dodatkowe korzyści z partnerstwa z QonnectOne:",
+      "benefit1Title": "Minimalizacja kosztów i ryzyka:",
+      "benefit1Text": "KIP X unika ogromnych początkowych nakładów finansowych związanych z budową systemu i procesem licencyjnym. Zamiast inwestycji w aktywa, model ten opiera się na kosztach operacyjnych (abonament, prowizje).",
+      "benefit2Title": "Sprawdzenie modelu biznesowego:",
+      "benefit2Text": "QonnectOne umożliwia KIP X szybkie i sprawne przetestowanie nowego modelu biznesowego na rzeczywistym rynku. Dzięki temu można weryfikować popyt, optymalizować procesy i zbierać cenne dane.",
+      "benefit3Title": "Skupienie na rozwoju biznesu:",
+      "benefit3Text": "Współpraca z QonnectOne zwalnia KIP X z obciążeń technologicznych i regulacyjnych, pozwalając w pełni skupić się na pozyskiwaniu klientów, budowaniu marki i rozwijaniu relacji biznesowych.",
+      "summaryTitle": "Podsumowanie:",
+      "summaryText": "Dla Krajowej Instytucji Płatniczej X, dążącej do rozszerzenia swojej oferty o karty płatnicze i konta IBAN, partnerstwo z QonnectOne stanowi strategiczne i optymalne rozwiązanie. Pozwala ono na znaczące skrócenie czasu wejścia na rynek, redukcję nakładów finansowych i minimalizację ryzyka biznesowego i operacyjnego. Zamiast złożonej i kosztownej drogi samodzielnego rozwoju, KIP X otrzymuje kompletne narzędzie informatyczne i wsparcie licencjonowanego partnera, co umożliwia szybkie sprawdzenie i skalowanie nowego modelu biznesowego."
+    },
+    "case2": {
+      "badge": "Kryptowaluty i aktywa cyfrowe",
+      "title": "Ciągłość Działalności i Zgodność z MiCA dla Instytucji Kryptowalutowej Y",
+      "introTitle": "Wprowadzenie",
+      "introText": "VASP, wpisany do rejestru, stoi w obliczu znaczących zmian regulacyjnych związanych z wejściem w życie MiCA (Markets in Crypto-Assets Regulation). Nowe przepisy wymagają uzyskania odpowiednich zezwoleń dla kontynuacji działalności, co stwarza poważne wyzwania operacyjne i strategiczne dla przedsiębiorstwa.",
+      "challengesTitle": "Wyzwania związane z wdrożeniem MiCA",
+      "challenge1Title": "Złożony proces licencyjny MiCA",
+      "challenge1Text": "Uzyskanie wymaganego zezwolenia to złożony proces, który może potrwać od kilku do kilkunastu miesięcy, wymagający kompleksowej dokumentacji i spełnienia określonych wymogów kapitałowych oraz operacyjnych.",
+      "challenge2Title": "Blokada działalności operacyjnej",
+      "challenge2Text": "Bez odpowiedniej licencji MiCA instytucja nie może kontynuować obsługi klientów w zakresie kryptoaktywów, co oznacza całkowite wstrzymanie przychodów z tego segmentu.",
+      "challenge3Title": "Ryzyko utraty pozycji rynkowej",
+      "challenge3Text": "Konkurenci, którzy szybciej uzyskają licencję MiCA lub mają alternatywne rozwiązania, mogą przejąć klientów i pozycję rynkową w czasie oczekiwania na licencję.",
+      "challenge4Title": "Wysokie koszty compliance",
+      "challenge4Text": "Dostosowanie systemów, procesów i zespołu do wymogów MiCA wymaga znacznych inwestycji bez gwarancji uzyskania licencji.",
+      "solutionTitle": "Rozwiązanie: Partnerstwo z QonnectOne",
+      "solutionIntro": "QonnectOne oferuje kompleksowe rozwiązanie, które pozwala na kontynuację działalności w okresie przejściowym:",
+      "solution1Title": "Gotowy system zgodny z MiCA",
+      "solution1Text": "Kompletny system transakcyjny już dostosowany do wymogów MiCA, gotowy do natychmiastowej integracji z infrastrukturą klienta.",
+      "solution2Title": "Partnerstwo z uprawnionym CASP",
+      "solution2Text": "Współpraca z CASP posiadającymi już licencję zgodnie z MiCA, umożliwiająca działalność pod ich parasolem regulacyjnym (formuła outsourcingu).",
+      "solution3Title": "Ciągłość działalności bez przerw",
+      "solution3Text": "Kontynuacja obsługi klientów i generowania przychodów od pierwszego dnia wdrożenia rozwiązania.",
+      "resultsTitle": "Kluczowe rezultaty",
+      "result1Value": "100%",
+      "result1Label": "Ciągłość działalności",
+      "result2Value": "Zabezpieczone",
+      "result2Label": "Przychody i pozycja",
+      "result3Value": "Bez presji",
+      "result3Label": "Własna licencja MiCA",
+      "result4Value": "Pełna zgodność",
+      "result4Label": "Od pierwszego dnia",
+      "detailsTitle": "Więcej szczegółów o rozwiązaniu",
+      "benefitsTitle": "Kluczowe korzyści z partnerstwa w kontekście MiCA:",
+      "benefit1Title": "Zabezpieczenie ciągłości biznesowej:",
+      "benefit1Text": "Instytucja Y może kontynuować obsługę swoich klientów kryptowalutowych bez przerwy, zachowując przychody i relacje biznesowe w czasie oczekiwania na własną licencję MiCA.",
+      "benefit2Title": "Brak presji czasowej:",
+      "benefit2Text": "Możliwość spokojnego przygotowania i złożenia wysokiej jakości wniosku licencyjnego bez presji związanej z utratą przychodów czy pozycji rynkowej.",
+      "benefit3Title": "Przewaga konkurencyjna:",
+      "benefit3Text": "Podczas gdy konkurenci mogą zmagać się z przerwami w działalności, Instytucja Y utrzymuje pełną operacyjność i może nawet pozyskać nowych klientów.",
+      "benefit4Title": "Redukcja ryzyka regulacyjnego:",
+      "benefit4Text": "Działalność pod licencją doświadczonego partnera minimalizuje ryzyko naruszeń przepisów MiCA i zapewnia pełną zgodność od pierwszego dnia.",
+      "summaryTitle": "Strategiczne znaczenie rozwiązania:",
+      "summaryText": "Dla Instytucji Nadzorowanej Y, stojącej przed wyzwaniem wdrożenia MiCA, partnerstwo z QonnectOne stanowi nie tylko rozwiązanie przejściowe, ale strategiczny element długoterminowej strategii biznesowej. Umożliwia ono utrzymanie konkurencyjności w kluczowym momencie transformacji regulacyjnej sektora kryptowalut, jednocześnie zapewniając spokój i stabilność finansową niezbędną do skutecznego uzyskania własnej licencji MiCA."
     }
   },
   "aboutPage": {
@@ -197,6 +689,50 @@
       "p2": "Dzięki integracji z QonnectOne nie tracisz cennego czasu i zasobów na budowanie nowego systemu od podstaw, rozszerzanie istniejących rozwiązań czy skomplikowany proces pozyskiwania licencji.",
       "p3": "Nie musisz też szukać i integrować się z wieloma dostawcami, co generuje dodatkowe koszty i złożoność. Integrując się z nami, otrzymujesz kompletne narzędzie informatyczne oraz możliwość skorzystania z licencji naszych Partnerów.",
       "highlight": "Po Twojej stronie pozostaje to, co najważniejsze: rozwój biznesu."
+    },
+    "whyUs": {
+      "sectionTitle": "DLACZEGO MY?",
+      "sectionSubtitle": "Naszą wizytówką jest doświadczenie, wiedza i znajomość potrzeb biznesu.",
+      "cards": {
+        "specialization": {
+          "title": "Specjalizacja branżowa",
+          "description": "Posiadamy głębokie, praktyczne zrozumienie wymagań rynkowych i regulacyjnych w sektorach nadzorowanych."
+        },
+        "innovation": {
+          "title": "Innowacyjność",
+          "description": "Nieustannie doskonalimy nasze rozwiązania, aby sprostać aktualnym wyzwaniom i przewidzieć przyszłe trendy w branży płatniczej."
+        },
+        "flexibility": {
+          "title": "Elastyczność",
+          "description": "Modułowe podejście i elastyczne modele wdrożenia gwarantują dopasowanie systemu do potrzeb oraz tempa rozwoju Twojej firmy."
+        },
+        "experts": {
+          "title": "Wsparcie ekspertów",
+          "description": "Nasz zespół specjalistów wspiera Cię na każdym etapie współpracy – od analizy potrzeb, przez wdrożenie, po bieżącą optymalizację."
+        }
+      }
+    },
+    "compliance": {
+      "title": "Kompleksowe bezpieczeństwo i zgodność",
+      "subtitle": "Kładziemy nacisk na najwyższe standardy ochrony informacji i prywatności danych.",
+      "items": {
+        "gdpr": {
+          "title": "RODO / GDPR",
+          "description": "Pełna zgodność z Rozporządzeniem Ogólnym o Ochronie Danych Osobowych, zapewniająca ochronę prywatności klientów."
+        },
+        "dora": {
+          "title": "DORA (Digital Operational Resilience Act)",
+          "description": "Przygotowujemy nasze rozwiązania do pełnej zgodności z nowymi regulacjami odporności cyfrowej sektora finansowego."
+        },
+        "audits": {
+          "title": "Audyty bezpieczeństwa / Penetration Tests",
+          "description": "Regularnie przeprowadzamy audyty i testy penetracyjne, aby szybko identyfikować i eliminować potencjalne luki."
+        },
+        "knf": {
+          "title": "Zgodność z wymogami KNF dla KIP/MIP",
+          "description": "System projektujemy tak, aby spełniał wszystkie wymogi Komisji Nadzoru Finansowego dla krajowych i małych instytucji płatniczych."
+        }
+      }
     }
   },
   "modulesPage": {
